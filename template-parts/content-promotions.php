@@ -7,7 +7,7 @@
 	$args =  array (
 	'post_type' => 'event_promotions',
 	'paged' => get_query_var('paged'),
-	'posts_per_page'=>2,
+	'posts_per_page'=>3,
 	);
 	?>
 	<?php
@@ -17,7 +17,7 @@
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
 
 
-<div class="small-12 medium-6 columns promotion-container">
+<div class="small-12 medium-4 columns promotion-container">
 <div class="card card-<?php the_field( 'promotion_event_color' ); ?>"  data-equalizer-watch>
 	
 <?php // ACF Image Object
