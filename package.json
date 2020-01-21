@@ -35,12 +35,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattrhummel/gcc-2018-theme-wp.git"
+    "url": "git+https://github.com/mattrhummel/2020Refresh.git"
   },
   "author": "Matt Hummel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mattrhummel/gcc-2018-theme-wp/issues"
+    "url": "https://github.com/mattrhummel/2020Refresh/issues"
   },
-  "homepage": "https://github.com/mattrhummel/gcc-2018-theme-wp#readme"
+  "homepage": "https://github.com/mattrhummel/2020Refresh#readme"
 }
