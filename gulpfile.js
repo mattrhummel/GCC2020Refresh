@@ -20,13 +20,15 @@ gulp.task('php', function() {
     php.server({ base: '/', port: 8889, keepalive: true});
 });
 
-gulp.task('browser-sync', ['php'], function() {
-  browserSync({
-       proxy: "http://localhost:8888/refresh/",
-       open: true,
-       notify: false
+gulp.task('browser-sync',['php'], function() {
+    browserSync.init({
+        proxy:"localhost:8888/",
+        baseDir: "./",
+        open:true,
+        notify:false
+
+    });
   });
-});
 
 gulp.task('bs-reload', function () {
   browserSync.reload();
