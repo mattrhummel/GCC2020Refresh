@@ -1,1 +1,1 @@
-# gcc-2018-theme-wp
+# GCC 2020 Refresh WordPress Theme
