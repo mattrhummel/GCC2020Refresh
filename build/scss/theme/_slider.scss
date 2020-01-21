@@ -1,0 +1,189 @@
+.slider-wrap {
+.hero {
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #ccc;
+        
+.hero-content {
+
+        min-height: 700px;
+        height: 70vh;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        align-items: flex-end;
+
+            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+            min-height: 550px;
+            height: 55vh;
+
+            }
+
+.hero-caption {
+        background-color:rgba(141,36,55,0.85);
+        // margin-top: 800px;
+        padding: 22px;
+        color: $white;
+        width: 100%;
+
+    @media screen and (min-width: 40em) {
+
+        width: 600px;
+        margin-left: 180px;
+
+    }
+
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+
+        margin-left: 20px;
+
+
+     }
+       
+    @media screen and (min-width: 64em) {
+
+     margin-top: 0;
+     // margin-left: 20px;
+     width: 600px;
+     margin-left: 0;
+     padding: 44px;
+
+    }
+
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+     padding: 34px;
+     margin-left: 80px;
+     width: 500px;
+
+    }
+
+h2 {
+    color: $white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 160%;
+
+     @media screen and (min-width: 40em) {
+
+         font-size: 300%;
+
+      }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
+        font-size:280%;
+         
+      }
+        
+        @media screen and (min-width: 64em) {
+ 
+            font-size: 400%;
+
+        }
+
+            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+            font-size: 300%;
+
+            }
+
+    }
+    
+    h3 {
+        color: $white;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        border-bottom:1px solid rgba(255,255,255,0.35);
+        padding-bottom:7px;margin-bottom:7px;
+    } 
+    .button {
+        background-color:#fff;
+        border-color:#fff;
+        color:rgb(90,20,30);
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        font-size:1.3em;
+        font-weight: 400px;
+        transition: 0.3s;
+        font-weight: 400;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        user-select: none;
+
+    &:hover {
+        background-color:#fff;
+        border-color:#fff;
+        color:rgb(90,20,30);
+    }
+    &:focus {
+        background-color:#fff;
+        border-color:#fff;
+        color:rgb(90,20,30);
+    }
+  }
+}
+
+}
+}
+
+.owl-theme {
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next,
+.owl-nav 
+{
+.owl-next, .owl-prev {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 35%;
+    display: inline-block;
+    z-index: 9999;
+    color: rgba(255,255,255, .4);
+
+    @media screen and (min-width: 40em) {
+
+               top: 50%;
+            
+    }
+
+}
+  .owl-prev {
+    left: 20px;
+  }
+  .owl-next {
+    right: 20px;
+  }
+  .fa {
+        font-size: 3rem;
+        font-weight: 100;
+    }
+}
+.owl-dots {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+.owl-dot {
+      width: 75px;
+      height: 10px;
+      border-radius: 5px;
+      background: rgba(255,255,255, .9) !important;
+      margin-right: 5px;
+}
+.owl-dot.active {
+      background: rgba(255,255,255, .3) !important;
+      width: 75px;
+      height: 10px;
+      border-radius: 5px;
+ }
+
+}
+
+}

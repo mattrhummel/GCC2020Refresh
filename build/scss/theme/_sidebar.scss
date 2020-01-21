@@ -1,0 +1,160 @@
+.nav-panel {
+        background-color:#f2f2f2;
+        padding: 21px;
+
+ul {
+        margin:0;
+        padding:0;
+        list-style-type:none;
+     
+     li {
+        padding:7px 0 7px 0;
+    
+       a {
+          font-size:14px;
+          line-height:28px;
+          color:#000;
+       }
+
+    }
+
+  }
+
+}
+
+.page-nav {
+  
+  padding: 0 !important;
+  margin-bottom: 20px;
+  
+  @media screen and (min-width: 40em) {
+    float: right !important; //do not remove, keeps sidebar on the right on desktop
+  }
+
+}
+
+//Page Side bar
+.widget {
+  
+  margin-bottom: 1rem;
+  background-color: $light-gray;
+  padding: 0;
+
+  li a {
+    padding: 1rem;
+  }
+
+  h3 {
+  color: $dark-gray;
+  width: 100%;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.textwidget {
+  margin: .5rem 0;
+  padding: 1rem;
+    
+    a {
+      text-decoration: underline;
+    }
+}
+
+ul.child-sidebar-menu {
+//advanced sidebar menu custom styles
+    margin: 0;
+    padding: 1rem;
+
+    li {
+
+      display: block;
+      width: 100%; //do not remove
+      padding: 0;
+
+      a {
+          font-weight: 800;
+          padding: .4rem 1rem;
+          font-weight: bold;
+          color: $dark-gray;
+      /* visited link */
+      &:visited {
+      }
+      /* mouse over link */
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+      /* selected link */
+      &:active {
+      }
+    }
+
+    ul.grandchild-sidebar-menu {
+      margin-left: 0 !important;
+      border-bottom: 0 !important;
+    }
+
+   ul.child-sidebar-menu li a:link {
+      padding: 1rem 1rem 1rem 1.4rem;
+      font-weight: 700;
+
+  } 
+}
+
+}
+
+.active > a {
+    background-color: $light-gray;
+    color: $secondary;
+    font-weight: 800;
+}
+
+.department-links {
+
+ padding: 1rem;
+  
+  ul.child-sidebar-menu {
+    margin: 0;
+    padding: 0 .8rem;
+
+  li {
+
+    a {
+        padding: 1rem 0;
+        font-weight: 400;
+        color: $dark-gray;
+        line-height: 1.4rem;
+        background-color: $light-gray;
+
+ /* visited link */
+    &:visited {
+    }
+
+    /* mouse over link */
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+
+    /* selected link */
+    &:active {
+        color: $primary;
+    }
+
+      }
+}
+li.active {
+  text-decoration: underline;
+  background-color: #e2e2e2;
+}
+.active > a {
+  text-decoration: underline;
+}
+  }
+}
+
+}
+
+
+

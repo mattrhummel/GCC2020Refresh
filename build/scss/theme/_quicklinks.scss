@@ -1,0 +1,22 @@
+.actions {
+  background-color: $dark-gray;
+
+  a {
+    border-right: .5px solid $medium-gray;
+    border-left: .5px solid $medium-gray;
+  }
+}
+
+.logo-container, .menu-botton-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.top-bar {
+  padding: .4rem 0;
+  background-color: $white;
+
+
+  }
+
+

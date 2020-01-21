@@ -1,0 +1,60 @@
+//Branding and Main Navigation
+@media screen and (min-width: 40em) {
+  
+.branding {
+  background-color: $white;
+  padding: 0;
+  max-width: 300px !important;
+  margin-bottom: 1rem;
+  font-family: $font-family-monospace;
+
+}
+
+.calltos {
+
+  margin-bottom: 0;
+  font-weight: bold;
+
+    a {
+        
+        font-size: 1.1rem !important;
+        padding-top: 1.05rem;
+        padding-bottom: 1.05rem;
+       
+    }
+
+    a.primary {
+    background-color: #82082A;
+
+    &:hover {
+      background-color: $medium-gray;
+      color: $primary;
+    }
+
+  }
+
+  a.secondary {
+
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $medium-gray;
+      color: $primary;
+    }
+
+  }
+
+}
+.custom-logo-link, .mobile-logo {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.custom-logo-link {
+  margin: 0;
+}
+.mobile-logo {
+  margin: .5rem;
+}
+
+}

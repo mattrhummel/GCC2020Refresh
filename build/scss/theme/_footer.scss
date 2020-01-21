@@ -1,0 +1,283 @@
+.site-footer {
+  
+  background: rgb(141,36,55);
+  color: $white;
+  text-align: center;
+  
+@media screen and (min-width: 40em) {
+  
+   text-align: left;
+
+}
+
+.top-footer {
+
+    padding: 40px 0;
+
+  @media screen and (min-width: 40em) {
+   
+   padding: 40px 0 100px 0;
+
+}
+
+.footer-logo {
+  margin-bottom: 40px;
+
+  .logo {
+    display: block;
+    text-indent: -9999px;
+    background-image: url('/refresh/wp-content/uploads/germanna-logo-white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    height: 55px;
+  }
+ 
+}
+
+.footer-contacts {
+
+  padding-left: 0;
+
+h3,h4 {
+
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Arial, san-serif;
+    color: $white;
+    text-transform: uppercase;
+             
+        @media screen and (min-width: 40em) {
+
+                text-align: left;
+
+        }
+}
+
+p  {
+     text-align: center;
+     font-weight: normal;
+     
+     @media screen and (min-width: 40em) {
+      text-align: left;
+     }
+}
+
+
+  a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+
+}
+
+.footer-content {
+
+    @media screen and (min-width: 64em) {
+      
+      padding-right: 0;
+
+    }
+
+.button-column {
+
+padding-left: 0;
+padding-right: 0;
+
+.action-buttons {
+
+  padding: 0;
+  margin: 0;
+
+
+li {
+
+     margin: 0 0 5px 0;
+     width: 100%;
+     list-style: none;
+
+  a {
+
+     color: $white;
+     background-color: #6a1b29;
+     text-transform: uppercase;
+     font-family: Arial, san-serif;
+     font-weight: bold;
+     padding: 14px 20px;
+     display: block;
+     transition: .6s;
+    font-size: 1.2rem;
+     &:hover {
+      background-color: $white;
+      color: $primary;
+     }
+  }
+
+}
+
+}
+
+}
+
+}
+
+}
+
+.social {
+
+  margin-bottom: 20px;
+
+      @media screen and (min-width: 40em) {
+
+        margin-bottom: 40px;
+  }
+
+  .social-icons {
+    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+     
+    @media screen and (min-width: 40em) {
+
+      align-items: left;
+      justify-content: left;
+      margin: 10px auto 0 auto;
+      text-align: left;
+
+   }
+
+        li {
+
+          a {
+              
+              cursor: pointer;
+              display: inline-block;
+              color: $white;           
+              padding: .6rem;
+
+               @media screen and (min-width: 40em) {
+
+                padding: 0 .3rem;
+
+               }
+
+              span {
+                
+              color: $white;
+              text-align: center; 
+              font-weight: normal;
+              font-size: 24px;
+                            
+              }
+
+              span:hover {
+                
+                color: $secondary;
+              
+              }
+              span.icon-text {
+                
+                display: block;
+                text-indent: -99999px;
+                display: none;
+              
+              }
+          }
+        }
+      }
+  }
+}
+
+.site-footer-bottom {
+
+  background: $white;
+  padding: 1.4rem 0 6rem 0;
+  
+  .bottom-footer-content {
+
+
+
+    .menu {
+
+      li {
+
+
+        a {
+          color: $primary;
+          font-size: .8rem;
+          font-family: Arial, san-serif;
+          font-weight: normal;
+          padding: 0 1rem 1rem 0;
+          margin: 0;
+
+          &:hover {
+            color: $secondary;
+            text-decoration: underline;
+          }
+
+              /* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+ padding: 0 1rem .5rem 0;
+}
+        }
+      }
+    }
+
+.menu .active > a, .menu .is-active > a {
+    background-color: $white;
+    color: $secondary;
+    text-decoration: underline;
+}
+
+  .vccs {
+
+  @media screen and (min-width: 40em) {
+  padding-right: 0;
+
+}
+
+}
+
+  p {
+   
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: $black;
+    font-weight: bold;
+    padding: 0;
+    font-family: Arial, san-serif;
+    margin: 2px 0 0 0;
+
+    @media screen and (min-width: 40em) {
+
+    text-align: right;
+    margin: 0;
+    line-height: .8rem;
+    }
+
+    /* Medium only */
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+text-align: right;
+line-height: inherit;
+}
+
+    a {
+      color: $primary;
+      font-weight: 700;
+    &:hover  {
+      color: $secondary;
+      text-decoration: underline;
+    }
+    
+  }
+
+}
+
+}

@@ -1,0 +1,359 @@
+.title-bar {
+background-color:rgba(255,255,255,0.85) !important;
+font-family: $font-family-monospace;
+
+.title-bar-left {
+  
+.logo-container {
+
+  a.logo {
+   padding:16px;
+   font: 900 20px $font-family-monospace;
+   color: $secondary;
+   text-transform: uppercase;
+   background-color: transparent;
+   transition: 0.3s;
+   float:left; //do not remove, keeps logos padding
+      @media screen and (max-width: 39.9375em) {
+          font-size:14px;
+          padding:16px 4px;
+       }
+
+      @media screen and (min-width: 40em) {
+        font-size:20px;
+         padding: 27.5px 28px;
+      }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
+        font-size: 16px;
+        padding:19px 8px;
+         
+      }
+
+      @media screen and (min-width: 64em) {
+        font-size:20px;
+        padding: 27.5px 28px;
+      }
+
+     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+      padding: 28px 8px;
+
+      }
+
+     &:focus {
+      text-decoration: none;
+     }
+
+    }
+}
+      
+    }
+
+} 
+span.fa-heart {
+  color: $primary;
+  margin-right: 2px;
+}
+ul.germanna-nav {
+  li.menu-item {          
+   margin-left: 5px; 
+  a {
+      color: $primary;
+      font: 900 20px $font-family-monospace;
+      text-transform: uppercase;
+      padding: 28px 28px 28px 28px;
+      display:inline-block;
+      line-height: inherit;
+      transition: 0.3s;
+      border-bottom: 7px solid rgba(255,255,255,0);
+
+   &:hover {
+      border-bottom: 7px solid #222;
+    } 
+
+      @media screen and (max-width: 39.9375em) {      
+            display: none;
+                            
+      }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
+           padding: 20px 6px;
+          font-size: 14px;
+      }
+
+       @media screen and (min-width: 64em) {
+        padding: 28px;
+       }
+
+       @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+         padding: 27px 12px;
+       }
+
+        &:hover {            
+            color: $primary;
+        } 
+
+        &:focus {           
+            color: $primary;
+            border-bottom:7px solid $primary;
+            text-decoration: none;
+        }
+  }
+
+}
+
+li.has-menu {          
+  background-color: $primary;
+  
+  &:hover {
+    background-color: $secondary;
+  }
+
+ button { 
+    color: $white;
+    transition: 0.3s;
+    border-radius: 0;
+    padding: 28px 28px;
+    display: inline-block;
+    line-height: 1.2rem;
+    font: 900 23px $font-family-monospace;
+    background-color: $primary;
+    border-bottom: 7px solid $primary; 
+
+    &:hover { 
+      background-color: #222;
+      color: $white;
+      border-bottom: 7px solid $secondary; 
+    }
+         
+    @media screen and (max-width: 39.9375em) {    
+      display: block;
+      padding: 12px 28px;
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {       
+        padding: 14px 22px;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+   @media screen and (min-width: 64em) {     
+      padding: 26px 28px;
+   }
+
+  @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+        padding: 23px 26px;
+  }
+}          
+button::after {
+  content: '\f0c9 ';
+  font-family: FontAwesome;
+  line-height: inherit;
+}
+
+button.is-active::after {
+    content: '\f00d';
+}
+
+  }
+}
+
+.js-off-canvas-overlay.is-overlay-absolute {
+  top: 75px;
+}
+#popout-menu {
+  //main sidebar styles
+  background-color: $light-gray;
+  width: auto;
+  //do not change these styles
+  overflow: visible;
+  border-top:14px solid rgb(141,36,55);
+  padding: 10px 28px 28px 28px;
+  position: absolute;
+  right: 0;
+  z-index: 999999;
+  top: 54px;
+
+.menu .active > a, .menu .is-active > a {
+  background-color: $light-gray;
+}
+       @media screen and (min-width: 40em) and (max-width: 63.9375em) {       
+              top: 69px;            
+          }
+
+       @media screen and (min-width: 64em) {           
+            top: 95px;
+        }
+
+       @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+        top: 93px;
+       }
+}
+.close-button-menu {
+  font-size: 1.2rem;
+  text-align: right;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: $font-family-monospace;
+  width: 100%;
+  display: block;
+}
+.menu-icon {
+  margin: 1rem !important;
+  height: 34px !important;
+  width: 34px !important;
+}
+.mobile-menu {
+  .mygcc-button {
+      margin-bottom: 20px;
+      margin-top: 10px;
+     .button {
+        color:rgb(141,36,55);
+        background-color:#fff;
+        font-family: $font-family-monospace;
+        text-transform: uppercase;
+        font-size: 1.2em;
+         border:none;
+
+        &:hover {
+        background-color:rgb(141,36,55);
+        color:#fff;
+        }
+        &:focus {
+        border: none;
+        outline: none;
+        }
+      }
+}
+.search-container {
+  margin-bottom: 30px;
+  .input-group {
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  [type="text"] {
+    height: auto;
+  }
+  .button {
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+
+  }
+}
+.menu {
+   
+    width: 100%;
+    margin: 0 0 28px 0;
+    padding: 0;
+  li {
+
+      a {
+          color: $primary;
+          font-weight: 800;
+          background-color: #f2f2f2;
+          font-size: 1.2rem; 
+          padding: 0 0 24px 0;
+          text-transform: uppercase;
+          font-family: $font-family-monospace;
+
+      /* visited link */
+
+    &:visited {
+        color: $primary;
+    }
+
+    &:hover {
+          color: $secondary;
+          text-decoration: underline;
+      }
+      /* selected link */
+     &:active {
+          color: $secondary!important;
+          text-decoration: underline;
+      }
+    }
+
+
+  }
+
+}
+.secondary-menu-container {
+  margin: 0;
+  padding: 0;
+
+  .secondary-menu {
+
+      margin: 0;
+      padding: 0;
+       
+    h3 {
+      
+        font-size: 16px;
+        text-align: left;
+        color: #666;
+        padding-bottom:7px;
+        text-transform: uppercase;
+        font-family: $font-family-monospace;
+
+    }
+
+     ul.menu.vertical {
+
+      padding-left: 0;
+
+      li {
+           
+          a {
+
+            font-family: $body-font-family;
+            color: $black;
+            margin:0;
+            padding:0 0 14px 0;
+            font-size:14px;
+            border:none;
+            text-transform: none;
+          
+            &:hover {
+              text-decoration: underline;
+              color: $primary;
+            }
+
+          }
+
+      }
+
+
+     }
+
+
+  }
+
+}
+
+}

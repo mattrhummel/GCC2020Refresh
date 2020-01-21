@@ -1,0 +1,238 @@
+.page-hero {
+
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color:#ccc;
+  /* height:25vh; */
+  background-image:url('https://germanna.wpengine.com/wp-content/themes/gcc-2020-refresh/img/classroom.png');
+  border-bottom: 17px solid rgb(141,36,55);
+
+  
+.hero-content {
+
+@media screen and (min-width: 40em) {
+
+     display: -webkit-flex; /* Safari */
+     display: flex;
+     align-items: flex-end;
+     height: 600px;
+     min-height:600px;
+
+}
+ .page-hero-caption {
+        background-color:rgba(141,36,55,1);
+        padding:28px;
+        color:#fff;
+
+@media screen and (min-width: 40em) {
+
+ margin-top: 0;
+
+}
+    h1 {
+        color: $white;
+        text-transform: uppercase;
+        border-bottom:1px solid rgba(255,255,255,0.35);
+        padding-bottom:7px;
+        margin-bottom:7px;
+        font: 400% $header-font-family;
+    }
+
+    .button {
+        background-color: $white;
+        border-color: $white;
+        color:rgb(90,20,30);
+        font-size: 1.3em;
+        transition: 0.3s;
+    
+    &:hover {
+        background-color:$white;
+        border-color:$white;
+        color:rgb(90,20,30);
+    &:focus {
+        background-color:$white;
+        border-color:$white;
+        color:rgb(90,20,30);
+    }
+}
+    
+}
+
+}
+
+}
+
+}
+
+.hero-section {
+  
+  img {
+    margin-bottom: 20px;
+  }
+
+}
+.hero-section-text {
+  
+    background-color: #75b5f5;
+
+  .header-content {
+    
+    padding: 3rem 0 0 1rem;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: bottom;
+
+    @media screen and (min-width: 40em) {
+    
+     padding: 9rem 0 0 1rem;
+
+    }
+    
+    h1.entry-title {
+      font-family: $font-family-monospace;
+      color: $white;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+    }
+
+}
+
+.crumbs-container {
+
+  background-color: #75b5f5;
+  width: 100%;
+  font-family: arial, san-serif;
+        
+  .breadcrumbs {
+
+    li {
+
+        font-family: arial, san-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+
+      a {
+
+        font-family: arial, san-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $black;
+      }
+    }
+
+    li.disabled {
+      color: $dark-gray;
+    }
+  }
+
+}
+
+}
+.post-meta {
+  margin: 0 auto;
+  padding: 0 1.5rem 1rem 1.5rem;
+  background-color: $light-gray;
+
+  p {
+    color: $secondary;
+  }
+  span.posted-on {
+    a {
+      color: $primary;
+      padding-left: 0.4rem;
+    }
+    a:hover {
+      color: $secondary;
+      text-decoration: underline;
+    }
+  }
+  span.cat-links {
+    a {
+      color: $primary;
+    }
+    a:hover {
+      color: $secondary;
+      text-decoration: underline;
+    }
+  }
+  span.tags-links {
+    a {
+      color: $primary;
+    }
+    a:hover {
+      color: $secondary;
+      text-decoration: underline;
+    }
+  }
+}
+
+.hero-section-plain {
+
+  margin: 2rem 0 0 0;
+  padding: 0;
+
+  .hero-section-text {
+  
+    background-color: $primary;
+    text-transform: uppercase;
+
+  }
+
+}
+
+.crumbs-container-plain {
+  padding: 0;
+  margin: 0;
+
+  .breadcrumbs {
+    padding: 0 1rem 0 2rem;
+    background-color: $medium-gray;
+
+    li {
+      padding: 1rem 0;
+
+      a {
+        font-weight: 700;
+      }
+    }
+
+    li.disabled {
+      color: $dark-gray;
+    }
+  }
+}
+
+.hero-section-404 {
+  position: relative;
+  height: 65vh;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+  background: rgba(0,0,0,.4);
+  color: $white;
+  text-align: center;
+  display: block;
+  
+  img {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hero-section-404-text {
+    margin: 120px 0 180px 0;
+
+  }
+}
