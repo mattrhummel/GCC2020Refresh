@@ -7,7 +7,7 @@
 * @package gccwp-2018
 */
 ?>
-<aside class="columns small-12 medium-12 large-4 page-nav hide-for-print" id="section-menu" data-toggler="hide">
+<aside class="columns small-12 medium-12 large-4 nav-panel hide-for-print" id="section-menu" data-toggler="hide">
 
   <?php //get page widgets
   dynamic_sidebar( 'sidebar-widgets' );

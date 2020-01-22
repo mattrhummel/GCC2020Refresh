@@ -47,20 +47,4 @@ function gcc_wp_2018_footer_calltos_menu() {
         'depth' => 0,                     // limit the depth of the nav
     ));
 }
-
-//change submenu class
-function change_submenu_class($menu) {
-  $menu = preg_replace('/ class="sub-menu"/',' class="vertical menu nested" ',$menu);
-  return $menu;
-}
-add_filter('wp_nav_menu','change_submenu_class');
-
-//highlights sidebar active page menu
-function special_nav_class ($classes, $item) {
-    if (in_array('current-page-ancestor', $classes) || in_array('current-menu-item', $classes) ){
-        $classes[] = 'active ';
-    }
-    return $classes;
-}
-add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 ?>
