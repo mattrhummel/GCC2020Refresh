@@ -1,18 +1,21 @@
 button.mobile-sidebar-button {
    
    background-color: $light-gray;
-   border: 1px solid $secondary;
   text-align: left;
         font-size: 1.8rem;
         font-family: $font-family-monospace;
         color: $secondary;
         font-weight: 800;
+        margin-bottom: 0;
+
 &:hover {
   color: $secondary;
+  background-color: $light-gray;
 }
 
 &:focus {
     color: $secondary;
+    background-color: $light-gray;
 }
 
 &::after {
@@ -48,7 +51,13 @@ button.mobile-sidebar-button {
   font-size: 1.4rem;
   margin: 0;
 }
+#advanced_sidebar_menu-2-wrap li
 
+{
+            list-style-type: none !important;
+           list-style: none  !important;
+
+}
 ul.menu, ul.child-sidebar-menu {
         margin:0;
         padding:0;
@@ -58,8 +67,9 @@ ul.menu, ul.child-sidebar-menu {
         
            width: 100%;
            border-bottom: 1px solid $white;
-           list-style-type: none;
-           list-style: none;
+           list-style-type: none !important;
+           list-style: none  !important;
+
        a {
           font-size: 14px;
           line-height: 28px;

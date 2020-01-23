@@ -9,11 +9,11 @@
 ?>
 <div class="mobile-sidebar" data-responsive-toggle="example-menu" data-hide-for="large">
    <button class="button expanded mobile-sidebar-button" type="button" data-toggle="example-menu"><?php _e('In This Section', 'gcc-wp-2018'); ?></button>
+
+   
 </div>
 
 <aside class="column large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
-
-<h2>In This Section</h2>
 
   <?php //get page widgets
   dynamic_sidebar( 'sidebar-widgets' );
