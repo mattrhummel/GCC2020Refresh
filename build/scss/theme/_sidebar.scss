@@ -1,3 +1,31 @@
+button.mobile-sidebar-button {
+   
+   background-color: $light-gray;
+   border: 1px solid $secondary;
+  text-align: left;
+        font-size: 1.8rem;
+        font-family: $font-family-monospace;
+        color: $secondary;
+        font-weight: 800;
+&:hover {
+  color: $secondary;
+}
+
+&:focus {
+    color: $secondary;
+}
+
+&::after {
+  content: '\f0c9 ';
+  font-family: FontAwesome;
+  line-height: inherit;
+  font-size: 1.6rem;
+  float: right;
+    color: $secondary;
+}
+
+}
+
 .nav-panel {
         background-color: $light-gray;
         padding: 21px;

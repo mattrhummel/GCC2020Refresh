@@ -7,7 +7,13 @@
 * @package gccwp-2018
 */
 ?>
-<aside class="columns small-12 medium-12 large-4 nav-panel hide-for-print" id="section-menu" data-toggler="hide">
+<div class="mobile-sidebar" data-responsive-toggle="example-menu" data-hide-for="large">
+   <button class="button expanded mobile-sidebar-button" type="button" data-toggle="example-menu"><?php _e('In This Section', 'gcc-wp-2018'); ?></button>
+</div>
+
+<aside class="column large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
+
+<h2>In This Section</h2>
 
   <?php //get page widgets
   dynamic_sidebar( 'sidebar-widgets' );
@@ -443,3 +449,6 @@
 
         </ul> -->
 </aside>
+
+
+   

@@ -69,9 +69,6 @@
   </div>
 </div>
 </footer>
-</div>
-</div>
-</div>
 
     <?php if( get_field('banner_text', 'options') ): ?>
     
