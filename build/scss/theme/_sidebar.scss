@@ -52,14 +52,14 @@ button.mobile-sidebar-button {
 ul.menu, ul.child-sidebar-menu {
         margin:0;
         padding:0;
-        list-style-type:none;
+        
      
      li.menu-item, li.page_item {
         
            width: 100%;
            border-bottom: 1px solid $white;
            list-style-type: none;
-
+           list-style: none;
        a {
           font-size: 14px;
           line-height: 28px;
