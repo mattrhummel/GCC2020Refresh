@@ -18,18 +18,21 @@ get_header(); ?>
     <div class="row">
       <?php get_sidebar();?>
       <div class="columns small-12 medium-12 large-8">
-      
+        
         <div class="entry-content" id="main">
           
-          <?php  //donate form for on donate page
+          <?php  //international admissions widget
           if (is_page('international-admissions')):?>
           <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
           <?php endif; ?>
           
-          <?php
-          the_content();
-          ?>
-          <?php  if (is_page('student-activities')):?>
+            <?php //default page content
+            the_content();
+            ?>
+
+          <?php  //student activities events output
+          if (is_page('student-activities')):?>
+
           <div class="row expanded" style="margin-top: 20px;"  data-equalizer data-equalize-on="medium" id="sa-events">
             <?php
             $args =  array (
@@ -66,13 +69,14 @@ get_header(); ?>
             <?php else : ?>
             <p><?php esc_html_e( 'Sorry, no current events to display', 'gcc-wp-2018'); ?></p>
             <?php endif; ?>
-            
           </div>
+
           <div class="row">
             <a class="button expanded primary" href="/student-activities/events">View all events</a>
           </div>
-          <?php endif; ?>
-          <?php  //donate form for on donate page
+          <?php endif; //student activities events output  ?>
+
+          <?php  //local scholarships output
           if (is_page('local-scholarship-aid')):?>
           <div class="row" data-equalizer data-equalize-on="medium" id="sa-events">
             <?php // get raw date
@@ -125,7 +129,10 @@ get_header(); ?>
             <?php endif; ?>
             
           </div>
-          <?php endif; ?>
+
+          <?php endif; 
+          //end local scholarships output
+          ?>
           
           <?php  //donate form for on donate page
           if (is_page('donate')):?>
@@ -133,20 +140,17 @@ get_header(); ?>
           <div id="bbox-root"></div>
           <?php endif; ?>
 
-
-            <footer class="entry-footer">
-          <?php gcc_wp_2018_entry_footer(); ?>
-          </footer><!-- .entry-footer -->
+           <footer class="entry-footer">
+            <?php gcc_wp_2018_entry_footer(); //entry footer?>
+            </footer>
 
           </div>
           
-          </div><!--.pagecontent-->
-     
+          </div>
+          
         </div>
         <?php endwhile; // End of the loop. ?>
-
-   
-
+        </div>
       </article>
       <?php
       get_footer();

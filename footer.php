@@ -98,7 +98,7 @@
       </div>
     </div>
 
-    <?php endif; ?>
+  <?php endif; ?>
 
 <?php wp_footer(); ?>
 <?php
@@ -160,5 +160,6 @@ window.bboxInit = function () {
 </script>
 
 <?php endif; ?>
+
 </body>
 </html>

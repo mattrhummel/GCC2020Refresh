@@ -11,7 +11,6 @@
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
   <head>
-    <meta http-equiv="pragma" content="no-cache" />
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -140,6 +139,7 @@
             </div>
 </div>
 
+</div>
 </div>
 </div>
 
