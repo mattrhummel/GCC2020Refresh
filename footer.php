@@ -33,12 +33,12 @@
       <h4><?php _e('#germanna', 'gcc-wp-2018'); ?></h4>
       <div class="social">       
         <ul class="social-icons">
-          <li><a href="https://www.facebook.com/<?php the_field('facebook_id', 'option'); ?>"><span class="fa fa-facebook-f" aria-hidden="true" title="GermannaCC on Facebook"><span class="icon-text"><?php _e('Facebook', 'gcc-wp-2018');?></span></span></a></li>
-          <li><a href="https://twitter.com/<?php the_field('twitter_id', 'option'); ?>"><span class="fa fa-twitter"  aria-hidden="true"><span class="icon-text" title="GermannaCC on Twitter"><?php _e('Twitter', 'gcc-wp-2018');?></span></span></a></li>
-          <li><a href="https://www.instagram.com/<?php the_field('instagram_id', 'option'); ?>"><span class="fa fa-instagram"  aria-hidden="true"><span class="icon-text" title="GermannaCC on Instagram"><?php _e('Instagram', 'gcc-wp-2018');?></span></span></a></li>
-          <li><a href="https://www.youtube.com/user/<?php the_field('youtube_id', 'option'); ?>"><span class="fa fa-youtube"  aria-hidden="true" title="GermannaCC on Youtube"><span class="icon-text"><?php _e('Youtube', 'gcc-wp-2018');?></span></span></a></li>
-          <li><a href="https://www.flickr.com/photos/<?php the_field('flickr_id', 'option'); ?>"><span class="fa fa-flickr"  aria-hidden="true" title="GermannaCC on Flickr"><span class="icon-text"><?php _e('Flickr', 'gcc-wp-2018');?></span></span></a></li>
-          <li><a href="https://www.linkedin.com/school/<?php the_field('linkedin_id', 'option'); ?>"><span class="fa fa-linkedin"  aria-hidden="true" title="GermannaCC on LinkedIn"><span class="icon-text"><?php _e('LinkedIn', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.facebook.com/<?php the_field('facebook_id', 'option'); ?>"><span class="fa fa-facebook-f" aria-hidden="true" title="Germanna on Facebook"><span class="icon-text"><?php _e('Facebook', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://twitter.com/<?php the_field('twitter_id', 'option'); ?>"><span class="fa fa-twitter"  aria-hidden="true"><span class="icon-text" title="Germanna on Twitter"><?php _e('Twitter', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.instagram.com/<?php the_field('instagram_id', 'option'); ?>"><span class="fa fa-instagram"  aria-hidden="true"><span class="icon-text" title="Germanna on Instagram"><?php _e('Instagram', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.youtube.com/user/<?php the_field('youtube_id', 'option'); ?>"><span class="fa fa-youtube"  aria-hidden="true" title="Germanna on Youtube"><span class="icon-text"><?php _e('Youtube', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.flickr.com/photos/<?php the_field('flickr_id', 'option'); ?>"><span class="fa fa-flickr"  aria-hidden="true" title="Germanna on Flickr"><span class="icon-text"><?php _e('Flickr', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.linkedin.com/school/<?php the_field('linkedin_id', 'option'); ?>"><span class="fa fa-linkedin"  aria-hidden="true" title="Germanna on LinkedIn"><span class="icon-text"><?php _e('LinkedIn', 'gcc-wp-2018');?></span></span></a></li>
         </ul>
       </div>
 
