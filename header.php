@@ -36,7 +36,9 @@
     _monsido.push(['_setDomainToken', '14l5XpM9a7fdx1hVoA-QRQ']);
     _monsido.push(['_withStatistics', 'true']);
     </script>
-    <script async src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
+    
+    <script async src="//cdn.monsido.com/tool/javascripts/monsido.js">
+    </script>
 
   </head>
   
@@ -45,7 +47,6 @@
   <div id="skip">
     
     <a href="#main-content" class="show-on-focus"><?php _e('skip to content', 'gcc-wp-2018') ?></a> 
-
   </div>
 
 <?php
