@@ -145,7 +145,7 @@ get_header(); ?>
         </div>
         <?php endwhile; // End of the loop. ?>
 
-   
+   </div>
 
       </article>
       <?php
