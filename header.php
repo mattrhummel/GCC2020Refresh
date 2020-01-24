@@ -11,11 +11,10 @@
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
   <head>
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
     <?php wp_head(); ?>
     
     <!-- Google Tag Manager -->
