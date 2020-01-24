@@ -1,12 +1,12 @@
 button.mobile-sidebar-button {
    
    background-color: $light-gray;
-  text-align: left;
-        font-size: 1.8rem;
-        font-family: $font-family-monospace;
-        color: $secondary;
-        font-weight: 800;
-        margin-bottom: 0;
+   text-align: left;
+   font-size: 1.8rem;
+   font-family: $font-family-monospace;
+   color: $secondary;
+   font-weight: 800;
+   margin-bottom: 0;
 
 &:hover {
   color: $secondary;
@@ -28,19 +28,16 @@ button.mobile-sidebar-button {
 }
 
 }
-
 .nav-panel {
         background-color: $light-gray;
         padding: 21px;
         position: relative;
-
        @media screen and (min-width: 40em) {
        float: right !important; //do not remove, keeps sidebar on the right on desktop
-      }
+}
 
 //Page Side bar
 .widget {
-
   margin-bottom: 1rem;
   background-color: $light-gray;
   padding: 0;
@@ -52,16 +49,14 @@ button.mobile-sidebar-button {
   margin: 0;
 }
 #advanced_sidebar_menu-2-wrap li
-
 {
-            list-style-type: none !important;
+           list-style-type: none !important;
            list-style: none  !important;
 
 }
 ul.menu, ul.child-sidebar-menu {
         margin:0;
-        padding:0;
-        
+        padding:0;      
      
      li.menu-item, li.page_item {
         
@@ -93,29 +88,31 @@ ul.menu, ul.child-sidebar-menu {
     }
 
   }
-
-.textwidget {
-  margin: .5rem 0;
-    
-    a {
-      color: $black;
-      &:hover {
-            color: $primary;
-            text-decoration: underline;
-          }
-          &:focus {
-            color: $primary;
-            text-decoration: underline;
-          }
-    }
+ul.parent-sidebar-menu,  {
+  margin: 0;
+  padding: 0;
 }
 
+ul.grandchild-sidebar-menu {
+  margin-left: .5rem;
+  list-style: circle; 
+}
+  .textwidget {
+    margin: .5rem 0;
+      
+      a {
+        color: $black;
+        &:hover {
+              color: $primary;
+              text-decoration: underline;
+            }
+            &:focus {
+              color: $primary;
+              text-decoration: underline;
+            }
+      }
+  }
 
 }
 
 }
-
-
-
-
-
