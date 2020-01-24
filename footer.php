@@ -12,6 +12,7 @@
 <?php //closing main container, do not remove ?>
 </main>
 
+</div>
 
 <footer class="site-footer hide-for-print">
 <div class="row top-footer">
