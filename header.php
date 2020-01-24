@@ -1,10 +1,20 @@
+<?php
+/**
+* The header for our theme
+*
+*
+* @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+*
+* @package gccwp-2018
+*/
+?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
   <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php wp_head(); ?>
     
     <!-- Google Tag Manager -->
@@ -78,7 +88,8 @@
 
             </div>
 </header> 
-        
+
+         
 <div class="off-canvas position-right mobile-menu" id="popout-menu" data-off-canvas>
     <div class="mobile-menu-container">
             <div class="mygcc-button">
