@@ -30,7 +30,7 @@ get_header(); ?>
             the_content();
             ?>
 
-          <?php  //student activities events output
+          <?php //student activities events output
           if (is_page('student-activities')):?>
 
           <div class="row expanded" style="margin-top: 20px;"  data-equalizer data-equalize-on="medium" id="sa-events">
@@ -130,9 +130,7 @@ get_header(); ?>
             
           </div>
 
-          <?php endif; 
-          //end local scholarships output
-          ?>
+          <?php endif; //end local scholarships output ?>
           
           <?php  //donate form for on donate page
           if (is_page('donate')):?>
