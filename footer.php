@@ -29,8 +29,8 @@
       
       <p><?php the_field('primary_address', 'option'); ?><br/>
         
-        <a href="tel:<?php the_field('primary_phone_number', 'option'); ?>">
-        <?php the_field('primary_phone_number', 'option'); ?></a>
+        <a href="tel:<?php _e('540-891-3000', 'gcc-wp-2019') ?>">
+        <?php _e('540-891-3000', 'gcc-wp-2019') ?></a>
         
       </p>
       <h4><?php _e('#germanna', 'gcc-wp-2018'); ?></h4>
