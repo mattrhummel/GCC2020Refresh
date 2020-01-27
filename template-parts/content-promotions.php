@@ -17,7 +17,7 @@
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
 
 
-<div class="small-12 medium-4 columns promotion-container">
+<div class="small-12 medium-6 large-4 columns promotion-container">
 <div class="card card-<?php the_field( 'promotion_event_color' ); ?>"  data-equalizer-watch>
 	
 <?php // ACF Image Object

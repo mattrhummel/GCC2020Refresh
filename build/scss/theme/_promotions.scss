@@ -16,12 +16,11 @@
 
  h2 {
   font-weight: 400;
-  margin-bottom:  0;
   font-size: 1.3rem;
 
   @media screen and (min-width: 40em) {
 
-		font-size: 2rem;
+		font-size: 1.6rem;
 
   }
 
@@ -98,6 +97,23 @@ a.button {
 
 }
 
+}
+
+}
+
+.promotion-container:last-child {
+
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    
+      width: 100%;
+
+	}
+
+.promo-image {
+ background-position: center; 
+ background-repeat: none; 
+ background-size: cover;
+ height: 300px;
 }
 
 }
