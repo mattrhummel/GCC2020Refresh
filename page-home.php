@@ -62,7 +62,7 @@ get_header(); ?>
 		 		<div class="stories-image" style=" background-image: url('<?php echo $url ?>');"></div> 
 									
 					<div class="card-section" data-equalizer-watch>
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						<h3><a href="<?php the_field('video_url'); ?>"><?php the_title(); ?></a></h3>
 					</div>
 			   
 			   </div>
