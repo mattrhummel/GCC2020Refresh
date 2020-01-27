@@ -23,26 +23,7 @@ if  (has_post_thumbnail( ) )  {?>
   <div class="row expanded crumbs-container">
 
     <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-      <div title="breadcrumbs trail">
-        <ul class="breadcrumbs">
-            <?php $home_page = get_the_title( get_option('page_on_front'));
-                $post_title = get_the_title( get_option('page_for_posts', true) );
-             ?>
-            <li role="menuitem">
-                <a href="<?php echo get_site_url(); ?>">
-                    <?php echo $home_page; ?>
-                </a>
-            </li>
-            <li role="menuitem">
-                <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
-                    <?php echo $post_title; ?>
-                </a>
-            </li>
-            <li role="menuitem">
-                <?php the_title(); ?>
-            </li>
-        </ul>
-      </div>
+      <?php custom_breadcrumbs();?>
     </nav>
 
   </div>
