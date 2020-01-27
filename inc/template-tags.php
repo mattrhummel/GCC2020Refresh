@@ -150,8 +150,8 @@ function custom_breadcrumbs() {
                 $post_type_archive = get_post_type_archive_link($post_type);
               
                 echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
-                echo '<li class="separator"> ' . $separator . ' </li>';
               
+     
             }
               
             $custom_tax_name = get_queried_object()->name;
@@ -169,30 +169,30 @@ function custom_breadcrumbs() {
                 $post_type_archive = get_post_type_archive_link($post_type);
               
                 echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
-                echo '<li class="separator"> ' . $separator . ' </li>';
+               
               
             }
               
-            // Get post category info
-            $category = get_the_category();
+            // // Get post category info
+            // $category = get_the_category();
              
-            if(!empty($category)) {
+            // if(!empty($category)) {
               
-                // Get last category post is in
-                $last_category = end(array_values($category));
+            //     // Get last category post is in
+            //     $last_category = end(array_values($category));
                   
-                // Get parent any categories and create array
-                $get_cat_parents = rtrim(get_category_parents($last_category->term_id, true, ','),',');
-                $cat_parents = explode(',',$get_cat_parents);
-                  
-                // Loop through parent categories and store in variable $cat_display
-                $cat_display = '';
-                foreach($cat_parents as $parents) {
-                    $cat_display .= '<li class="item-cat">'.$parents.'</li>';
-                    $cat_display .= '<li class="separator"> ' . $separator . ' </li>';
-                }
+            //     // Get parent any categories and create array
+            //     $get_cat_parents = rtrim(get_category_parents($last_category->term_id, true, ','),',');
+            //         $cat_parents = explode(',',$get_cat_parents);
+            //     $get_cat_parents = end($cat_parents);
+            //     // Loop through parent categories and store in variable $cat_display
+            //     $cat_display = '';
+            //     foreach($cat_parents as $parents) {
+            //         $cat_display .= '<li class="item-cat">'.$parents.'</li>';
+                
+            //     }
              
-            }
+            // }
               
             // If it's a custom post type within a custom taxonomy
             $taxonomy_exists = taxonomy_exists($custom_taxonomy);
@@ -215,7 +215,7 @@ function custom_breadcrumbs() {
             } else if(!empty($cat_id)) {
                   
                 echo '<li class="item-cat item-cat-' . $cat_id . ' item-cat-' . $cat_nicename . '"><a class="bread-cat bread-cat-' . $cat_id . ' bread-cat-' . $cat_nicename . '" href="' . $cat_link . '" title="' . $cat_name . '">' . $cat_name . '</a></li>';
-                echo '<li class="separator"> ' . $separator . ' </li>';
+               
                 echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
               
             } else {
@@ -282,11 +282,11 @@ function custom_breadcrumbs() {
                
             // Year link
             echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link( get_the_time('Y') ) . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</a></li>';
-            echo '<li class="separator separator-' . get_the_time('Y') . '"> ' . $separator . ' </li>';
+ 
                
             // Month link
             echo '<li class="item-month item-month-' . get_the_time('m') . '"><a class="bread-month bread-month-' . get_the_time('m') . '" href="' . get_month_link( get_the_time('Y'), get_the_time('m') ) . '" title="' . get_the_time('M') . '">' . get_the_time('M') . ' Archives</a></li>';
-            echo '<li class="separator separator-' . get_the_time('m') . '"> ' . $separator . ' </li>';
+           
                
             // Day display
             echo '<li class="item-current item-' . get_the_time('j') . '"><strong class="bread-current bread-' . get_the_time('j') . '"> ' . get_the_time('jS') . ' ' . get_the_time('M') . ' Archives</strong></li>';
@@ -297,7 +297,7 @@ function custom_breadcrumbs() {
                
             // Year link
             echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link( get_the_time('Y') ) . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</a></li>';
-            echo '<li class="separator separator-' . get_the_time('Y') . '"> ' . $separator . ' </li>';
+        
                
             // Month display
             echo '<li class="item-month item-month-' . get_the_time('m') . '"><strong class="bread-month bread-month-' . get_the_time('m') . '" title="' . get_the_time('M') . '">' . get_the_time('M') . ' Archives</strong></li>';
