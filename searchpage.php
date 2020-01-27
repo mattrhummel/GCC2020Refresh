@@ -3,4 +3,3 @@
 Template Name: Search Page
 */
 ?>
-

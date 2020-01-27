@@ -17,6 +17,8 @@ get_header(); ?>
 		<!--Page Content-->
 		<div class="row gutter-small expanded content-area">
 
+			<div class="row">
+
 			<div class="small-12 entry-content" id="main" tabindex="0">
 
 			<?php
@@ -47,6 +49,7 @@ get_header(); ?>
 
 		</div><!--.pagecontent-->
 
+</div>
 <?php endwhile; // End of the loop. ?>
 
 </article>
