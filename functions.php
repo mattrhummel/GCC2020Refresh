@@ -27,10 +27,6 @@ require get_template_directory() . '/inc/custom-post-types.php';
  */
 require get_template_directory() . '/inc/theme-settings.php';
 /**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/branding-sidebar.php';
-/**
  * Custom Breadcrumbs
  */
 require get_template_directory() . '/inc/breadcrumbs.php';
