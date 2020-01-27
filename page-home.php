@@ -32,7 +32,7 @@ get_header(); ?>
 
 			<?php
 
-							$this_post = $post->ID;
+			$this_post = $post->ID;
 							$args =  array (
 							'post_type' => 'success_stories',
 							'posts_per_page'=>3,
@@ -76,14 +76,6 @@ get_header(); ?>
 			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
 		</div>
-		<div class="row expanded">
-			<div class="small-12 small-centered text-center columns">
-				<a href="<?php the_field('success_section_button_url'); ?>" class="text-center button primary" style="margin-top: 40px;"><?php the_field('success_section_button_text'); ?>
-			
-				</a>
-		
-		</div>
-	</div>
 </div>
 	<?php endif; ?>
 
