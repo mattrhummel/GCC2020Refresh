@@ -71,17 +71,6 @@ $args =  array (
 
 </div>
 
-<?php if( !empty($programs_button_url) ): ?>
-
-<div class="row">
-
-  <div class="small-12 medium-6 large-4 small-centered text-center columns">
-    <a href="<?php the_field('programs_button_url'); ?>" class="button expanded large"><?php the_field('programs_button_text'); ?></a>
-  </div>
-
-</div>
-
-<?php endif; ?>
 
 </div>
 

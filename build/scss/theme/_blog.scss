@@ -1,39 +1,37 @@
-.latest-post {
-  margin-bottom: 1rem;
+.highlights {
+
+  padding: 2rem 0 4rem 0;
+
+.post-box {
+ 
   background-color: $light-gray;
-  padding: 1rem;
-  position: relative;
-  
+  padding: 1.2rem 0;
+  margin-bottom: 1rem;
   h2.post-title, h3.post-title {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
   h2.post-title a, h3.post-title a {
-      padding-bottom: 0;
-      margin-bottom: 0;
+     padding: 0 1rem;
+     display: block;
+      &:hover {
+        text-decoration: underline
+      }
   }
-  h2.post-title:after, h3.post-title:after  {
-    border-bottom: none;
-    margin: 0;
-    padding: 0;
-  }
+
   p {
-    margin-bottom: 0;
+    margin: 0 1rem;
+    padding: 0;
+    display: block;
   }
-  img {
-    margin-bottom: 1rem;
-    min-width: 100%;
-  }
+
   .entry-meta {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: .2rem 1rem .3rem 1rem;
+
+    padding: 0 1rem;
     background-color:  $primary;
     p {
       font-size: 1rem;
-      padding-bottom: 0;
+      padding: 0 1rem;
       margin-bottom: 0;
       color: $white;
       a {
@@ -97,5 +95,8 @@ span.posted-on {
     padding-left: .5rem;
 
   }
+
+}
+
 
 }

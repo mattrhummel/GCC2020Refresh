@@ -1,13 +1,11 @@
 //styles for the page callout boxes and alerts.
 //Default Callout
+
 .callout {
-  padding: 1.25rem;
-  display: block;
-  overflow: hidden;
 
   h2, h3 {  
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 28px;
   }
   
   .close-button {
@@ -26,123 +24,8 @@
     }
 
 }
-//small callout
-.callout.small {
 
-  display: block;
-  overflow: hidden;
-  padding: 1.25rem;
-  
-h2, h3 {
-  font-size: 24px;
-  line-height: 38px;
 
-}
-  /* visited link */
-  a.button.primary {
-        
-        background-color:rgb(90,20,30);
-        border-color:rgb(90,20,30);
-        color: rgb(255,255,255);
-        transition: 0.3s;
-
-        &:hover {
-        
-        background-color:$white;
-        border-color:$white;
-        color:rgb(90,20,30);
-        
-        }
-
-        &:focus {
-        background-color: $white;
-        border-color:$white;
-        color:rgb(90,20,30);
-        }
-  }
-
-}
-//Page Panels
-//Primary Callout
-.callout.primary {
-  
-  background-color: $light-gray !important;
-  border: 1px solid rgba(0,0,0,.125);
-  color: $black !important;
-
-  h2,h3 {
-    font-size: 23px;
-    line-height: 32px;
-  }
- 
-ul.accordion {
-
-li.accordion-item {
-
-  border-bottom: none;
-  border-top: none;
-
-  a.accordion-title {
-    
-    border-bottom: none;
-    border-top: none;
-  
- }
-  div.accordion-content {
-    border: none;
-    background-color: none;
-  
-  }
-
-}
-
-}
-
-}
-
-//Secondary callout
-.callout.secondary {
-
-  background-color: $white !important;
-  border: 1px solid rgba(0,0,0,.125);
-  color: $secondary !important;
-  height: 100%;
-  position: relative;
-
-  h2, h3 {
-    
-    font-size: 28px;
-    line-height: 36px;
-  }
-
- a.button.secondary {
-    
-        background-color:rgb(90,20,30);
-        border-color:rgb(90,20,30);
-        color:rgb(255,255,255);
-        transition: 0.3s;
-        font-weight: bold;
-
-        &:hover {
-        background-color:$white;
-        border-color:$white;
-        color:rgb(90,20,30);
-        }
-
-        &:hover {
-        background-color:$white;
-        border-color:$white;
-        color:rgb(90,20,30);
-        }
-  }
-
-}
-//Alert callout
-.callout.alert {
-  background-color: $light-gray !important;
-  border: 2px solid $primary !important;
-  color: $secondary !important;
-}
 //Closing Announcement
 .closing {
 
@@ -176,6 +59,7 @@ li.accordion-item {
 
     }
   }
+
 .close-button-weather {
   color: $white;
   top: 0;
@@ -198,15 +82,7 @@ a.alert-button {
   margin-right: 1rem;
 }
 }
-.entry-content .large-6.columns .callout.primary a.button.primary {    
-    display: block;
-    position: relative;
-    width: 100%;
-    font-size: 1rem;
-}
-.callout.callout-workforce-highlights {
-  border: 1px solid $medium-gray !important;
-}
+
 .callout.announcement.small {
   background: $light-gray;
   color: $black;
@@ -243,12 +119,11 @@ a.alert-button {
     .close-button-banner {
       color: $white;
       font-size: 2rem;
-      font-weight: 800;
-       
+      font-weight: 800;     
       font-size: 2em;
       line-height: 1;
       position: absolute;
-}
+    }
 
     p {
       color: $white;
@@ -283,6 +158,7 @@ a.alert-button {
       margin-right: 0;
     
     }
+
    .button.banner-button, .button.banner-button-hollow {
     margin: .2rem .1rem 0 .1rem; 
     font-weight: 800;

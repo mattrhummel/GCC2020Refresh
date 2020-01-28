@@ -75,16 +75,16 @@ success: #0d6d2e,
 warning: #a05d00,
 alert: #9d263a,
 );
-$primary: rgb(141,36,55);
+$primary: #8d2437;
 $secondary: #231F20;
 $warning: #a05d00;
 $success: #0d6d2e;
 $light-gray: #f2f2f2;
-$medium-gray: #e2e2e2;
+$medium-gray: #cccccc;
 $dark-gray: #262626;
 $black: #333333;
 $white: #ffffff;
-$button-color: #5a141e;
+// $button-color: #5a141e;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: palatino, 'times new roman', times, san-serif;
@@ -109,7 +109,7 @@ $print-transparent-backgrounds: true;
 // 2. Breakpoints
 // --------------
 $breakpoints: (
- small: 0px,
+   small: 0px,
   medium: 576px,
   large: 1024px,
   xlarge: 992px,
@@ -238,8 +238,8 @@ $accordion-background: $light-gray;
 $accordion-plusminus: true;
 $accordion-title-font-size: rem-calc(18);
 $accordion-item-color: $secondary;
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: .8rem .5rem;
+$accordion-item-background-hover: $primary;
+$accordion-item-padding: .8rem 1rem;
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $medium-gray;
 $accordion-content-color: $secondary;
@@ -290,11 +290,11 @@ $breadcrumbs-item-separator-color: $dark-gray;
 // 11. Button
 // ----------
 
-$button-font-family: $body-font-family;
+$button-font-family: $font-family-monospace;
 $button-padding: 1rem;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $button-color;
+$button-background: rgb(90,20,30);
 $button-background-hover: $white;
 $button-color: $white;
 $button-color-alt: $black;
@@ -303,7 +303,7 @@ $button-hollow-border-width: 2px;
 $button-sizes: (
   tiny: 0.8rem,
   small: .95rem,
-  default: 1rem,
+  default: 1.3rem,
   large: 1.15rem,
 );
 $button-palette: $foundation-palette;
@@ -325,15 +325,15 @@ $buttongroup-radius-on-each: true;
 // 13. Callout
 // -----------
 
-$callout-background: $primary;
-$callout-background-fade: 1%;
-$callout-border: none;
+$callout-background: $secondary;
+$callout-background-fade: 98%;
+$callout-border: 1px solid $medium-gray;
 $callout-margin: 0 0 1rem 0;
-$callout-padding: 1.25rem;
-$callout-font-color: $white;
-$callout-font-color-alt: $body-background;
+$callout-padding: .8rem;
+$callout-font-color: $secondary;
+$callout-font-color-alt: $secondary;
 $callout-radius: $global-radius;
-$callout-link-tint: 30%;
+
 
 // 14. Card
 // --------
@@ -807,16 +807,16 @@ $table-stack-breakpoint: medium;
 // --------
 
 $tab-margin: 0;
-$tab-background: $light-gray;
-$tab-color: $secondary;
-$tab-background-active: #ededed;
+$tab-background: $white;
+$tab-color: $white;
+$tab-background-active: $secondary;
 $tab-active-color: $white;
-$tab-item-font-size: rem-calc(18);
-$tab-item-background-hover: $medium-gray;
-$tab-item-padding: 1rem 1.2rem;
-$tab-expand-max: 6;
-$tab-content-background: $light-gray;
-//$tab-content-border: $white;
+$tab-item-font-size: rem-calc(14);
+$tab-item-background-hover: $secondary;
+$tab-item-padding: 1rem;
+$tab-expand-max: 4;
+$tab-content-background: $white;
+$tab-content-border: $medium-gray;
 $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem;
 

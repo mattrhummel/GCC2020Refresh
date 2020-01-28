@@ -19,7 +19,7 @@
 				<div class="hero-content">
 					
 					<div class="hero-caption">
-						<h2><?php the_sub_field( 'slide_heading' ); ?></h2>
+						<h1><?php the_sub_field( 'slide_heading' ); ?></h1>
 						<p class="lead"><?php the_sub_field( 'slide_text' ); ?></p>
 						
 						<p>

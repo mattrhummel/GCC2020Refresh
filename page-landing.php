@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="row hero-content">
       
       <div class="page-hero-caption">
-        <h1><?php the_title(); ?></h1>
+        <h1>The only application<br>decision is yours</h1>
         
         <p class="lead">Germanna offers open admissions. There's no application fee and no deadline to apply.</p>
         
@@ -33,6 +33,9 @@ get_header(); ?>
   <div class="row expanded content-area">
     
     <div class="row">
+
+           <?php get_sidebar();?>
+           
       <div class="small-12 medium-12 large-8 float-left columns" >
         <?php // if the page has a featured image
         if  (has_post_thumbnail( ) )  { ?>
@@ -109,20 +112,7 @@ get_header(); ?>
       </div>
           <aside class="small-12 medium-12 large-4 columns right page-nav hide-for-print" id="section-menu" data-toggler="hide">
     
-    <nav class="nav-panel">
-    <ul class="">
-            <li><a href="">College &amp; University Transfer Students</a></li>
-            <li><a href="">Career &amp; Technical Students</a></li>
-            <li><a href="">Continuing Education Students</a></li>
-             <li><a href="">High School Dual-Enrollment Students</a></li>
-             <li><a href="">Apprenticeship Students</a></li>
-             <li><a href="">International Students</a></li>
-             <li><a href="">Senior Students</a></li>
-             <li><a href="">Visiting College Students</a></li>
-             <li><a href="">Undecided Students</a></li>
-         </ul>
-    </nav>
-
+    
     </aside>
       <footer class="entry-footer">
         <?php gcc_wp_2018_entry_footer(); ?>

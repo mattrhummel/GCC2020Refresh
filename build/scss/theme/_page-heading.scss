@@ -21,9 +21,11 @@
 
 }
  .page-hero-caption {
+
         background-color:rgba(141,36,55,1);
-        padding:28px;
+        padding: 28px;
         color:#fff;
+        margin: 0;
 
 @media screen and (min-width: 40em) {
 
@@ -34,25 +36,24 @@
         color: $white;
         text-transform: uppercase;
         border-bottom:1px solid rgba(255,255,255,0.35);
-        padding-bottom:7px;
-        margin-bottom:7px;
-        font: 400% $header-font-family;
+        font: 400% $font-family-monospace;
+        line-height: 5rem;
     }
 
     .button {
         background-color: $white;
         border-color: $white;
-        color:rgb(90,20,30);
+        color: rgb(90,20,30);
         font-size: 1.3em;
         transition: 0.3s;
     
     &:hover {
-        background-color:$white;
-        border-color:$white;
+        background-color: $white;
+        border-color: $white;
         color:rgb(90,20,30);
     &:focus {
-        background-color:$white;
-        border-color:$white;
+        background-color: $white;
+        border-color: $white;
         color:rgb(90,20,30);
     }
 }
@@ -205,34 +206,9 @@
 }
 
 .hero-section-404 {
-  position: relative;
-  height: 65vh;
-  margin-bottom: 0;
-  padding: 0;
-  width: 100%;
-  background: rgba(0,0,0,.4);
-  color: $white;
-  text-align: center;
-  display: block;
   
-  img {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    margin-bottom: 0;
-    margin-left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
   .hero-section-404-text {
-    margin: 120px 0 180px 0;
+    margin: 40px 0 40px 0;
 
   }
 }

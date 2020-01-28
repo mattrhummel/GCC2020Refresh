@@ -29,7 +29,6 @@ get_header(); ?>
 		<h2 class="text-center"><?php the_field('success_section_heading'); ?></h2>
 		<p  class="text-center"><?php the_field('success_section_text'); ?></p>
 		
-
 			<?php
 
 			$this_post = $post->ID;

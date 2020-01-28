@@ -49,7 +49,7 @@
   </div>
 
 <?php
-  get_template_part( 'template-parts/content', 'weather-alert' );
+  //get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
         
 <div class="off-canvas-wrapper no-js">
@@ -73,10 +73,10 @@
 
                   <nav role="navigation">
                     <ul class="menu germanna-nav float-right">                  
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/become-a-student/', 'gcc-wp-2018'); ?>"><?php _e('Become a Student', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/explore-programs/', 'gcc-wp-2018'); ?>" ><?php _e('Explore Programs', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/admissions/visit-us/', 'gcc-wp-2018'); ?>" ><?php _e('Visit Us', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/give/', 'gcc-wp-2018'); ?>"><?php _e('Give', 'gcc-wp-2018'); ?></a></li>
+                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/refresh/become-a-student/', 'gcc-wp-2018'); ?>"><?php _e('Become a Student', 'gcc-wp-2018'); ?></a></li>
+                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/refresh/explore-programs/', 'gcc-wp-2018'); ?>" ><?php _e('Explore Programs', 'gcc-wp-2018'); ?></a></li>
+                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/refresh/visit-us/', 'gcc-wp-2018'); ?>" ><?php _e('Visit Us', 'gcc-wp-2018'); ?></a></li>
+                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/refresh/donate/', 'gcc-wp-2018'); ?>"><?php _e('Give', 'gcc-wp-2018'); ?></a></li>
                       <li class="menu-item has-menu">                     
                         <button data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
                         </button>                      

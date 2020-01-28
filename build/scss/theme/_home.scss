@@ -146,6 +146,10 @@ h2 {
 
     color: $white;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
 .pathway-image {
   
  background-position: top center; 
