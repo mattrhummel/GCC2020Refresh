@@ -55,7 +55,6 @@ body, html {
 @import '_vendor/sassy-lists/stylesheets/functions/remove';
 @import '_vendor/sassy-lists/stylesheets/functions/replace';
 @import '_vendor/sassy-lists/stylesheets/functions/to-list';
-@import 'theme/animate';
 //@import '_vendor/lazy-load';
 
 // Settings
@@ -122,17 +121,14 @@ body, html {
 @import 'theme/promotions';
 @import 'theme/blog';
 @import 'theme/page-heading';
-@import 'theme/alerts';
 @import 'theme/label';
-@import 'theme/directory-styles';
 @import 'theme/tabs';
 @import 'theme/card';
+@import 'theme/alerts';
 @import 'theme/workforce';
-@import 'theme/custom-wpforms';
 @import 'theme/helpers';
 @import 'theme/wp-styles';
 @import 'theme/footer';
-@import 'theme/specific-page-styles.scss';
 @import 'theme/print';
 @import 'theme/search';
 @import 'font-awesome/font-awesome';
@@ -198,9 +194,9 @@ body, html {
     @include foundation-prototype-classes;
   }
 }
-@import 'small-only';
-@import 'medium-only';
-@import 'medium-and-up';
-@import 'large-only.scss';
+// @import 'small-only';
+// @import 'medium-only';
+// @import 'medium-and-up';
+// @import 'large-only.scss';
 
 @import 'theme/mobile-menu';
