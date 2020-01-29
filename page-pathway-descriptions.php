@@ -16,11 +16,29 @@ get_header(); ?>
     <!--Page Content-->
     <div class="row gutter-small expanded content-area">
 
-      <?php //Page with Sidebar Template
-      get_template_part( 'template-parts/content', 'fullpage' ); ?>
+         <div class="row">
 
+      <?php get_sidebar();?>
+
+      <div class="columns small-12 medium-12 large-8">
+      
+        <div class="entry-content" id="main">
+          
+          <?php  //donate form for on donate page
+          if (is_page('international-admissions')):?>
+          <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
+          <?php endif; ?>
+          
+          <?php
+          the_content();
+          ?>
+
+      </div>
+  </div>
 
     </div><!--.pagecontent-->
+
+</div>
 
 <?php endwhile; // End of the loop. ?>
 
