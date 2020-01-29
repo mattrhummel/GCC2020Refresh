@@ -206,20 +206,20 @@ button.is-active::after {
   width: 34px !important;
 }
 .mobile-menu {
-  .mygcc-button {
-      margin-bottom: 20px;
-      margin-top: 10px;
-     .button {
-        color:rgb(141,36,55);
-        background-color:#fff;
+
+  a.mygcc-button {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: rgb(141,36,55);
+        background-color:$white;
         font-family: $font-family-monospace;
         text-transform: uppercase;
         font-size: 1.2em;
-         border:none;
+        border:none;
 
         &:hover {
-        background-color:rgb(141,36,55);
-        color:#fff;
+  
+        color: rgb(141,36,55);
         }
         &:focus {
         border: none;
