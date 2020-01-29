@@ -7,9 +7,13 @@
 * @package gccwp-2018
 */
 get_header(); ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <?php
+
+ <?php
   while ( have_posts() ) : the_post(); ?>
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+ 
   <?php //Page Heading
   get_template_part( 'template-parts/content', 'page-heading' );
   ?>
@@ -19,7 +23,7 @@ get_header(); ?>
 
       <?php get_sidebar();?>
 
-      <div class="columns small-12 medium-12 large-8">
+      <div class="columns small-12 medium-12 large-8" style="padding: 0">
       
         <div class="entry-content" id="main">
           
@@ -197,7 +201,22 @@ get_header(); ?>
           <?php endif; ?>
 
 
-            <footer class="entry-footer">
+
+          </div>
+          
+          </div><!--.pagecontent-->
+     
+        </div>
+
+      </article>
+
+      <div class="row expanded gutter-small">
+
+        <div class="row">
+
+          <div class="small-12 columns entry-footer">
+
+                  <footer>
               <?php $u_time = get_the_time('U'); 
 $u_modified_time = get_the_modified_time('U'); 
 if ($u_modified_time >= $u_time + 86400) { 
@@ -207,15 +226,12 @@ the_modified_time('F j, Y');
           <?php gcc_wp_2018_entry_footer(); ?>
           </footer><!-- .entry-footer -->
 
-          </div>
-          
-          </div><!--.pagecontent-->
-     
         </div>
+
+    </div>
+</div>
+
         <?php endwhile; // End of the loop. ?>
 
-   
-
-      </article>
       <?php
       get_footer();
