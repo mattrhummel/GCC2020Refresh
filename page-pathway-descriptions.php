@@ -16,7 +16,7 @@ get_header(); ?>
     <!--Page Content-->
     <div class="row gutter-small expanded content-area">
 
-         <div class="row">
+     <div class="row">
 
       <?php get_sidebar();?>
 
