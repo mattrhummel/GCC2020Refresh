@@ -1,5 +1,5 @@
 .title-bar {
-background-color:rgba(255,255,255,0.85) !important;
+background-color:$primary !important;
 font-family: $font-family-monospace;
 
 .title-bar-left {
@@ -9,7 +9,7 @@ font-family: $font-family-monospace;
   a.logo {
    padding:16px;
    font: 900 20px $font-family-monospace;
-   color: $secondary;
+   color: $white;
    text-transform: uppercase;
    background-color: transparent;
    transition: 0.3s;
@@ -51,25 +51,23 @@ font-family: $font-family-monospace;
     }
 
 } 
-span.fa-heart {
-  color: $primary;
-  margin-right: 2px;
-}
+
 ul.germanna-nav {
   li.menu-item {          
    margin-left: 5px; 
   a {
-      color: $primary;
+      color: $white;
       font: 900 20px $font-family-monospace;
       text-transform: uppercase;
       padding: 28px 28px 28px 28px;
       display:inline-block;
       line-height: inherit;
       transition: 0.3s;
-      border-bottom: 7px solid rgba(255,255,255,0);
+      border-bottom: 7px solid $primary;
 
-   &:hover {
-      border-bottom: 7px solid #222;
+    &:hover {
+      border-bottom: 7px solid $white;
+      color: $white;
     } 
 
       @media screen and (max-width: 39.9375em) {      
@@ -91,7 +89,7 @@ ul.germanna-nav {
        }
 
         &:hover {            
-            color: $primary;
+            color: $white;
         } 
 
         &:focus {           
@@ -104,11 +102,8 @@ ul.germanna-nav {
 }
 
 li.has-menu {          
-  background-color: $primary;
+  background-color: $secondary;
   
-  &:hover {
-    background-color: $secondary;
-  }
 
  button { 
     color: $white;
@@ -116,15 +111,13 @@ li.has-menu {
     border-radius: 0;
     padding: 28px 28px;
     display: inline-block;
-    line-height: 1.2rem;
-    font: 900 23px $font-family-monospace;
-    background-color: $primary;
-    border-bottom: 7px solid $primary; 
+    line-height: 1.3rem;
+    font: 900 20px $font-family-monospace;
+    text-transform: uppercase;
 
     &:hover { 
       background-color: #222;
       color: $white;
-      border-bottom: 7px solid $secondary; 
     }
          
     @media screen and (max-width: 39.9375em) {    
@@ -165,19 +158,20 @@ button.is-active::after {
 }
 #popout-menu {
   //main sidebar styles
-  background-color: $light-gray;
+  background-color: $white;
   width: auto;
   //do not change these styles
   overflow: visible;
-  border-top:14px solid rgb(141,36,55);
+  border-top:14px solid $secondary;
   padding: 10px 28px 28px 28px;
   position: absolute;
   right: 0;
   z-index: 999999;
   top: 54px;
+  box-shadow: none;
 
 .menu .active > a, .menu .is-active > a {
-  background-color: $light-gray;
+  background-color: $white;
 }
        @media screen and (min-width: 40em) and (max-width: 63.9375em) {       
               top: 69px;            
@@ -206,20 +200,20 @@ button.is-active::after {
   width: 34px !important;
 }
 .mobile-menu {
-
-  a.mygcc-button {
-        margin-bottom: 20px;
-        margin-top: 10px;
-        color: rgb(141,36,55);
-        background-color:$white;
+  .mygcc-button {
+      margin-bottom: 20px;
+      margin-top: 10px;
+     .button {
+        color: $white;
+        background-color: $secondary;
         font-family: $font-family-monospace;
         text-transform: uppercase;
         font-size: 1.2em;
-        border:none;
+         border:none;
 
         &:hover {
-  
-        color: rgb(141,36,55);
+        background-color: rgb(141,36,55);
+        color: $white;
         }
         &:focus {
         border: none;
@@ -271,13 +265,14 @@ button.is-active::after {
     width: 100%;
     margin: 0 0 28px 0;
     padding: 0;
+
   li {
 
       a {
           color: $primary;
           font-weight: 800;
-          background-color: #f2f2f2;
-          font-size: 1.2rem; 
+          background-color: $white;
+          font-size: 20px; 
           padding: 0 0 24px 0;
           text-transform: uppercase;
           font-family: $font-family-monospace;
@@ -312,7 +307,7 @@ button.is-active::after {
       margin: 0;
       padding: 0;
        
-    h3 {
+    h2 {
       
         font-size: 16px;
         text-align: left;
@@ -320,6 +315,7 @@ button.is-active::after {
         padding-bottom:7px;
         text-transform: uppercase;
         font-family: $font-family-monospace;
+        font-weight: bold;
 
     }
 
@@ -333,11 +329,13 @@ button.is-active::after {
 
             font-family: $body-font-family;
             color: $black;
-            margin:0;
+            margin: 0;
             padding:0 0 14px 0;
-            font-size:14px;
+            font-size: 14px;
             border:none;
             text-transform: none;
+            font-weight: bold;
+            transition: 0.3s;
           
             &:hover {
               text-decoration: underline;

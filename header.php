@@ -65,7 +65,6 @@
                 <div class="logo-container">
 
                   <a href="<?php bloginfo('url'); ?>" class="logo">
-                    <span class="fa fa-heart" aria-hidden="true"></span>
                     <?php _e('Germanna Community College', 'gcc-wp-2018'); ?>
                   </a>
 
@@ -91,43 +90,41 @@
 
          
 <div class="off-canvas position-right mobile-menu" id="popout-menu" data-off-canvas>
-    
     <div class="mobile-menu-container">
-
-        
-            <a href="<?php echo esc_html_e('https://gcc.my.vccs.edu/', 'gcc-wp-2018'); ?>" class="button expanded mygcc-button ">
+            <div class="mygcc-button">
+            <a href="<?php echo esc_html_e('https://gcc.my.vccs.edu/', 'gcc-wp-2018'); ?>" class="button expanded">
                   
                 <i class="fa fa-lock" aria-hidden="true"></i>
                   <?php _e('myGCC', 'gcc-wp-2018'); ?>
+                </a>
                 
-            </a>
-                          
-        <div id="gccSearch" class="search-container">
-                
-            <?php get_template_part( 'searchform' ); ?>
-
-        </div>
+              </div>
               
-        <?php  //function located in inc/main-navigation.php
-        gcc_wp_2018_main_menu(); ?>
+              <div id="gccSearch" class="search-container">
+                
+                <?php
+  get_template_part( 'searchform' );
+    ?>
 
-        <div class="row expanded secondary-menu-container">
-          <div class="small-12 medium-6 columns secondary-menu">
-            <h3 id="menu_information"><?php _e('Information For', 'gcc-wp-2018') ?></h3>
-            
-            <?php //function located in inc/main-navigation.php
-            gcc_wp_2018_information_menu(); ?>
-          </div>
-          <div class="small-12 medium-6 columns secondary-menu">
-            <h3 id="menu_resource"><?php _e('Resource', 'gcc-wp-2018'); ?></h3>
-            
-            <?php  //function located in inc/main-navigation.php
-            gcc_wp_2018_resource_menu(); ?>
-          </div>     
-        </div>
-
-    </div>
-
+              </div>
+              
+              <?php  //function located in inc/main-navigation.php
+              gcc_wp_2018_main_menu(); ?>
+              <div class="row expanded secondary-menu-container">
+                <div class="small-12 medium-6 columns secondary-menu">
+                  <h2 id="menu_information"><?php _e('Information For', 'gcc-wp-2018') ?></h2>
+                  
+                  <?php //function located in inc/main-navigation.php
+                  gcc_wp_2018_information_menu(); ?>
+                </div>
+                <div class="small-12 medium-6 columns secondary-menu">
+                  <h2 id="menu_resource"><?php _e('Resources', 'gcc-wp-2018'); ?></h2>
+                  
+                  <?php  //function located in inc/main-navigation.php
+                  gcc_wp_2018_resource_menu(); ?>
+                </div>     
+              </div>
+            </div>
 </div>
 
 </div>

@@ -61,18 +61,20 @@ ul.menu, ul.child-sidebar-menu {
      li.menu-item, li.page_item {
         
            width: 100%;
-           border-bottom: 1px solid $white;
            list-style-type: none !important;
            list-style: none  !important;
+           color: $black;
+           font-family:  $font-family-monospace;
 
        a {
-          font-size: 14px;
-          line-height: 28px;
+          font-size: 16px;
           color: $black;
           width: 100%;
           position: relative;
           display: block;
           padding: 7px 0;
+          font-family:  $font-family-monospace;
+          text-transform: uppercase;
 
           &:hover {
             color: $primary;
@@ -85,6 +87,12 @@ ul.menu, ul.child-sidebar-menu {
 
        }
 
+    }
+
+    li.current_page_ancestor {
+         color: $black;
+           font-family:  $font-family-monospace;
+           font-size: 1.8rem;
     }
 
   }
