@@ -12,13 +12,20 @@
 
 .top-footer {
 
-    padding: 40px 0;
+    padding: 40px 20px;
 
-  @media screen and (min-width: 40em) {
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+    padding: 40px 10px;
+
+
+  }
+
+  @media screen and (min-width: 64em) {
    
    padding: 40px 0 100px 0;
 
-}
+ }
 
 .footer-logo {
   margin-bottom: 40px;
@@ -31,6 +38,15 @@
     background-size: contain;
     background-position: left center;
     height: 55px;
+    width: 200px;
+    margin: 0 auto;
+
+            @media screen and (min-width: 40em) {
+
+        margin: 0;
+
+}
+
   }
  
 }
@@ -75,12 +91,7 @@ p  {
 
 .footer-content {
 
-    @media screen and (min-width: 64em) {
-      
-      padding-right: 0;
-
-    }
-
+   
 .button-column {
 
 padding-left: 0;
@@ -94,7 +105,7 @@ padding-right: 0;
 
 li {
 
-     margin: 0 0 5px 0;
+     margin-bottom: 5px;
      width: 100%;
      list-style: none;
 
@@ -201,8 +212,6 @@ li {
   
   .bottom-footer-content {
 
-
-
     .menu {
 
       li {
@@ -244,6 +253,18 @@ li {
 
 }
 
+.copywrite {
+ 
+  margin-bottom: 1rem;
+
+      @media screen and (min-width: 40em) {
+
+        text-align: left;
+
+      }
+
+}
+
   p {
    
     font-size: 0.8rem;
@@ -271,6 +292,7 @@ line-height: inherit;
     a {
       color: $primary;
       font-weight: 700;
+    
     &:hover  {
       color: $secondary;
       text-decoration: underline;

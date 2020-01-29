@@ -22,13 +22,13 @@
     
   </div>
   <div class="small-12 medium-12 large-8 columns footer-content">
-    <div class="medium-7 columns footer-contacts">
+    <div class="large-7 columns footer-contacts">
       <h3><?php bloginfo( 'name' ); ?></h3>
       
       <p><?php the_field('primary_address', 'option'); ?><br/>
         
         <a href="tel:<?php _e('540-891-3000', 'gcc-wp-2019') ?>">
-        <?php _e('540-891-3000', 'gcc-wp-2019') ?></a>
+        <?php _e('(540) 891 - 3000', 'gcc-wp-2019') ?></a>
         
       </p>
       <h4><?php _e('#germanna', 'gcc-wp-2018'); ?></h4>
@@ -43,11 +43,8 @@
         </ul>
       </div>
 
-        <p><?php _e('&copy;', 'gcc-wp-2018'); ?>
-        <?php bloginfo( 'name' ); ?></p>
-      
     </div>
-    <div class="medium-5 columns button-column">
+    <div class="large-5 columns button-column">
         <?php  //function located in inc/main-navigation.php
         gcc_wp_2018_footer_calltos_menu(); ?>
     </div>
@@ -60,6 +57,10 @@
       <div class="small-12 medium-7 columns">      
           <?php  //function located in inc/main-navigation.php
           gcc_wp_2018_footer_links_menu(); ?>
+
+           <p class="copywrite"><?php _e('&copy;', 'gcc-wp-2018'); ?>
+           <?php bloginfo( 'name' ); ?></p>
+      
       </div>
       
       <div class="small-12 medium-5 columns">
