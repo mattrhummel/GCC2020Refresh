@@ -117,7 +117,44 @@ ul.grandchild-sidebar-menu {
               text-decoration: underline;
             }
       }
+
+
   }
+
+  .social-icons {
+margin: 0;
+padding: 0;
+
+li {
+list-style: none;
+width: auto;
+display: inline-block;
+
+a {
+padding: 0.4rem 0.2rem;
+
+span {
+color: $primary;
+padding: 0.3rem 0.6rem;
+border: 1px solid $primary;
+border-radius: 100%;
+text-align: center;
+}
+
+span:hover {
+color: $dark-gray;
+border: 1px solid $dark-gray;
+}
+span.icon-text {
+    
+    display: block;
+    text-indent: -99999px;
+    display: none;
+
+}
+    }
+  }
+}
 
 }
 
