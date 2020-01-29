@@ -17,7 +17,7 @@
   <div class="small-12 medium-12 large-4 columns">
     
     <div class="footer-logo">      
-         <a href="https://germanna.wpengine.com/" class="logo" rel="home" title="germanna.edu home"><?php _e('Back to Germanna Community College Homepage') ?></a>     
+         <a href="<?php bloginfo('url'); ?>" class="logo" rel="home" title="<?php _e('germanna.edu home', 'gcc-wp-2018') ?>"><?php _e('Back to germanna.edu homepage', 'gcc-wp-2018') ?></a>     
     </div>
     
   </div>

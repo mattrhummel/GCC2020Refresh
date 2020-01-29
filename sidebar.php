@@ -8,7 +8,7 @@
 */
 ?>
 <div class="mobile-sidebar" data-responsive-toggle="example-menu" data-hide-for="large">
-   <button class="button expanded mobile-sidebar-button" type="button" data-toggle="example-menu"><?php _e('In This Section', 'gcc-wp-2018'); ?></button>
+   <button class="button expanded mobile-sidebar-button" type="button" data-toggle="example-menu"><?php _e('In this section', 'gcc-wp-2018'); ?></button>
 
    
 </div>

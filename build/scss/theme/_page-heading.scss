@@ -66,15 +66,7 @@
 
 }
 
-.hero-section {
-  
-  img {
-    margin-bottom: 20px;
-  }
-
-}
 .hero-section-text {
-  
 
   .header-content {
     
@@ -83,6 +75,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: bottom;
+    margin: 0;
 
     @media screen and (min-width: 40em) {
     
@@ -111,6 +104,8 @@
   font-family: $font-family-monospace;
         
   .breadcrumbs {
+
+    margin: 0;
 
     li {
 
@@ -188,11 +183,13 @@
 }
 
 .crumbs-container-plain {
+  
   padding: 0;
   margin: 0;
 
   .breadcrumbs {
     padding: 0 1rem 0 2rem;
+    margin: 0;
     background-color: $medium-gray;
 
     li {
