@@ -8,6 +8,33 @@
    margin-top: 20px;
   }
 
+ .column,
+ .columns, .small-uncollapse > .columns,
+ .large-collapse > .columns
+  {
+  
+    padding-right: .325rem;
+    padding-left: .325rem;
+
+    @media print,screen and (min-width:36em) {
+
+  
+   padding-left: 0;
+  padding-right: 1rem;
+}
+
+    @media screen and (min-width: 40em) {
+
+      padding-left: 0;
+     padding-right: 1rem;
+
+    }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {  
+      padding-left: 0;
+        padding-right: 1rem;
+      }
+}
 
   h2,h3,h4,h5,h6 {
     font-family: $body-font-family;
@@ -184,4 +211,3 @@ span.icon-text {
 }
 
 }
-
