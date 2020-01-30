@@ -10,7 +10,8 @@
 
  .column,
  .columns, .small-uncollapse > .columns,
- .large-collapse > .columns
+ .large-collapse > .columns,
+
   {
   
     padding-right: .325rem;
@@ -20,7 +21,7 @@
 
   
    padding-left: 0;
-  padding-right: 1rem;
+    padding-right: 1rem;
 }
 
     @media screen and (min-width: 40em) {
@@ -35,6 +36,7 @@
         padding-right: 1rem;
       }
 }
+
 
   h2,h3,h4,h5,h6 {
     font-family: $body-font-family;

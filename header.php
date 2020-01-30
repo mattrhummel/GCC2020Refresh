@@ -56,21 +56,18 @@
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         
         <div class="off-canvas-content" data-off-canvas-content>
+
           <header class="title-bar expanded hide-for-print">
             
             <div class="title-bar-left">
-              
-              <div class="row expanded">
-                
+                              
                 <div class="logo-container">
 
-                  <a href="<?php bloginfo('url'); ?>" class="logo">
-                    <?php _e('Germanna Community College', 'gcc-wp-2018'); ?>
-                  </a>
+                  <?php the_custom_logo( ); ?>
 
                 </div>
 
-                  <nav role="navigation">
+                  <nav role="navigation" class="main-nav">
                     <ul class="menu germanna-nav float-right">                  
                       <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/become-a-student/', 'gcc-wp-2018'); ?>"><?php _e('Become a Student', 'gcc-wp-2018'); ?></a></li>
                       <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/explore-programs/', 'gcc-wp-2018'); ?>" ><?php _e('Explore Programs', 'gcc-wp-2018'); ?></a></li>
@@ -85,7 +82,6 @@
 
               </div>
 
-            </div>
 </header> 
 
          
