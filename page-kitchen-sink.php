@@ -44,7 +44,7 @@ get_header(); ?>
           <h2>Links</h2>
 
           <p>Links are very standard, and the color is preset to the Foundation primary color. <a href="global.html">Learn more about Foundation's global colors.</a></p>
-<h2>Butons</h2>
+<h2>Buttons</h2>
 <a class="button tiny" href="#">So Tiny</a>
 <a class="button small" href="#">So Small</a>
 <a class="button" href="#">So Basic</a>
