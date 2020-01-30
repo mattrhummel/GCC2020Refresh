@@ -303,10 +303,10 @@ $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 2px;
 $button-sizes: (
-  tiny: 0.8rem,
-  small: .95rem,
+  tiny: 0.85rem,
+  small: 1rem,
   default: 1.3rem,
-  large: 1.15rem,
+  large: 1.6rem,
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;

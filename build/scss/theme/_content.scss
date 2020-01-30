@@ -32,7 +32,6 @@ a.button {
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-        font-size:1.3em;
 }
 
 a.button:hover {
@@ -51,7 +50,6 @@ a.button.primary {
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-        font-size:1.3em;
 }
 
 a.button.primary:hover {
@@ -71,12 +69,11 @@ a.button.secondary {
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-        font-size:1.3em;
 }
 a.button.secondary:hover {
           background-color:$white;
           border-color:$secondary;
-        color: $secondary;
+          color: $secondary;
          }
 a.button.secondary:focus {
         background-color: $white;
@@ -89,7 +86,6 @@ a.button.success {
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-        font-size:1.3em;
 }
 a.button.success:hover {
           background-color:$white;
@@ -107,7 +103,6 @@ a.button.alert {
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-        font-size:1.3em;
 }
 a.button.alert:hover {
           background-color:$white;
@@ -125,7 +120,6 @@ a.button.alert:focus {
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-        font-size:1.3em;
 }
 a.button.warning:hover {
           background-color:$white;
