@@ -30,23 +30,24 @@
 .footer-logo {
   margin-bottom: 40px;
 
-//   .logo {
-//     // display: block;
-//     // text-indent: -9999px;
-//     // background-repeat: no-repeat;
-//     // background-size: contain;
-//     // background-position: left center;
-//     // height: 55px;
-//     // width: 200px;
-//     // margin: 0 auto;
 
-//             @media screen and (min-width: 40em) {
+ img {
+    display: block;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    height: 55px;
+    width: 200px;
+    margin: 0 auto;
 
-//         margin: 0;
+            @media screen and (min-width: 40em) {
 
-// }
+        margin: 0;
 
-//   }
+}
+
+  }
  
 }
 
