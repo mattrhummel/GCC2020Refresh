@@ -37,13 +37,21 @@ get_header(); ?>
           <h5>h5. This is a small header.</h5>
           <h6>h6. This is a tiny header.</h6>
 
+          <hr>
+
           <h2>Paragraphs</h2>
 
           <p>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap strong around type to <strong>make it bold!</strong>. You can also use em to <em>italicize your words</em>.</p>
 
+                    <hr>
+
+
           <h2>Links</h2>
 
           <p>Links are very standard, and the color is preset to the Foundation primary color. <a href="global.html">Learn more about Foundation's global colors.</a></p>
+          <hr>
+
+
 <h2>Buttons</h2>
 <a class="button tiny" href="#">So Tiny</a>
 <a class="button small" href="#">So Small</a>
@@ -51,6 +59,9 @@ get_header(); ?>
 <a class="button large" href="#">So Large</a>
 <a class="button expanded" href="#">Such Expand</a>
 <a class="button small expanded" href="#">Wow, Small Expand</a>
+
+          <hr>
+
 
   <h2>Button Colors</h2>
 
@@ -60,9 +71,15 @@ get_header(); ?>
 <a class="button alert" href="#">Alert</a>
 <a class="button warning" href="#">Warning</a>
 
+          <hr>
+
+
           <h2>Dividers</h2>
 
           <hr/>
+
+                    <hr>
+
 
           <h2>Unordered List</h2>
 
@@ -80,6 +97,7 @@ get_header(); ?>
   <li>List item</li>
   <li>List item</li>
 </ul>
+          <hr>
 
 <h2>Ordered List</h2>
 
@@ -97,6 +115,9 @@ get_header(); ?>
   <li>Mushrooms</li>
 </ol>
 
+          <hr>
+
+
 <h2>Definition List</h2>
 
 <dl>
@@ -107,15 +128,24 @@ get_header(); ?>
   <dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
 </dl>
 
+          <hr>
+
+
 <h2>Blockquotes</h2>
 <blockquote>
   Those people who think they know everything are a great annoyance to those of us who do.
   <cite>Isaac Asimov</cite>
 </blockquote>
 
+          <hr>
+
+
 <h2>Abbreviations</h2>
 
 <p>In my dream last night, I saw <abbr title="John Ronald Reuel">J. R. R.</abbr> Tolkien and George <abbr title="Raymond Richard">R. R.</abbr> Martin hanging out on Sunset <abbr title="Boulevard">Blvd</abbr>.</p>
+
+          <hr>
+
 
 <h2>Accordion</h2>
           
@@ -143,6 +173,9 @@ get_header(); ?>
   <!-- ... -->
 </ul>
 
+          <hr>
+
+
 <h2>Tabs</h2>
 
 <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
@@ -167,6 +200,9 @@ get_header(); ?>
   </div>
 </div>
 
+          <hr>
+
+
 <h2>Callouts</h2>
 <div class="callout primary small">
   <h2>This is a small callout</h2>
@@ -180,6 +216,9 @@ get_header(); ?>
    <a class="button primary" href="#">Primary</a>
 </div>
 
+          <hr>
+
+
 <h2>Cards</h2>
 
 <div class="card" style="width: 300px;">
@@ -191,6 +230,9 @@ get_header(); ?>
     <p>This card makes use of the card-divider element.</p>
   </div>
 </div>
+
+          <hr>
+
 
 <h2>Tables</h2>
 
