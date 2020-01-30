@@ -72,18 +72,20 @@ $foundation-palette: (
 primary: #8d2437,
 secondary: #231F20,
 success: #0d6d2e,
-warning: #a05d00,
 alert: #9d263a,
+warning: #a05d00,
 );
 $primary: #8d2437;
 $secondary: #231F20;
-$warning: #a05d00;
 $success: #0d6d2e;
+$alert: #9d263a;
+$warning: #a05d00;
 $light-gray: #f2f2f2;
 $medium-gray: #cccccc;
 $dark-gray: #262626;
 $black: #333333;
 $white: #ffffff;
+
 // $button-color: #5a141e;
 $body-background: $white;
 $body-font-color: $black;

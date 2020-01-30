@@ -1,15 +1,13 @@
 .tabs {
 	border: none;
-
+  margin-bottom: 2rem;
   @media screen and (max-width: 39.9375em) {
 		
 		background-color: $white;
 
   }
 
- .tabs-content {
- 	// border: 1px solid rgba(242, 242, 242, .4);
- }
+
 .tabs-title {
 	color: $secondary;
 	background-color: $primary;
@@ -21,6 +19,10 @@
 }
 }
 
+.tabs-content {
+ 	// border: 1px solid rgba(242, 242, 242, .4);
+ 	margin-bottom: 1rem;
+ }
 .accordion {
 
 	.accordion-title {
