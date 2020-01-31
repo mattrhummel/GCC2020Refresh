@@ -10,7 +10,9 @@ $programs_button_text = get_field('programs_button_text');
 
 <div class="pathways-content">
 
-<h2 class="text-center"><?php the_field('pathways_heading'); ?></h2>
+  <h2 class="text-center">
+    <?php the_field('pathways_heading'); ?>
+  </h2>
 
 <div class="row gutter-small expanded">
 

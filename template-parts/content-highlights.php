@@ -6,7 +6,7 @@ $highlights_heading = get_field('highlights_heading');
 
 <div class="row expanded highlights" data-equalizer>
 
-<h2  class="text-center"><?php the_field('highlights_heading'); ?></h2>
+<h2 class="text-center"><?php the_field('highlights_heading'); ?></h2>
 
 <div class="row" data-equalizer data-equalize-on="medium">  
   <?php
@@ -29,10 +29,10 @@ $highlights_heading = get_field('highlights_heading');
 
       <div class="small-12 large-4 columns">
 
-        <div class="post-box"  data-equalizer-watch>
-          <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        <p><?php the_date(); ?></p>
-        </div>
+          <div class="post-box"  data-equalizer-watch>
+            <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+          <p><?php the_date(); ?></p>
+          </div>
 
       </div>
 

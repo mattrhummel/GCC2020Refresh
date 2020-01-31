@@ -48,7 +48,7 @@ get_header(); ?>
 			
 			<div class="small-12 medium-6 large-4 columns stories">
 				
-					<div class="card">
+			 <div class="card">
 			
 				<?php // ACF Image Object
 							
@@ -72,7 +72,7 @@ get_header(); ?>
 			<!-- pagination here -->
 			<?php wp_reset_postdata(); ?>
 			<?php else : ?>
-			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
 		</div>
 </div>

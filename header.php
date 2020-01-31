@@ -74,7 +74,7 @@
                       <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/visit-us/', 'gcc-wp-2018'); ?>" ><?php _e('Visit Us', 'gcc-wp-2018'); ?></a></li>
                       <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/donate/', 'gcc-wp-2018'); ?>"><?php _e('Give', 'gcc-wp-2018'); ?></a></li>
                       <li class="menu-item has-menu">                     
-                        <button data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
+                        <button id="btn-toggle" class="" data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
                         </button>                      
                       </li>
                     </ul>

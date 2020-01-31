@@ -232,52 +232,16 @@ padding: 1rem 0 3rem 0;
 
 .highlights-content {
 
-h2 {
+  h2 {
 
-  color: $secondary;
-  text-align: center;
-  margin-bottom: 4rem;
-  font-weight: 800;
-  font-size: 2.8rem;
-}
-
-/*Trending Sidebar*/
-
-.trending {
-
-h3 {
-
-background-color: $secondary;
-color: $white;
-padding: 1rem;
-margin-bottom: 1.2rem;
-
-}
-
-}
-}
-
-  .events-calendar {
-
-    max-width: 100%;
-    margin: 0 0 1rem 0;
-    position: relative;
-    margin-bottom: 1rem;
-    display: block;
-    height: auto;
-
-    .calendar-widget {
-     background-image: url('https://www.germanna.edu/wp-content/uploads/events-calendar.jpg');
-     background-position: bottom center; 
-     background-repeat: none; 
-     background-size: cover;
-     background-color: #eee;
-     margin: 0;
-     padding: 0;
-     height: 350px; 
-    }
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 800;
+    font-size: 2.8rem;
 
   }
 
+}
 
 }

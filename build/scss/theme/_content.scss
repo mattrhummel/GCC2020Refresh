@@ -37,11 +37,10 @@
       }
 }
 
-
-  h2,h3,h4,h5,h6 {
-    font-family: $body-font-family;
-    font-weight: bold;
-  }
+h2,h3,h4,h5,h6 {
+  font-family: $body-font-family;
+  font-weight: bold;
+}
 
 table h4 {
   margin-bottom: 0;
@@ -57,12 +56,12 @@ a {
   color:rgb(141,36,55);
 }  
 
-
 a.button {
-        background-color: rgb(90,20,30);
-        border-color:rgb(90,20,30);
+        background-color: $primary;
+        border-color: $primary;
         color: $white;
         transition: 0.3s;
+        text-transform: uppercase;
 }
 
 a.button:hover {
@@ -77,8 +76,8 @@ a.button:focus {
           color:rgb(90,20,30);
          }
 a.button.primary {
-        background-color: rgb(90,20,30);
-        border-color:rgb(90,20,30);
+        background-color: $primary;
+        border-color: $primary;
         color: $white;
         transition: 0.3s;
 }
@@ -172,7 +171,6 @@ ul.accordion {
     }
   }
 }
-    
 background-color: $white;
 
   &:focus {

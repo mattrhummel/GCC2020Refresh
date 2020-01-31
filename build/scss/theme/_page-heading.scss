@@ -132,32 +132,50 @@
 
         font-family: $font-family-monospace;
         text-transform: uppercase;
-        font-weight: 900;
-        font-size: 1.2rem;
+        font-weight: 400;
+        font-size: .85rem;
+        color: $black;
 
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+font-size: .95rem;
+ 
+}
 
       @media screen and (min-width: 40em) {
 
-      font-size: 1.4rem;
+      font-size: 1rem;
 
       }
+
+      /* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+ font-size: .95rem;
+  
+}
 
        @media screen and (min-width: 64em) {
 
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+       
        }
 
-      a {
 
-        font-family: $font-family-monospace;
-        text-transform: uppercase;
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+ font-size: 1.1rem;
+
+}
+
+
+      a {
         color: $black;
+        font-family: $font-family-monospace;
+         font-weight: 400;
       }
     }
 
-    li.disabled {
-      color: $dark-gray;
-    }
   }
 
 }

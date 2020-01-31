@@ -7,14 +7,18 @@
 
 $(function () {
 
-	  $(".menu-open").click(function(){
+	$(".menu-open").click(function(){
 	    $(this).addClass('is-active');
 	});
 
 	$(".js-off-canvas-exit").click(function(){
 	    $(this).removeClass("is-active");
+	    $("#btn-toggle").removeClass('is-open');
 	});
+
+  
 });
+
 
 // $(document).ready(function() {
 //     var isshow = localStorage.getItem('isshow');
