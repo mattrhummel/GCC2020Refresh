@@ -160,9 +160,8 @@ li.has-menu {
     }
 
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {       
-       padding: 18px 22px;
+       padding: 18.5px 22px;
         font-size: 16px;
-        margin-left: 5px;
     }
 
    @media screen and (min-width: 64em) {     
@@ -174,7 +173,7 @@ li.has-menu {
   }
 }      
 
-    
+
 button::after {
   content: '\f0c9 ';
   font-family: FontAwesome;
