@@ -50,7 +50,7 @@ get_header(); ?>
             
             <?php the_sub_field('promo_text') ?>
 
-            <?php the_sub_field( 'promo_form' ); ?>
+            <?php the_sub_field( 'promo_form_shortcode' ); ?>
 
 
 
@@ -92,7 +92,7 @@ get_header(); ?>
             <?php the_sub_field('promo_text') ?>
 
 
-            <?php the_sub_field( 'promo_form' ); ?>
+            <?php the_sub_field( 'promo_form_shortcode' ); ?>
 
 
               <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button"><?php the_sub_field( 'promo_button_text' ); ?></a>
