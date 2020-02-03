@@ -69,10 +69,10 @@
 
                   <nav role="navigation" class="main-nav">
                     <ul class="menu germanna-nav float-right">                  
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('refresh/become-a-student/', 'gcc-wp-2018'); ?>"><?php _e('Become a Student', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('refresh/explore-programs/', 'gcc-wp-2018'); ?>" ><?php _e('Explore Programs', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('refresh/visit-us/', 'gcc-wp-2018'); ?>" ><?php _e('Visit Us', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('refresh/donate/', 'gcc-wp-2018'); ?>"><?php _e('Give', 'gcc-wp-2018'); ?></a></li>
+                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/become-a-student/', 'gcc-wp-2018'); ?>"><?php _e('Become a Student', 'gcc-wp-2018'); ?></a></li>
+                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/explore-programs/', 'gcc-wp-2018'); ?>" ><?php _e('Explore Programs', 'gcc-wp-2018'); ?></a></li>
+                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/visit-us/', 'gcc-wp-2018'); ?>" ><?php _e('Visit Us', 'gcc-wp-2018'); ?></a></li>
+                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/donate/', 'gcc-wp-2018'); ?>"><?php _e('Give', 'gcc-wp-2018'); ?></a></li>
                       <li class="menu-item has-menu">                     
                         <button id="btn-toggle" class="" data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
                         </button>                      
@@ -83,8 +83,7 @@
               </div>
 
 </header> 
-
-         
+        
 <div class="off-canvas position-right mobile-menu" id="popout-menu" data-off-canvas>
     <div class="mobile-menu-container">
             <div class="mygcc-button">

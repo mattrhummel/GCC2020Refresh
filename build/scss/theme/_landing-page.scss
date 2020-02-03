@@ -1,13 +1,13 @@
 .header {
 	padding:42px;
 	background-color:#8a1137;
-	color:#fff;
+	
 }
 
-.header h1 {
-	font-family: $font-family-monospace;
+.header h2 {
+	font-family:'Oswald', sans-serif;
 	text-transform:uppercase;
-	color: white;
+	color:#fff;
 	font-size: 3em;
 	font-weight:bold;
 	line-height:0.90em;
@@ -17,7 +17,7 @@
 
 font-size:2em;
 
-}
+  }
 
 		// Medium devices (tablets, 768px and up)
 		@media (min-width: 768px) { 
@@ -34,8 +34,8 @@ font-size:2em;
 
 }
 
-.spring-box {
-	background-image:url(../media/hero.jpg);
+.promo-box {
+
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position: left;
@@ -43,77 +43,18 @@ font-size:2em;
 	margin-bottom:42px;
 }
 
-.spring-save {
-	background-image:url(../media/spring-save.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position: center;
-	min-height:90vh;
-	margin-bottom:42px;
-}
-
-.spring-skill {
-	background-image:url(../media/spring-skill.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position: center;
-	min-height:90vh;
-	margin-bottom:42px;
-}
-
-.spring-learn {
-	background-image:url(../media/spring-learn.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-position: center;
-	min-height:90vh;
-	margin-bottom:42px;
-}
-
-.spring-bottom {
-	background-color:#87b8d1;
-	min-height:90vh;
+.promo-hero {
 	padding-top:42px;
-}
-
-.spring-footer {
-	padding:42px;
-	background-color:#124570;
-	color:#fff;
-
-		// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-
-padding:12px;
-
-}
-
-}
-
-.spring-footer a {
-	color:#fff;
-	text-decoration:underline;
-}
-
-.spring-footer a:hover {
-	text-decoration:underline;
-}
-
-
-.spring-hero {
-	padding-top:42px;
-
-
 	
 }
 
-.spring-form {
+.promo-content {
 	background-color:rgba(255,255,255,0.87);
 	padding:42px;
 	margin-bottom:84px;
 }
 
-.spring-form p {
+.promo-content p {
 	font-size: 1.2em;
 
 	// Medium devices (tablets, 768px and up)
@@ -190,11 +131,11 @@ margin-bottom:12px;
 	}
 }
 
-h3 {
+.lead {
 	font-size:1.2em;
 	margin-bottom:21px;
 	text-transform:uppercase;
-	color:#999;
+	color: #999;
 	font-weight:bold;
 
 		// Medium devices (tablets, 768px and up)
