@@ -10,147 +10,124 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
   while ( have_posts() ) : the_post(); ?>
+ <?php //Page Heading
+  get_template_part( 'template-parts/content', 'page-heading' );
+  ?>
 
-
-  <div class="row expanded gutter-small content-area">
+  <div class="row expanded gutter-small content-area" id="workforce">
+    
     <div class="row">
       <?php get_sidebar();?>
       
-      <div class="columns small-12 medium-12 large-8">
+      <div class="columns small-12 medium-12 large-8" style="padding: 0">
         <div class="entry-content" id="main" tabindex="0">
-          <div class="owl-carousel" style="z-index: 0; height: 640px;">
 
-  <div class="item" style="height: 640px;">
-    
-    <div class="row column expanded no-gutter hero" style="background-image:url('https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/revslider/workforce-nov-4/workforce-spring-2020-class-schedule.jpg'); ">
-
-  <div class="row">
-    
-    <div class="hero-content">
+            <?php if ( have_rows( 'slide_item', 'options' ) ) : ?>
+            <div class="slider-wrap-workforce">
               
-         <div class="hero-caption">
+            <div id="sync1" class="owl-carousel owl-theme" style="z-index: 0;">
 
-              <h2>Get started today!</h2>
-              <p class="lead">New Workforce January – June 2020 class schedule </p>
+              <?php
+              //while there are slide items
+              while ( have_rows( 'slide_item', 'options' ) ) : the_row(); ?>
+              <?php // ACF Image Object
               
-              <p>
-                <a href="https://germanna.augusoft.net/" class="button">Register Online</a>
-             </p>
-
-             </div>
-
-    </div>
-  
-  </div>
-
-</div>
-
-</div>
-
-  <div class="item">
-    
-    <div class="row column expanded no-gutter hero" style="background-image:url('https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/revslider/workforce-nov-4/fastforward-featured-image.jpg')">
-
-  <div class="row">
-    
-    <div class="hero-content">
+              $image = get_sub_field('slide_image');
+              // vars
+              $url = $image['url'];
               
-         <div class="hero-caption">
+              ?>
+              <div class="item">
+                <div class="row column expanded no-gutter hero" style="background-image: url('<?php echo $url ?>');">
+                  <div class="row">
+                    <div class="hero-content">
+                      
+                      <div class="hero-caption">
+                        <h2><?php the_sub_field( 'slide_heading' ); ?></h2>
+                        <p class="lead"><?php the_sub_field( 'slide_text' ); ?></p>
+                        
+                    
+                          <a href="<?php the_sub_field( 'slide_button_url' ); ?>" class="button"><?php the_sub_field( 'slide_button_text' ); ?></a>
+                   
 
-              <h2>FastForward tuition assistance </h2>
-              <p class="lead">Change your future in weeks. Not years.</p>
-              
-              <p>
-                <a href="/workforce/tuition-assistance/" class="button">Learn More</a>
-             </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <?php endwhile; ?>
 
-             </div>
+            </div>
+            </div>
+            <?php endif; //end workforce slider?>
 
-    </div>
-  
-  </div>
-
-</div>
-
-</div>
-
-</div>
-
-
-          <div class="callout primary small">
-            
-            <h3><?php the_field('box_1_heading'); ?></h3>
-            <div class="small-12 medium-6 columns">
+          <div class="row expanded workforce-callout">
+           
+           <div class="small-12 medium-7 columns">
+               <h3><?php the_field('box_1_heading'); ?></h3>
+              <p class="description"><?php the_field('box_1_description'); ?></p>
+              <a href="<?php the_field('box_1_url');?>" class="button primary" ><?php the_field('box_1_button_text'); ?></a>
+            </div>
+           
+            <div class="small-12 medium-5 columns" style="padding-right: 0">
               <?php
               $box_1_image = get_field('box_1_image');
               // vars
               $url = $box_1_image['url'];
-              $title = $box_1_image['title'];
-              $alt = $box_1_image['alt'];
-              $caption = $box_1_image['caption'];
-              // thumbnail
-              $size = 'large';
-              $thumb = $box_1_image['sizes'][ $size ];
-              $width = $box_1_image['sizes'][ $size . '-width' ];
-              $height = $box_1_image['sizes'][ $size . '-height' ];
+            
               if( !empty($box_1_image) ):   ?>
-              <img src="<?php echo $box_1_image['url']; ?>" alt="<?php echo $box_1_image['alt']; ?>" height="220" width="330" class="responsive" />
+
+                <div class="workforce-promo-image" style="background-image: url('<?php echo $box_1_image['url']; ?>');" ></div>
+             
               <?php endif; ?>
             </div>
-            <div class="small-12 medium-6 columns">
-              
-              <p class="description"><?php the_field('box_1_description'); ?></p>
-              <a href="<?php the_field('box_1_url');?>" class="button primary" ><?php the_field('box_1_button_text'); ?></a>
-            </div>
+
           </div>
-          <div class="callout primary small">
-            <h2><?php the_field('box_2_heading');  ?></h2>
-            <div class="small-12 medium-6 columns">
+
+          <div class="row expanded workforce-callout">
+
+           <div class="small-12 medium-7 columns">
+          <h3><?php the_field('box_2_heading');  ?></h3>
+              <p class="description"><?php the_field('box_2_description'); ?></p>
+              <a href="<?php the_field('box_2_url');?>" class="button primary" ><?php the_field('box_2_button_text'); ?></a>
+            </div>
+
+            <div class="small-12 medium-5 column" style="padding-right: 0">
               <?php //credentials box
               $box_2_image = get_field('box_2_image');
               // vars
               $url = $box_2_image['url'];
-              $title = $box_2_image['title'];
-              $alt = $box_2_image['alt'];
-              $caption = $box_2_image['caption'];
-              // thumbnail
-              $size = 'large';
-              $thumb = $box_2_image['sizes'][ $size ];
-              $width = $box_2_image['sizes'][ $size . '-width' ];
-              $height = $box_2_image['sizes'][ $size . '-height' ];
+             
               if( !empty($box_2_image) ): ?>
-              <img src="<?php echo $box_2_image['url']; ?>" alt="<?php echo $box_1_image['alt']; ?>" height="220" width="330" class="responsive" />
+
+             <div class="workforce-promo-image" style="background-image: url('<?php echo $box_2_image['url']; ?>');" ></div>
               <?php endif; ?>
             </div>
-            <div class="small-12 medium-6 columns">
-              <p class="description"><?php the_field('box_2_description'); ?></p>
-              <a href="<?php the_field('box_2_url');?>" class="button primary" ><?php the_field('box_2_button_text'); ?></a>
-            </div>
+
           </div>
-          <div class="callout primary small">
-            <h3><?php the_field('box_3_heading');  ?></h3>
-            <div class="small-12 medium-6 columns">
+
+          <div class="row expanded workforce-callout">
+
+            <div class="small-12 medium-7 column">
+                   <h3><?php the_field('box_3_heading');  ?></h3>
+              <p class="description"><?php the_field('box_3_description'); ?></p>
+              <a href="<?php the_field('box_3_url');?>" class="button primary" ><?php the_field('box_3_button_text'); ?></a>
+            </div>
+            
+            <div class="small-12 medium-5 column" style="padding-right: 0">
               <?php //tuition assistance box
               $box_3_image = get_field('box_3_image');
               // vars
               $url = $box_3_image['url'];
-              $title = $box_3_image['title'];
-              $alt = $box_3_image['alt'];
-              $caption = $box_3_image['caption'];
-              // thumbnail
-              $size = 'large';
-              $thumb = $box_3_image['sizes'][ $size ];
-              $width = $box_3_image['sizes'][ $size . '-width' ];
-              $height = $box_3_image['sizes'][ $size . '-height' ];
+              
               if( !empty($box_3_image) ): ?>
-              <img src="<?php echo $box_3_image['url']; ?>" alt="<?php echo $box_1_image['alt']; ?>" height="220" width="330" class="responsive" />
+              
+             <div class="workforce-promo-image" style="background-image: url('<?php echo $box_3_image['url']; ?>');" ></div>
+
               <?php endif; ?>
             </div>
-            <div class="small-12 medium-6 columns">
-              <p class="description"><?php the_field('box_3_description'); ?></p>
-              <a href="<?php the_field('box_3_url');?>" class="button primary" ><?php the_field('box_3_button_text'); ?></a>
-            </div>
           </div>
+        
           <div class="callout primary small">
             <h3><?php the_field('box_4_heading'); ?></h3>
             <?php //online training box
