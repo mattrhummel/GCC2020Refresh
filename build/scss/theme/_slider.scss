@@ -138,6 +138,7 @@ h1 {
 .owl-nav .owl-prev,
 .owl-nav .owl-next,
 .owl-nav 
+
 {
 .owl-next, .owl-prev {
     width: 40px;
@@ -147,6 +148,10 @@ h1 {
     display: inline-block;
     z-index: 9999;
     color: rgba(255,255,255, .4);
+
+    &:hover {
+      color: rgba(255,255,255, 1);
+    }
 
     @media screen and (min-width: 40em) {
 
@@ -173,17 +178,24 @@ h1 {
 
 }
 .owl-dot {
+
+      background: rgba(255,255,255, .3) !important;
+      width: 75px;
+      height: 10px;
+      border-radius: 5px;
+      margin-right: 5px;
+
+      &:hover {
+              background: rgba(255,255,255, .9) !important;
+      }
+
+}
+.owl-dot.active {
       width: 75px;
       height: 10px;
       border-radius: 5px;
       background: rgba(255,255,255, .9) !important;
       margin-right: 5px;
-}
-.owl-dot.active {
-      background: rgba(255,255,255, .3) !important;
-      width: 75px;
-      height: 10px;
-      border-radius: 5px;
  }
 
 }
