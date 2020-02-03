@@ -50,8 +50,8 @@ $args =  array (
 
      <div class="block-section">
       <?php the_title('<h3>', '</h3>'); ?>
-      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
+    
     </a>
   </div>
 

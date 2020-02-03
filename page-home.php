@@ -16,6 +16,8 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/content', 'slider' );  ?>
 
+<div class="home-content">
+
 <?php get_template_part( 'template-parts/content', 'promotions' );  ?>
 
 <?php get_template_part( 'template-parts/content', 'pathways' );  ?>
@@ -81,5 +83,7 @@ get_header(); ?>
 
 
 <?php get_template_part( 'template-parts/content', 'highlights' ); ?>
+
+</div>
 
 <?php get_footer();

@@ -17,15 +17,20 @@
   border: none;
 }
 
+.home-content {
+  h2 {
+    font-size: 2.4rem;
+  }
+
 #success {
   background: $light-gray; 
-  padding:80px 1rem;
+  padding: 80px 1rem;
   color: $secondary;
   margin: 2rem 0;
 
   h2 {
-    font-size: 2.8rem;
     padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   p {
@@ -58,7 +63,11 @@ width: 100%;
 
 h3 {
 
-   text-align: center;
+         text-align: center;
+         font-family: $font-family-monospace;
+         text-transform: uppercase;
+         font-weight: bold;
+         font-size: 1.4rem;
 
    a {
     @media screen and (max-width: 39.9375em) {
@@ -107,6 +116,7 @@ height: 350px;
 
 background-color: $white;
 padding: 1rem;
+margin-bottom: 4rem;
 
 .pathways-content {
 
@@ -119,9 +129,7 @@ h2 {
 
   color: $secondary;
   position: relative;
-  font-size: 2.8rem;
-  font-weight: 800;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -141,7 +149,7 @@ h2 {
 .pathways-block {
   position: relative;
   margin-bottom: 20px;
-
+ line-height: 0;
   a {
 
     color: $white;
@@ -171,30 +179,38 @@ h2 {
      display: block;
      min-width: 100%;
      z-index: 1;
-     padding: 1rem;
-  
+     padding: 1rem 1.2rem;
+      
      h3  {
-
-      font-size: 1.2rem;
-      width: 92%;
       color: $white;
-     
-      @media screen and (max-width: 39.9375em) {
+      font-family: $font-family-monospace;
+      font-size: 1.1rem;
+      line-height: 0;
+      display: block;
+      margin: 0;
+      padding: .5rem 0 .6rem 0;
 
-      }  
-      @media screen and (min-width: 39.9375em) and (max-width: 63.9375em) {
-        font-size: 1.2rem;
-      }
-      @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-        font-size: 1.2rem;
-      }
-      @media screen and (min-width: 40em) {
-       font-size: 1rem;
-      }
-      @media screen and (min-width: 74.9375em) {
-       font-size: 1.2rem;
+     @media screen and (min-width: 40em) {
+
+      font-size: 1.4rem;
 
       }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
+         
+      }
+        
+        @media screen and (min-width: 64em) {
+       
+         font-size: 1.6rem;
+
+
+        }
+
+            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+
+            }
 
    }
 
@@ -203,7 +219,7 @@ h2 {
   
    }
 
-   .more-icon {
+  .more-icon {
      position: absolute;
      right: .4rem;
      top: .8rem;
@@ -224,23 +240,175 @@ h2 {
 
 }
 
-#highlights {
+.highlights {
 
-position: relative;
-background-color: $white;
-padding: 1rem 0 3rem 0;
+  padding: 40px 0 60px 0;
 
-.highlights-content {
+     @media screen and (min-width: 40em) {
+
+       font-size: 1.4rem;
+        padding: 0 1rem;
+  padding: 60px 0 100px 0;
+
+
+      }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
+         padding: 0 3rem;
+           padding: 60px 0 100px 0;
+      }
+        
+        @media screen and (min-width: 64em) {
+       
+         font-size: 1.6rem;
+          padding: 0 1rem;
+          padding: 60px 0 100px 0;
+
+
+        }
+
+            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+   padding: 60px 20px 100px 20px;
+            }
 
   h2 {
+    margin-bottom: 2rem;
+  }
 
+.post-box {
+ 
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+
+
+     @media screen and (min-width: 40em) {
+
+       font-size: 1.4rem;
+        padding: 0 1rem;
+
+      }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
+         padding: 0 3rem;
+      }
+        
+        @media screen and (min-width: 64em) {
+       
+         font-size: 1.6rem;
+ padding: 0 1rem;
+
+        }
+
+            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+        padding: 0 1rem;
+
+            }
+
+  .post-box-content {
+  padding: 1.2rem 0;
+  background-color: $light-gray;
+
+
+
+      h2.post-title, h3.post-title {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  h2.post-title a, h3.post-title a {
+     padding: 0 1rem;
+     display: block;
+      &:hover {
+        text-decoration: underline
+      }
+  }
+
+  p {
+    margin: 0 1rem;
+    padding: 0;
+    display: block;
+    font-size: .95rem;
+    color: rgba(0,0,0, .4);
+    font-weight: bold;
+  }
+
+  .entry-meta {
+
+    padding: 0 1rem;
+    background-color:  $primary;
+    p {
+      font-size: 1rem;
+      padding: 0 1rem;
+      margin-bottom: 0;
+      color: $white;
+      a {
+        color: $white;
+      }
+      a:hover {
+        color: $secondary;
+      }
+  }
+}
+span.posted-on {
+  font-size: 1rem;
+  padding-top: 0;
+  margin-top: 0;
+}
+  .button.primary {
+    background: $light-gray;
+    color: $primary;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 1rem 0 0;
+    text-align: left;
+    line-height: 1.6rem;
+  }
+  .button.primary:hover {
+    background: $light-gray;
     color: $secondary;
-    text-align: center;
-    margin-bottom: 4rem;
-    font-weight: 800;
-    font-size: 2.8rem;
+  }
+  .button.primary::after {
+    font-family: FontAwesome;
+    content: "\f061";
+    border-radius: 100%;
+    color: $primary;
+    right: 0;
+    position: absolute;
+    margin-left: 0.4rem;
+    margin-top: -.4rem;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+  }
+  .button.primary:hover::after {
+    background-color: $secondary;
+    color: $white;
+    padding: 0.4rem;
+  }
+
 
   }
+}
+.prevnext {
+  margin-top: 2rem;
+
+  span.fa.fa-chevron-left {
+
+    padding-right: .5rem;
+
+  }
+
+  span.fa.fa-chevron-right {
+
+    padding-left: .5rem;
+
+  }
+
+}
+
 
 }
 

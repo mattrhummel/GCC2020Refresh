@@ -86,15 +86,13 @@ h1 {
 
             font-size: 300%;
 
-            }
-
-            
+            }           
 
     }
     
     h3 {
         color: $white;
-        font-family: 'Oswald', sans-serif;
+        font-family: $font-family-monospace;
         text-transform: uppercase;
         border-bottom:1px solid rgba(255,255,255,0.35);
         padding-bottom:7px;margin-bottom:7px;

@@ -27,11 +27,13 @@ $highlights_heading = get_field('highlights_heading');
 
   <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-      <div class="small-12 large-4 columns">
+      <div class="small-12 large-4 columns post-box">
 
-          <div class="post-box"  data-equalizer-watch>
+          <div class="post-box-content"  data-equalizer-watch>
+
             <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <p><?php the_date(); ?></p>
+
           </div>
 
       </div>
