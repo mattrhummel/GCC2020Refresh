@@ -50,11 +50,8 @@ get_header(); ?>
             
             <?php the_sub_field('promo_text') ?>
 
-          <?php if ( the_sub_field( 'promo_form' ) ) : ?>
-
             <?php the_sub_field( 'promo_form' ); ?>
 
-          <?php endif; ?>
 
 
               <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button"><?php the_sub_field( 'promo_button_text' ); ?></a>
@@ -94,11 +91,8 @@ get_header(); ?>
             
             <?php the_sub_field('promo_text') ?>
 
-            <?php if ( the_sub_field( 'promo_form' ) ) : ?>
 
             <?php the_sub_field( 'promo_form' ); ?>
-
-          <?php endif; ?>
 
 
               <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button"><?php the_sub_field( 'promo_button_text' ); ?></a>
