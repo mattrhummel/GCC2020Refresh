@@ -58,13 +58,13 @@
           <?php  //function located in inc/main-navigation.php
           gcc_wp_2018_footer_links_menu(); ?>
 
-              <div class="tips">
-      
-      <a href="<?php echo get_field( 'tips_url', 'options' ); ?>" class="tips-logo" aria-hidden="true">
-      
-      <span><?php echo get_field( 'tips_text', 'options' ); ?><span class="hide-text">report an incident</span></span></a>
-    
-    </div>
+        <div class="tips">
+          
+          <a href="<?php echo get_field( 'tips_url', 'options' ); ?>" class="tips-logo" aria-hidden="true">
+          
+          <span><?php echo get_field( 'tips_text', 'options' ); ?><span class="hide-text"><?php _e('report an incident', 'gcc-wp-2018')?></span></span></a>
+        
+        </div>
       </div>
       
       <div class="small-12 medium-5 columns">
