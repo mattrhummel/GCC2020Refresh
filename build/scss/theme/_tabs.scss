@@ -1,5 +1,5 @@
 .tabs {
-	border: none;
+	border: none !important;
     margin-bottom: 2rem;
     
   @media screen and (max-width: 39.9375em) {
@@ -7,6 +7,7 @@
 	background-color: $white;
 
   }
+
 
 .tabs-title {
 	color: $secondary;
@@ -25,10 +26,13 @@
 .tabs-content {
  	// border: 1px solid rgba(242, 242, 242, .4);
  	margin-bottom: 1rem;
+ 	border-top: 1px solid $medium-gray !important;
  }
 .accordion {
 
-	.accordion-title {
+li.accordion-item {
+
+	a.accordion-title {
 
 			text-decoration: none;
 			font-weight: 800;
@@ -36,18 +40,34 @@
 			line-height: 1.6rem;
 			color: $secondary;
 			font-family: $font-family-monospace;
-	text-transform: uppercase;
+	        text-transform: uppercase; 
+	        border-top: none !important;
+            border-bottom: 2px solid $white !important;
+
 
 		&:hover {
 			background-color: $primary;
 			color: $white;
 		}
+
 		&:focus {
 			background-color: $primary;
             color: $white;
-					}
+				}
 
 	  }
 
+	}
 
+  .accordion-content {
+  	border: none;
+  	border-left: .5px solid $medium-gray;
+  	border-right: .5px solid $medium-gray;
+    border-bottom: .5px solid $medium-gray;
+
+  }
+
+  :last-child > .accordion-content:last-child {
+    border-bottom: 1px solid $medium-gray;
+}
 }
