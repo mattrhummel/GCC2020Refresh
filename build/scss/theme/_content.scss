@@ -63,105 +63,114 @@ a.button {
         color: $white;
         transition: 0.3s;
         text-transform: uppercase;
+
+       &:hover {
+          background-color:$white;
+          border-color:$white;
+          color: $primary;
+         }
+
+       &:focus {
+          background-color:$white;
+          border-color:$white;
+          color: $primary;
+         }
 }
 
-a.button:hover {
-          background-color:$white;
-          border-color:$white;
-          color:rgb(90,20,30);
-         }
 
-a.button:focus {
-          background-color:$white;
-          border-color:$white;
-          color:rgb(90,20,30);
-         }
 a.button.primary {
         background-color: $primary;
         border-color: $primary;
         color: $white;
         transition: 0.3s;
-}
 
-a.button.primary:hover {
+        &:hover {
           background-color:$white;
           border-color:$white;
           color:rgb(90,20,30);
          }
 
-a.button.primary:focus {
+        &:focus {
           background-color: $secondary;
           border-color:$white;
           color:rgb(90,20,30);
          }
+}
+
+
 
 a.button.secondary {
         background-color: $secondary;
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-}
-a.button.secondary:hover {
+
+       &:hover {
           background-color:$white;
           border-color:$secondary;
           color: $secondary;
          }
-a.button.secondary:focus {
+      &:focus {
         background-color: $white;
           border-color:$secondary;
         color: $secondary;
          }
+}
 
 a.button.success {
         background-color: $success;
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-}
-a.button.success:hover {
+
+        &:hover {
           background-color:$white;
           border-color:$success;
         color: $success;
          }
-a.button.success:focus {
+        &:focus {
         background-color: $white;
         border-color:$success;
         color: $success;
          }
+}
+
 
 a.button.alert {
         background-color: $alert;
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-}
-a.button.alert:hover {
+        &:hover {
           background-color:$white;
           border-color: $alert;
           color:  $alert;
          }
-a.button.alert:focus {
+       &:focus {
         background-color: $white;
           border-color: $alert;
           color:  $alert;
          }
+}
 
-  a.button.warning {
+a.button.warning {
         background-color: $warning;
         border-color:rgb(90,20,30);
         color: $white;
         transition: 0.3s;
-}
-a.button.warning:hover {
+        
+        &:hover {
           background-color:$white;
           border-color:$warning;
           color:  $warning;
          }
-a.button.warning:focus {
+       &:focus {
         background-color: $white;
           border-color:$warning;
           color:  $warning;
          }
+}
+
 
 ul.accordion {
     li.accordion-item {
