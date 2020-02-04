@@ -5,6 +5,7 @@
     'resource-menu' => 'Resource Menu',
     'footer-links-menu' => 'Footer Links Menu',
     'footer-calltos-menu' => 'Footer Calltos Menu',
+    'top-bar-menu' => 'Top Bar Menu',
     'about-menu' => 'About Menu',// registers the departmental menus in the WordPress admin menu editor
     'archive-menu' => 'Archive Menu',
     'single-post-menu' => 'Single Post Menu',

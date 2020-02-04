@@ -90,17 +90,22 @@ width: auto;
 display: inline-block; 
 float: right;
 
-ul.germanna-nav {
+div.germanna-nav {
+
+  ul {
+
+    margin-bottom: 0;
   
-  li.menu-item {          
+  li.menu-item {    
+
+  display:inline-block;      
 
   a {
       color: $white;
       font: 900 16px $font-family-monospace;
       text-transform: uppercase;
       padding: 14px;
-      display:inline-block;
-      line-height: inherit;
+            line-height: inherit;
       border-bottom: 7px solid $primary;
 
       @media screen and (max-width: 39.9375em) {      
@@ -135,6 +140,12 @@ padding:  19.2px 12px;
             color: $white;
             border-bottom:7px solid $black;
             text-decoration: none;
+    }
+    &:active {
+
+      border-bottom: 7px solid $white;
+      color: $white;
+
     }
   }
 
@@ -193,6 +204,8 @@ button.is-open:after {
 }
 
   }
+
+}
 }
 
 }

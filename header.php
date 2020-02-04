@@ -71,16 +71,19 @@
                       </div>
 
                         <nav role="navigation" class="main-nav">
-                          <ul class="menu germanna-nav float-right">                  
-                            <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/become-a-student/', 'gcc-wp-2018'); ?>"><?php _e('Become a Student', 'gcc-wp-2018'); ?></a></li>
-                            <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/explore-programs/', 'gcc-wp-2018'); ?>" ><?php _e('Explore Programs', 'gcc-wp-2018'); ?></a></li>
-                            <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/visit-us/', 'gcc-wp-2018'); ?>" ><?php _e('Visit Us', 'gcc-wp-2018'); ?></a></li>
-                            <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/donate/', 'gcc-wp-2018'); ?>"><?php _e('Give', 'gcc-wp-2018'); ?></a></li>
+                          <div class="menu germanna-nav float-right"> 
+
+                          <?php gcc_wp_2018_top_bar_menu() ?>
+                            
+                            <ul>
                             <li class="menu-item has-menu">                     
                               <button id="btn-toggle" class="" data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
                               </button>                      
                             </li>
-                          </ul>
+
+                            </ul>
+
+                          </div>
                         </nav>
 
                   </div>
