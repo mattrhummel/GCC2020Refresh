@@ -11,7 +11,6 @@ function gcc_wp_2018_main_menu () {
     	'fallback_cb' => 'main_nav_fb'   // fallback function (see below)
 	));
 }
-
 function gcc_wp_2018_information_menu () {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
@@ -20,7 +19,6 @@ function gcc_wp_2018_information_menu () {
     	'fallback_cb' => 'main_nav_fb',   // fallback function (see below)
 	));
 }
-
 function gcc_wp_2018_resource_menu() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
@@ -29,7 +27,6 @@ function gcc_wp_2018_resource_menu() {
         'depth' => 0,                     // limit the depth of the nav
     ));
 }
-
 function gcc_wp_2018_footer_links_menu() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
@@ -38,7 +35,6 @@ function gcc_wp_2018_footer_links_menu() {
         'depth' => 0,                     // limit the depth of the nav
     ));
 }
-
 function gcc_wp_2018_footer_calltos_menu() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container

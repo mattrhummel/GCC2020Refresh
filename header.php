@@ -76,10 +76,11 @@
                           <?php gcc_wp_2018_top_bar_menu() ?>
                             
                             <ul>
-                            <li class="menu-item has-menu">                     
-                              <button id="btn-toggle" class="" data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
-                              </button>                      
-                            </li>
+                            
+                              <li class="menu-item has-menu">                     
+                                <button id="btn-toggle" class="" data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
+                                </button>                      
+                              </li>
 
                             </ul>
 
