@@ -16,16 +16,16 @@
 	<div class="item">
 		<div class="row column expanded no-gutter hero" style="background-image: url('<?php echo $url ?>');">
 			<div class="row">
+
 				<div class="hero-content">
 					
 					<div class="hero-caption">
-						<h1><?php the_sub_field( 'slide_heading' ); ?></h1>
-						<p class="lead"><?php the_sub_field( 'slide_text' ); ?></p>
 						
-						<p>
-							<a href="<?php the_sub_field( 'slide_button_url' ); ?>" class="button"><?php the_sub_field( 'slide_button_text' ); ?></a>
-						</p>
-
+						<h1><?php the_sub_field( 'slide_heading' ); ?></h1>
+						
+						<?php the_sub_field( 'slide_text' ); ?>
+						
+					 	<a href="<?php the_sub_field( 'slide_button_url' ); ?>" class="button primary"><?php the_sub_field( 'slide_button_text' ); ?></a>
 					</div>
 				</div>
 			</div>

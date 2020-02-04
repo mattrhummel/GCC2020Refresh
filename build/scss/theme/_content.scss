@@ -47,9 +47,8 @@ table h4 {
 }
 
 p.lead {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.8rem;
+ font-size: 1.6rem;
+ font-weight: 100;
 }
 
 a {
@@ -65,7 +64,7 @@ a.button {
         text-transform: uppercase;
 
        &:hover {
-          background-color:$white !important;
+          background-color:$white;
           border-color:$white;
           color: $primary;
          }

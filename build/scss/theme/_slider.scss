@@ -22,10 +22,9 @@
 
 .hero-caption {
         
-        background-color:rgba(141,36,55,1);
+        background-color:$white;
         // margin-top: 800px;
         padding: 18px;
-        color: $white;
         width: 100%;
 
     @media screen and (min-width: 40em) {
@@ -59,8 +58,7 @@
 
     }
 
-h1 {
-    color: $white;
+ h1 {
     font-family: $font-family-monospace;
     font-size: 160%;
     text-transform: uppercase;
@@ -87,45 +85,13 @@ h1 {
             font-size: 300%;
 
             }           
-
     }
     
-    h3 {
-        color: $white;
-        font-family: $font-family-monospace;
-        text-transform: uppercase;
-        border-bottom:1px solid rgba(255,255,255,0.35);
-        padding-bottom:7px;margin-bottom:7px;
-    } 
-    .button {
-        background-color:#fff;
-        border-color:#fff;
-        color:rgb(90,20,30);
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-size:1.3em;
-        font-weight: 400px;
-        transition: 0.3s;
-        font-weight: 400;
-        display: inline-block;
-        text-align: center;
-        vertical-align: middle;
-        padding: .375rem .75rem;
-        line-height: 1.5;
-        border-radius: .25rem;
-        user-select: none;
+    p.lead {
+  font-size: 1.6rem;
+ font-weight: 100;
+}
 
-    &:hover {
-        background-color:#fff;
-        border-color:#fff;
-        color:rgb(90,20,30);
-    }
-    &:focus {
-        background-color:#fff;
-        border-color:#fff;
-        color:rgb(90,20,30);
-    }
-  }
 }
 
 }
@@ -224,10 +190,9 @@ h1 {
 
 .hero-caption {
         
-        background-color:rgba(141,36,55,1);
+        background-color:$white;
         // margin-top: 800px;
         padding: 20px;
-        color: $white;
         width: auto;
         margin-left: 40px;
         max-width: 80%;
@@ -254,7 +219,6 @@ h1 {
     }
 
 h2 {
-    color: $white;
     font-family: $font-family-monospace;
     font-size: 140%;
     text-transform: uppercase;
@@ -287,36 +251,13 @@ h2 {
         border-bottom:1px solid rgba(255,255,255,0.35);
         padding-bottom:7px;margin-bottom:7px;
     } 
-    .button {
-        background-color:#fff;
-        border-color:#fff;
-        color:rgb(90,20,30);
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-        font-size:1.3em;
-        font-weight: 400px;
-        transition: 0.3s;
-        font-weight: 400;
-        display: inline-block;
-        text-align: center;
-        vertical-align: middle;
-        padding: .375rem .75rem;
-        line-height: 1.5;
-        border-radius: .25rem;
-        user-select: none;
-        margin-bottom: 0;
 
-    &:hover {
-        background-color:#fff;
-        border-color:#fff;
-        color:rgb(90,20,30);
-    }
-    &:focus {
-        background-color:#fff;
-        border-color:#fff;
-        color:rgb(90,20,30);
-    }
-  }
+
+.lead {
+ font-size: 1.4rem;
+ font-weight: 100;
+}
+
 }
 
 }

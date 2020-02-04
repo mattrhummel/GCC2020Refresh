@@ -73,7 +73,7 @@
                         <nav role="navigation" class="main-nav">
                           <div class="menu germanna-nav float-right"> 
 
-                          <?php gcc_wp_2018_top_bar_menu() ?>
+                            <?php gcc_wp_2018_top_bar_menu() ?>
                             
                             <ul>
                             

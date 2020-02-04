@@ -13,10 +13,6 @@
      height:auto;
  }
 
-#slider {
-  border: none;
-}
-
 .home-content {
   h2 {
     font-size: 2.4rem;
@@ -70,12 +66,14 @@ h3 {
          font-size: 1.2rem;
 
    a {
+    font-size: 1.4rem;
+    
     @media screen and (max-width: 39.9375em) {
 
       font-size: 1.2rem;
     }
 
-    font-size: 1.6rem;
+    
    }
   
 }
@@ -110,7 +108,6 @@ height: 350px;
 }
 
 }
-
 
 #pathways {
 
@@ -355,41 +352,6 @@ span.posted-on {
   padding-top: 0;
   margin-top: 0;
 }
-  .button.primary {
-    background: $light-gray;
-    color: $primary;
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 0;
-    margin: 1rem 0 0;
-    text-align: left;
-    line-height: 1.6rem;
-  }
-  .button.primary:hover {
-    background: $light-gray;
-    color: $secondary;
-  }
-  .button.primary::after {
-    font-family: FontAwesome;
-    content: "\f061";
-    border-radius: 100%;
-    color: $primary;
-    right: 0;
-    position: absolute;
-    margin-left: 0.4rem;
-    margin-top: -.4rem;
-    padding: 0.4rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: background-color 0.5s ease;
-  }
-  .button.primary:hover::after {
-    background-color: $secondary;
-    color: $white;
-    padding: 0.4rem;
-  }
-
-
   }
 }
 .prevnext {
