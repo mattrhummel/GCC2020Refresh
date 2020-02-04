@@ -33,16 +33,15 @@ get_header();?>
     
 </header>
 
-<div class="row expanded content-area">
-  
+  <div class="row expanded content-area gutter-small" >
+    
     <div class="row">
 
       <?php get_sidebar();?>
 
+      <div class="columns small-12 medium-12 large-8" style="padding: 0">
       
-      <!--Page Content-->
-
-    <div class="small-12 medium-9 entry-content" id="main" tabindex="0">
+        <div class="entry-content" id="main">
                
 
                 <?php
@@ -107,6 +106,8 @@ get_header();?>
 
 
             </div>
+
+        
 
         <?php
 get_footer();

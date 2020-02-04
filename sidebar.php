@@ -63,9 +63,10 @@
   //custom archive widgets
    dynamic_sidebar( 'single-widgets' );
   }
+
   if ( is_archive('safety-alerts'))  {
   //custom archive widgets
-  // dynamic_sidebar( 'single-widgets' );
+  dynamic_sidebar( 'single-widgets' );
   }
   //awards
   if (is_page('35') || $post->post_parent == '35')
