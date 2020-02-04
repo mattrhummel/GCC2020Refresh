@@ -17,7 +17,7 @@ get_header();?>
 
       <div class="row header-content">
      
-        <?php echo get_cat_name(); ?>
+        <?php echo get_cat_name(1); ?>
   
         <div class="crumbs-container">
 
