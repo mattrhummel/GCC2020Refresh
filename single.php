@@ -26,14 +26,15 @@ get_header(); ?>
 		</div>
 	</header>
 
-	<div class="row expanded content-area">
-		
-		<div class="row">
-			
-			<?php get_sidebar();?>
-			
-			<div class="small-12 medium-9 entry-content" id="main" tabindex="0">
-				<div class="entry-content" id="main" tabindex="0">
+  <div class="row expanded content-area gutter-small" >
+    
+    <div class="row">
+
+      <?php get_sidebar();?>
+
+      <div class="columns small-12 medium-12 large-8" style="padding: 0">
+      
+        <div class="entry-content" id="main">
 					<?php
 					the_content( sprintf(
 					wp_kses(

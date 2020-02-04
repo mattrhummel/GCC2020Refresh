@@ -61,13 +61,17 @@
   //post pages
   if ( is_singular('post'))  {
   //custom archive widgets
-   dynamic_sidebar( 'single-widgets' );
+   dynamic_sidebar( 'blog-widgets' );
   }
-
-  if ( is_archive('safety-alerts'))  {
+//post pages
+  if ( is_page('13180'))  {
   //custom archive widgets
-  dynamic_sidebar( 'single-widgets' );
+   dynamic_sidebar( 'blog-widgets' );
   }
+  // if ( is_archive('news'))  {
+  // //custom archive widgets
+  // dynamic_sidebar( 'single-widgets' );
+  // }
   //awards
   if (is_page('35') || $post->post_parent == '35')
   {
@@ -434,21 +438,12 @@
   dynamic_sidebar( 'veterans-widgets' );
   }
   //workforce
-  if ( is_page('113') || $post->post_parent == '113' ) {
+  if ( is_page('113') || $post->post_parent == '113' || is_singular('workforce_news_post')) {
   //custom department widgets
   //echo gcc_wp_2018_list_child_pages('child_of=113'); 
   dynamic_sidebar( 'workforce-widgets' );
   }
   ?>
-
-<!--   <ul class="campaigns">
-          
-        <li><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">Apply</a></li>
-        <li><a href="https://gccstaging1.wpengine.com/visit/">Visit</a></li>
-<li><a href="https://gccstaging1.wpengine.com/admissions/request-information/">Get Info</a></li>
-<li><a href="https://gccstaging1.wpengine.com/donate/">Give</a></li>
-
-        </ul> -->
 </aside>
 
 

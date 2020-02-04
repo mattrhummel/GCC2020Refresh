@@ -10,21 +10,44 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
   while ( have_posts() ) : the_post(); ?>
-  <?php
-  get_template_part( 'template-parts/content', 'workforce-single-heading' );
-  ?>
-  <div class="row gutter-small expanded content-area">
-    <div class="columns small-12 medium-12 large-9">
+ 
+  <header class="hero-section">
+    <?php //if the child page doesn't have a featured images
+    //gcc_featured_image_on_child(); ?>
+    <div class="row expanded hero-section-text">
+      <div class="row header-content">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <p><?php the_date(); ?></p>
+        <div class="crumbs-container">
+          <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+            <?php custom_breadcrumbs();?>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+   <div class="row expanded content-area gutter-small" >
+    
+    <div class="row">
+
+      <?php get_sidebar();?>
+
+      <div class="columns small-12 medium-12 large-8" style="padding: 0">
+      
+        <div class="entry-content" id="main">
+      
+
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
-      <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
-        <?php the_post_thumbnail('', array ('alt' => false));  ?>
-      </div>
+        <?php the_post_thumbnail();  ?>
+     
       <?php  }  else {  //.pagesubbanner
       // if page doesn't have a featured image
       ?>
+      
       <?php } ?>
-      <div class="entry-content" id="main" tabindex="0">
+        
         <?php
         the_content( sprintf(
         wp_kses(
@@ -41,10 +64,11 @@ get_header(); ?>
         ); ?>
       </div>
     </div>
-    <aside class="small-12 medium-12 large-4 columns right page-nav hide-for-print" id="section-menu"  data-toggler="hide">
-      <?php dynamic_sidebar( 'workforce-widgets' ); ?>
-    </aside>
+
     <?php endwhile; // End of the loop. ?>
+</div>
+</div>
+
   </article>
   <?php
   get_footer();

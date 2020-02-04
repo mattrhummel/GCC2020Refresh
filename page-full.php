@@ -10,10 +10,12 @@ get_header(); ?>
   <?php //Page Heading
   get_template_part( 'template-parts/content', 'page-heading' );
   ?>
+
   <div class="row gutter-small expanded content-area">
     <div class="row">
     <div class="small-12 columns">
       <div class="entry-content" id="main" tabindex="0">
+    
         <?php //Page Heading
         get_template_part( 'template-parts/content', 'page-alert' );
         ?>
