@@ -251,12 +251,12 @@ function custom_breadcrumbs() {
                 echo $parents;
                    
                 // Current page
-                echo '<li class="item-current item-' . $post->ID . '"> ' . get_the_title() . '</li>';
+                //echo '<li class="item-current item-' . $post->ID . '"> ' . get_the_title() . '</li>';
                    
             } else {
                    
                 // Just display current page if not parents
-                echo '<li class="item-current item-' . $post->ID . '"> ' . get_the_title() . '</li>';
+                //echo '<li class="item-current item-' . $post->ID . '"> ' . get_the_title() . '</li>';
                    
             }
                
