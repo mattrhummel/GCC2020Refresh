@@ -6,56 +6,43 @@
  *
  * @package gccwp-2018
  */
-get_header();
-$post_page_featured_image = get_field('post_page_featured_image', 'option');
-$post_page_title= get_field('post_page_title', 'option');
-
-	// vars
-	$url = $post_page_featured_image['url'];
-	$title = $post_page_featured_image['title'];
-	$alt = $post_page_featured_image['alt'];
-	$caption = $post_page_featured_image['caption'];
-
-	// thumbnail
-	$size = 'large';
-	$thumb = $post_page_featured_image['sizes'][ $size ];
-	$width = $post_page_featured_image['sizes'][ $size . '-width' ];
-	$height = $post_page_featured_image['sizes'][ $size . '-height' ];
-?>
+get_header();?>
 
     <?php
 		if ( have_posts() ) : ?>
 
-        <header class="hero-section hero-section-single">
+   
+<header>
 
-            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+    <div class="row expanded hero-section-text">
 
-            <div class="hero-section-text" style="width: 75%;">
-                <h1>
-                    <?php echo $post_page_title; ?>
-                </h1>
-                <p>
-                    <?php echo get_the_archive_title(); ?>
-                </p>
+      <div class="row header-content">
+     
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+  
+        <div class="crumbs-container">
 
-            </div>
+            <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
+              <?php custom_breadcrumbs();?>
+            </nav>
+    
+        </div>
+ 
+    </div>
 
-            <div class="row expanded crumbs-container show-for-medium">
+  </div>
+    
+</header>
 
-                <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+    <div class="row expanded content-area gutter-small" >
+    
+    <div class="row">
 
-                    <?php gcc_wp_2018_archive_breadcrumbs(); ?>
+      <?php get_sidebar();?>
 
-                </nav>
-
-            </div>
-
-        </header>
-
-        <!--Page Content-->
-        <div class="row gutter-small expanded content-area">
-
-            <div class="small-12 medium-9 entry-content">
+      <div class="columns small-12 medium-12 large-8" style="padding: 0">
+      
+        <div class="entry-content" id="main">
 
                 <?php
 								/* Start the Loop */
@@ -69,9 +56,9 @@ $post_page_title= get_field('post_page_title', 'option');
 
 								?>
 
-                    <div class="row latest-post">
-                        <div class="medium-12 columns">
 
+
+                          <div class="row expaned latest-post">
 
                             <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
 
@@ -82,6 +69,7 @@ $post_page_title= get_field('post_page_title', 'option');
                             </h3>
 
                             <?php if ( 'post' === get_post_type() ) : ?>
+                            
                             <div class="entry-meta">
                                 <p>
                                     <strong>
@@ -118,6 +106,7 @@ $post_page_title= get_field('post_page_title', 'option');
                             </p>
                         </div>
                     </div>
+                </div>
 
                     <?php endwhile;
 
@@ -125,18 +114,15 @@ $post_page_title= get_field('post_page_title', 'option');
 
             </div>
 
+            <?php else :
 
-            <?php //Template Sidebar
-		 	 get_template_part( '/sidebars/archive-sidebar' ); ?>
-
-            <?php	else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
+			get_template_part( 'template-parts/content', 'none' ); ?>
 
 
-        </div>
+		<?php endif; ?>
+
+            </div>
+
 
         <?php
 get_footer();
