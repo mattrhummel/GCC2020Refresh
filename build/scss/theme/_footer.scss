@@ -253,13 +253,13 @@ li {
 .site-footer-bottom {
 
   background: $white;
-  padding: 1.4rem 0 6rem 0;
+  padding: 1.4rem 0 4rem 0;
   
   .bottom-footer-content {
 
     .menu {
 
-      margin: 0 0 1.4rem 0;
+      margin: 0 0 1rem 0;
 
       li {
 
@@ -364,7 +364,7 @@ li {
     width: 100px;
     text-indent: -9999px;
     display: block;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 1rem auto;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -384,6 +384,10 @@ li {
     margin: 0 auto 1rem auto;
 
    }
+
+     @media screen and (min-width: 64em) {
+    margin: 0;
+}
 
 }
 

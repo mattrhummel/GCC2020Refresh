@@ -30,9 +30,7 @@
   }
 
   p {
-    font-size: 1.4rem;
     padding: 0 0 1rem 0;
-    line-height: 2.4rem;
   }
 
 .stories {
@@ -131,9 +129,7 @@ h2 {
 
 
   p {
-    font-size: 1.4rem;
     padding: 0 0 1rem 0;
-    line-height: 2.4rem;
   }
 
 .pathways-row-1, .pathways-row-2 {
@@ -249,7 +245,6 @@ h2 {
 
      @media screen and (min-width: 40em) {
 
-      font-size: 1.4rem;
       padding: 0 1rem;
       padding: 60px 0 100px 0;
 
@@ -264,7 +259,6 @@ h2 {
         
       @media screen and (min-width: 64em) {
      
-        font-size: 1.6rem;
         padding: 0 1rem;
         padding: 60px 0 100px 0;
 
@@ -283,11 +277,9 @@ h2 {
 
 }
 
-p {
-  font-size: 1.4rem;
-  padding: 0 0 1rem 0;
-  line-height: 1.4rem;
-}
+  p {
+    padding: 0 0 1rem 0;
+  }
 
 .post-box {
  
@@ -297,7 +289,6 @@ p {
 
      @media screen and (min-width: 40em) {
 
-       font-size: 1.4rem;
         padding: 0 1rem;
 
       }
@@ -308,8 +299,7 @@ p {
         
         @media screen and (min-width: 64em) {
        
-         font-size: 1.6rem;
- padding: 0 1rem;
+        padding: 0 1rem;
 
         }
 
@@ -344,7 +334,6 @@ p {
     background-color:  $primary;
 
     p {
-      font-size: 1rem;
       padding: 0 1rem;
       color: $white;
   }
