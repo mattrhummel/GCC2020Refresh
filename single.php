@@ -25,11 +25,13 @@ get_header(); ?>
 			</div>
 		</div>
 	</header>
+
 	<div class="row expanded content-area">
 		
 		<div class="row">
 			
 			<?php get_sidebar();?>
+			
 			<div class="small-12 medium-9 entry-content" id="main" tabindex="0">
 				<div class="entry-content" id="main" tabindex="0">
 					<?php

@@ -61,7 +61,7 @@
   //post pages
   if ( is_singular('post'))  {
   //custom archive widgets
-  // dynamic_sidebar( 'single-widgets' );
+   dynamic_sidebar( 'single-widgets' );
   }
   if ( is_archive('safety-alerts'))  {
   //custom archive widgets

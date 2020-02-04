@@ -31,7 +31,6 @@ get_header();?>
 </div>
   
         <div class="crumbs-container">
-
      
             <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
               <?php custom_breadcrumbs();?>
@@ -54,18 +53,18 @@ get_header();?>
       
       <!--Page Content-->
 
-<div class="small-12 medium-9 entry-content" id="main" tabindex="0">
+    <div class="small-12 medium-9 entry-content" id="main" tabindex="0">
 
-  <?php
-  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+      <?php
+      $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
-  $args =  array (
+      $args =  array (
 
-  'post_type' => 'post',
-  'posts_per_page'=>10,
-  'paged'          => $paged
-  );
-  ?>
+      'post_type' => 'post',
+      'posts_per_page'=>10,
+      'paged'          => $paged
+      );
+      ?>
 
   <?php
 
