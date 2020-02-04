@@ -11,7 +11,6 @@ get_header();?>
     <?php
 		if ( have_posts() ) : ?>
 
-   
 <header>
 
     <div class="row expanded hero-section-text">
@@ -34,15 +33,17 @@ get_header();?>
     
 </header>
 
-    <div class="row expanded content-area gutter-small" >
-    
+<div class="row expanded content-area">
+  
     <div class="row">
 
       <?php get_sidebar();?>
 
-      <div class="columns small-12 medium-12 large-8" style="padding: 0">
       
-        <div class="entry-content" id="main">
+      <!--Page Content-->
+
+    <div class="small-12 medium-9 entry-content" id="main" tabindex="0">
+               
 
                 <?php
 								/* Start the Loop */
@@ -56,9 +57,7 @@ get_header();?>
 
 								?>
 
-
-
-                          <div class="row expaned latest-post">
+                          <div class="callout primary">
 
                             <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
 
@@ -84,29 +83,11 @@ get_header();?>
                                 </strong>
                                 </p>
                             </div>
+
                             <!-- .entry-meta -->
                             <?php endif; ?>
-                            <p>
-                                <?php the_excerpt(
-
-				sprintf(
-						 wp_kses(
-							 /* translators: %s: Name of current post. Only visible to screen readers */
-							 __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-							 array(
-								 'span' => array(
-									 'class' => array(),
-								 ),
-							 )
-						 ),
-						 get_the_title()
-					 )
-
-			); ?>
-                            </p>
+               
                         </div>
-                    </div>
-                </div>
 
                     <?php endwhile;
 
@@ -121,8 +102,11 @@ get_header();?>
 
 		<?php endif; ?>
 
-            </div>
+                            </div>
+</div>
 
+
+            </div>
 
         <?php
 get_footer();
