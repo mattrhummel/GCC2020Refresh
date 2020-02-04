@@ -53,3 +53,11 @@ add_filter( 'protected_title_format', 'remove_protected_text' );
 function remove_protected_text() {
 return __('%s');
 }
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+  if (in_array('current-menu-item', $classes) ){
+    $classes[] = 'active ';
+  }
+  return $classes;
+}

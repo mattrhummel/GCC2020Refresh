@@ -96,7 +96,7 @@ div.germanna-nav {
 
     margin-bottom: 0;
   
-  li.menu-item, li.current-page-item {    
+  li.menu-item {    
 
   display:inline-block;      
 
@@ -149,6 +149,16 @@ padding:  19.2px 12px;
     }
   }
 
+}
+
+li.active  {
+  
+    a {
+
+      border-bottom: 7px solid $white;
+      color: $white;
+
+    }
 }
 
 li.has-menu {          
