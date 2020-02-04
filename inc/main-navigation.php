@@ -30,7 +30,7 @@ function gcc_wp_2018_resource_menu() {
 function gcc_wp_2018_footer_links_menu() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
-        'items_wrap' => '<div><ul class="menu vertical medium-horizontal">%3$s</ul></div>' ,                  // menu name
+        'items_wrap' => '<div><ul class="menu vertical large-horizontal">%3$s</ul></div>' ,                  // menu name
         'theme_location' => 'footer-links-menu',  // where it's located in the theme
         'depth' => 0,                     // limit the depth of the nav
     ));

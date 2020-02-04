@@ -47,6 +47,11 @@
 
 }
 
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+margin: 0 auto;
+
+      }
+
   }
  
 }
@@ -69,6 +74,12 @@ h3,h4 {
                 text-align: left;
 
         }
+
+          @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+      text-align: center;
+      
+     }
 }
 
 p  {
@@ -77,6 +88,12 @@ p  {
      
      @media screen and (min-width: 40em) {
       text-align: left;
+     }
+
+       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+      text-align: center;
+      
      }
 
      a {
@@ -133,11 +150,17 @@ li {
      padding: 14px 20px;
      display: block;
      transition: .6s;
-    font-size: 1.2rem;
+     font-size: 1.2rem;
 
      &:hover {
       background-color: $white;
       color: $primary;
+     }
+
+     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+      text-align: center;
+
      }
   }
 
@@ -177,6 +200,13 @@ li {
       text-align: left;
 
    }
+
+     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+         margin: 10px auto 0 auto;
+         justify-content: center;
+      
+     }
 
         li {
 
@@ -229,7 +259,7 @@ li {
 
     .menu {
 
-      margin:0 0 1.4rem 0;
+      margin: 0 0 1.4rem 0;
 
       li {
 
@@ -239,7 +269,7 @@ li {
           font-size: .8rem;
           font-family: Arial, san-serif;
           font-weight: normal;
-          padding: 0 1rem 0 0;
+          padding: 0 1rem 1rem 0;
           margin: 0;
 
           &:hover {
@@ -249,7 +279,8 @@ li {
 
               /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
- padding: 0 1rem .5rem 0;
+     text-align: center;
+     margin-bottom: 0;
 }
         }
       }
@@ -266,8 +297,12 @@ li {
   @media screen and (min-width: 40em) {
   padding-right: 0;
 
-
 }
+
+ @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+  text-align: center;
+  }
 
 }
 
@@ -281,6 +316,11 @@ li {
 
       }
 
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+      text-align: center;
+      }
+
 }
 
   p {
@@ -289,19 +329,18 @@ li {
     line-height: 1.2rem;
     font-weight: bold;
     font-family: Arial, san-serif;
-    margin: 0 0 8px 0;
+    margin: 0 0 1rem;
       color: $black;
-    padding: 0;
 
     @media screen and (min-width: 40em) {
 
     text-align: right;
-    line-height: 1.2rem;
+
     }
 
  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-text-align: right;
-line-height: inherit;
+  text-align: center;
+  line-height: inherit;
 }
 
 }
@@ -325,7 +364,7 @@ line-height: inherit;
     width: 100px;
     text-indent: -9999px;
     display: block;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 2rem auto;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -337,9 +376,14 @@ line-height: inherit;
     align-items: left;
     justify-content: left;
     text-align: left;
-    margin: .3rem 0;
+    margin: 0;
 
   }
+
+   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    margin: 0 auto 1rem auto;
+
+   }
 
 }
 

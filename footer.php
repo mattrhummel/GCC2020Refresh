@@ -33,7 +33,7 @@
       </p>
 
       <p><a href="/admissions/contact-us/">Contact Us</a></p>
-      
+
       <h4><?php _e('#germanna', 'gcc-wp-2018'); ?></h4>
       <div class="social">       
         <ul class="social-icons">
@@ -47,7 +47,7 @@
       </div>
 
     </div>
-    <div class="large-5 columns button-column">
+    <div class="small-12 medium-only-12 large-5 columns button-column">
         <?php  //function located in inc/main-navigation.php
         gcc_wp_2018_footer_calltos_menu(); ?>
     </div>
@@ -57,7 +57,7 @@
   <div class="bottom-footer-content">
     <div class="row">
       
-      <div class="small-12 medium-7 columns">      
+      <div class="small-12 medium-only-12 large-7 columns">      
           <?php  //function located in inc/main-navigation.php
           gcc_wp_2018_footer_links_menu(); ?>
 
@@ -70,7 +70,7 @@
         </div>
       </div>
       
-      <div class="small-12 medium-5 columns">
+      <div class="small-12 medium-only-12 large-5 columns">
         <?php the_field('bottom_footer_text', 'option'); ?> 
         <p class="copywrite"><?php _e('&copy;', 'gcc-wp-2018'); ?>
            <?php bloginfo( 'name' ); ?></p> 
