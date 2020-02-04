@@ -72,7 +72,7 @@ get_header();?>
                                 <p>
                                     <strong>
 							<?php
-	        		gcc_wp_2018_posted_on();
+	        		             gcc_wp_2018_posted_on();
 						?>
 						<?php if (is_tag()) {
 						# code...
@@ -107,7 +107,7 @@ get_header();?>
 
             </div>
 
-        
+
 
         <?php
 get_footer();
