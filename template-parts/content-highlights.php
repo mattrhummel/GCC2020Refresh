@@ -6,7 +6,8 @@ $highlights_heading = get_field('highlights_heading');
 
 <div class="row expanded highlights" data-equalizer>
 
-<h2 class="text-center"><?php the_field('highlights_heading'); ?></h2>
+  <h2 class="text-center"><?php the_field('highlights_heading'); ?></h2>
+  <p  class="text-center"><?php the_field('highlights_section_text'); ?></p>
 
 <div class="row" data-equalizer data-equalize-on="medium">  
   <?php

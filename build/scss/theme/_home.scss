@@ -124,11 +124,17 @@ margin-bottom: 4rem;
 
 h2 {
 
-  color: $secondary;
-  position: relative;
-  margin-bottom: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 
 }
+
+
+  p {
+    font-size: 1.4rem;
+    padding: 0 0 1rem 0;
+    line-height: 2.4rem;
+  }
 
 .pathways-row-1, .pathways-row-2 {
   padding: 0 !important;
@@ -269,8 +275,18 @@ h2 {
    padding: 60px 20px 100px 20px;
             }
 
-  h2 {
-    margin-bottom: 2rem;
+ h2 {
+
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+
+  p {
+    font-size: 1.4rem;
+    padding: 0 0 1rem 0;
+    line-height: 2.4rem;
   }
 
 .post-box {

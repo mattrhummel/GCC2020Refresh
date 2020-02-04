@@ -14,6 +14,8 @@ $programs_button_text = get_field('programs_button_text');
     <?php the_field('pathways_heading'); ?>
   </h2>
 
+    <p  class="text-center"><?php the_field('pathways_section_text'); ?></p>
+
 <div class="row gutter-small expanded">
 
 <div class="columns small-12" id="main" tabindex="0">
