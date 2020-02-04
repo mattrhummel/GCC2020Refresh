@@ -17,7 +17,7 @@ get_header();?>
 
       <div class="row header-content">
      
-        
+        <?php the_title(); ?>
   
         <div class="crumbs-container">
 

@@ -243,7 +243,7 @@ function custom_breadcrumbs() {
                 // Parent page loop
                 if ( !isset( $parents ) ) $parents = null;
                 foreach ( $anc as $ancestor ) {
-                    $parents .= '<li class="item-parent item-parent-' . $ancestor . '"><a class="bread-parent bread-parent-' . $ancestor . '" href="/news/">' . get_the_title($ancestor) . '</a></li>';
+                    $parents .= '<li class="item-parent item-parent-' . $ancestor . '"><a class="bread-parent bread-parent-' . $ancestor . '" href="">' . get_the_title($ancestor) . '</a></li>';
                     $parents .= '';
                 }
                    
