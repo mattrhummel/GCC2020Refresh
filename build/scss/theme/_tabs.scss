@@ -27,6 +27,18 @@
  	// border: 1px solid rgba(242, 242, 242, .4);
  	margin-bottom: 1rem;
  	border-top: 1px solid $medium-gray !important;
+
+ 	 p {
+    	margin-bottom: 1rem;
+    }
+
+    ul, ol {
+    	margin-bottom: 1rem;
+    }
+
+    h3, h4, h5, h6 {
+    	margin-top: 1rem;
+    }
  }
 .accordion {
 
@@ -65,6 +77,19 @@ li.accordion-item {
   	border-right: .5px solid $medium-gray;
     border-bottom: .5px solid $medium-gray;
 
+    p {
+    	margin-bottom:1rem;
+    }
+
+    ul, ol {
+    	margin-bottom: 1rem;
+    }
+
+    h3, h4, h5, h6 {
+    	margin-top: 1rem;
+    }
+
+ 
   }
 
   :last-child > .accordion-content:last-child {
