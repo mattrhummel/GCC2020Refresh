@@ -249,31 +249,32 @@ h2 {
 
      @media screen and (min-width: 40em) {
 
-       font-size: 1.4rem;
-        padding: 0 1rem;
-  padding: 60px 0 100px 0;
-
+      font-size: 1.4rem;
+      padding: 0 1rem;
+      padding: 60px 0 100px 0;
 
       }
 
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
-         padding: 0 3rem;
-           padding: 60px 0 100px 0;
+         
+        padding: 0 3rem;
+        padding: 60px 0 100px 0;
+     
       }
         
-        @media screen and (min-width: 64em) {
-       
-         font-size: 1.6rem;
-          padding: 0 1rem;
-          padding: 60px 0 100px 0;
+      @media screen and (min-width: 64em) {
+     
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        padding: 60px 0 100px 0;
 
+      }
 
-        }
+      @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
-            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
-   padding: 60px 20px 100px 20px;
-            }
+        padding: 60px 20px 100px 20px;
+      
+      }
 
  h2 {
 
@@ -282,12 +283,11 @@ h2 {
 
 }
 
-
-  p {
-    font-size: 1.4rem;
-    padding: 0 0 1rem 0;
-    line-height: 2.4rem;
-  }
+p {
+  font-size: 1.4rem;
+  padding: 0 0 1rem 0;
+  line-height: 1.4rem;
+}
 
 .post-box {
  
@@ -319,19 +319,13 @@ h2 {
 
             }
 
-  .post-box-content {
+.post-box-content {
   padding: 1.2rem 0;
   background-color: $light-gray;
 
-
-
-      h2.post-title, h3.post-title {
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
   h2.post-title a, h3.post-title a {
      padding: 0 1rem;
-     display: block;
+     display: block; //do not remove, keeps padding
       &:hover {
         text-decoration: underline
       }
@@ -339,10 +333,8 @@ h2 {
 
   p {
     margin: 0 1rem;
-    padding: 0;
-    display: block;
     font-size: .95rem;
-    color: rgba(0,0,0, .4);
+    color: $black;
     font-weight: bold;
   }
 
@@ -350,24 +342,14 @@ h2 {
 
     padding: 0 1rem;
     background-color:  $primary;
+
     p {
       font-size: 1rem;
       padding: 0 1rem;
-      margin-bottom: 0;
       color: $white;
-      a {
-        color: $white;
-      }
-      a:hover {
-        color: $secondary;
-      }
   }
 }
-span.posted-on {
-  font-size: 1rem;
-  padding-top: 0;
-  margin-top: 0;
-}
+
   }
 }
 .prevnext {
