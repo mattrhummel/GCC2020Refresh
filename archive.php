@@ -17,7 +17,7 @@ get_header();?>
 
       <div class="row header-content">
      
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php echo get_cat_name(); ?>
   
         <div class="crumbs-container">
 
