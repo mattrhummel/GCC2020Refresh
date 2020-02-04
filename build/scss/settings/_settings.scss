@@ -295,11 +295,11 @@ $breadcrumbs-item-separator-color: $dark-gray;
 $button-font-family: $font-family-monospace;
 $button-padding: 1rem;
 $button-margin: 0 0 $global-margin 0;
-$button-fill: solid;
-$button-background: rgb(90,20,30);
-$button-background-hover: $white;
-$button-color: $white;
-$button-color-alt: $white;
+//$button-fill: solid;
+//$button-background: $primary;
+//$button-background-hover: $white;
+//$button-color: $white;
+//$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-hollow-border-width: 2px;
 $button-sizes: (
@@ -309,10 +309,10 @@ $button-sizes: (
   large: 1.6rem,
 );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+//$button-opacity-disabled: 0.25;
+//$button-background-hover-lightness: -20%;
+//$button-hollow-hover-lightness: -50%;
+//$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 $button-responsive-expanded: true;
 
 // 12. Button Group

@@ -11,7 +11,9 @@
 * @package gccwp-2018
 */
 get_header(); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="landing-page">
   <?php
   while ( have_posts() ) : the_post(); ?>
 
@@ -54,7 +56,7 @@ get_header(); ?>
 
 
 
-              <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button"><?php the_sub_field( 'promo_button_text' ); ?></a>
+              <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button primrary"><?php the_sub_field( 'promo_button_text' ); ?></a>
             
           </div>
           
@@ -93,7 +95,7 @@ get_header(); ?>
 
             <?php the_sub_field( 'promo_form_shortcode' ); ?>
 
-              <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button"><?php the_sub_field( 'promo_button_text' ); ?></a>
+              <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button primary"><?php the_sub_field( 'promo_button_text' ); ?></a>
             
           </div>
           
@@ -114,6 +116,7 @@ get_header(); ?>
  <?php endif; ?>
 
  <?php endwhile; // End of the loop. ?>
+ </div>
 </article>
 
 

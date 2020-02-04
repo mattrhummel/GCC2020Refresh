@@ -1,13 +1,14 @@
+.landing-page {
+
 .header {
-	padding:42px;
-	background-color:#8a1137;
-	
+	padding:22px;
+	background-color: $white;
+
 }
 
 .header h2 {
-	font-family:'Oswald', sans-serif;
+	font-family:$font-family-monospace;
 	text-transform:uppercase;
-	color:#fff;
 	font-size: 3em;
 	font-weight:bold;
 	line-height:0.90em;
@@ -15,7 +16,7 @@
 	// Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 
-font-size:2em;
+    font-size:2em;
 
   }
 
@@ -39,8 +40,9 @@ font-size:2em;
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position: left;
-	min-height:90vh;
+	min-height:60vh;
 	margin-bottom:42px;
+	max-height: 550px;
 }
 
 .promo-hero {
@@ -49,9 +51,9 @@ font-size:2em;
 }
 
 .promo-content {
-	background-color:rgba(255,255,255,0.87);
-	padding:42px;
-	margin-bottom:84px;
+	background-color:$white;
+	padding: 0 22px;
+	margin-bottom: 84px;
 }
 
 .promo-content p {
@@ -107,7 +109,6 @@ small {
 
 h2 {
 	font-size:1.4em;
-	margin-bottom:22px;
 
 		// Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
@@ -120,13 +121,11 @@ margin-bottom:12px;
 	@media (min-width: 768px) { 
 
 	font-size:1.4em;
-	margin-bottom:32px;
 
 	}
 
 	@media (min-width: 992px) { 
 	font-size:1.8em;
-	margin-bottom:42px;
 
 	}
 }
@@ -148,4 +147,6 @@ margin-bottom:12px;
 			font-size: 1.6em;
 
 			}
+}
+
 }

@@ -152,7 +152,7 @@ padding:  19.2px 12px;
 }
 
 li.active  {
-  
+
     a {
 
       border-bottom: 7px solid $white;
@@ -178,8 +178,9 @@ li.has-menu {
       border-bottom: 7px solid $secondary;
      margin-left: 0;
      margin-right: 0;
+    
     &:hover { 
-      background-color: white;
+      background-color: $white;
       color: $primary;
       border-bottom: 7px solid $white;
 
