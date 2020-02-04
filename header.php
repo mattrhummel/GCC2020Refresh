@@ -46,6 +46,7 @@
   <div id="skip">
     
     <a href="#main-content" class="show-on-focus"><?php _e('skip to content', 'gcc-wp-2018') ?></a> 
+
   </div>
 
 <?php
@@ -57,33 +58,35 @@
         
         <div class="off-canvas-content" data-off-canvas-content>
 
-          <header class="title-bar expanded hide-for-print">
+          <header class="title-bar hide-for-print">
+
+              <div class="row navigation">
             
-            <div class="title-bar-left">
-                              
-                <div class="logo-container">
+                <div class="title-bar-left expanded">
+                                  
+                      <div class="logo-container">
 
-                  <?php the_custom_logo( ); ?>
+                        <?php the_custom_logo( ); ?>
 
-                </div>
+                      </div>
 
-                  <nav role="navigation" class="main-nav">
-                    <ul class="menu germanna-nav float-right">                  
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/become-a-student/', 'gcc-wp-2018'); ?>"><?php _e('Become a Student', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/explore-programs/', 'gcc-wp-2018'); ?>" ><?php _e('Explore Programs', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/visit-us/', 'gcc-wp-2018'); ?>" ><?php _e('Visit Us', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/donate/', 'gcc-wp-2018'); ?>"><?php _e('Give', 'gcc-wp-2018'); ?></a></li>
-                      <li class="menu-item has-menu">                     
-                        <button id="btn-toggle" class="" data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
-                        </button>                      
-                      </li>
-                    </ul>
-                  </nav>
+                        <nav role="navigation" class="main-nav">
+                          <ul class="menu germanna-nav float-right">                  
+                            <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/become-a-student/', 'gcc-wp-2018'); ?>"><?php _e('Become a Student', 'gcc-wp-2018'); ?></a></li>
+                            <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/explore-programs/', 'gcc-wp-2018'); ?>" ><?php _e('Explore Programs', 'gcc-wp-2018'); ?></a></li>
+                            <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/visit-us/', 'gcc-wp-2018'); ?>" ><?php _e('Visit Us', 'gcc-wp-2018'); ?></a></li>
+                            <li class="menu-item hide-for-small-only"><a href="<?php echo esc_html_e('/donate/', 'gcc-wp-2018'); ?>"><?php _e('Give', 'gcc-wp-2018'); ?></a></li>
+                            <li class="menu-item has-menu">                     
+                              <button id="btn-toggle" class="" data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
+                              </button>                      
+                            </li>
+                          </ul>
+                        </nav>
 
-              </div>
-
+                  </div>
+     </div>
 </header> 
-        
+ 
 <div class="off-canvas position-right mobile-menu" id="popout-menu" data-off-canvas>
     <div class="mobile-menu-container">
             <div class="mygcc-button">

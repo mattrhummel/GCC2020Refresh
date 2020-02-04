@@ -3,6 +3,12 @@
 background-color:$primary !important;
 font-family: $font-family-monospace;
 
+.navigation {
+  width: 100%;
+  padding: 0;
+
+}
+
 .title-bar-left {
   
 .logo-container {
@@ -12,12 +18,11 @@ font-family: $font-family-monospace;
   padding: .3rem 1rem;
   margin: 0 .3rem;
 
-
       @media screen and (min-width: 40em) {
 
-       padding: 9px 0;
-       width: 200px;
-       margin: 0;
+         padding: 9px 0;
+         width: 200px;
+         margin: 0;
   
       }
 
@@ -41,18 +46,21 @@ font-family: $font-family-monospace;
    
     width: 100%;
     height: auto;
+    padding: 0;
+    display: block;
   
       @media screen and (max-width: 39.9375em) {
+
        }
 
       @media screen and (min-width: 40em) {
 
-       padding: 12px 24px;
+       padding: 0 12px;
    
       }
 
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
-       
+       padding: 10px 4px;
          
       }
 
@@ -85,13 +93,12 @@ float: right;
 ul.germanna-nav {
   
   li.menu-item {          
-   margin-left: 5px;
 
   a {
       color: $white;
-      font: 900 20px $font-family-monospace;
+      font: 900 16px $font-family-monospace;
       text-transform: uppercase;
-      padding: 28px 28px 28px 28px;
+      padding: 14px;
       display:inline-block;
       line-height: inherit;
       border-bottom: 7px solid $primary;
@@ -100,17 +107,22 @@ ul.germanna-nav {
             display: none;                        
       }
 
+            @media screen and (min-width: 40em) {
+      padding:  19px 12px;
+
+   
+      }
+
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
-           padding: 20px 6px;
-          font-size: 14px;
+ padding:  22px 12px;
       }
 
        @media screen and (min-width: 64em) {
-        padding: 28px;
+padding:  19.2px 12px;
        }
 
        @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-         padding: 27px 12px;
+
        }
 
 
@@ -121,7 +133,7 @@ ul.germanna-nav {
     
     &:focus {           
             color: $white;
-            border-bottom:7px solid $white;
+            border-bottom:7px solid $black;
             text-decoration: none;
     }
   }
@@ -129,20 +141,22 @@ ul.germanna-nav {
 }
 
 li.has-menu {          
-  background-color: $secondary;
-  
+    
+    background-color: $secondary;
     display: inline-block;
- button { 
-    color: $white;
-    border-radius: 0;
-    padding: 28px 28px;
-    display: inline-block;
-    line-height: 1.4rem;
-    font: 900 20px $font-family-monospace;
-    text-transform: uppercase;
-    border-bottom: 7px solid $secondary;
+ 
+  button { 
 
-
+      color: $white;
+      border-radius: 0;
+      padding: 10px;
+      display: inline-block;
+      line-height: 1.2rem;
+      font: 900 16px $font-family-monospace;
+      text-transform: uppercase;
+      border-bottom: 7px solid $secondary;
+     margin-left: 0;
+     margin-right: 0;
     &:hover { 
       background-color: white;
       color: $primary;
@@ -152,21 +166,18 @@ li.has-menu {
          
     @media screen and (max-width: 39.9375em) {    
       display: block;
-      padding: 12px 28px;
-      font-size: 18px;
     }
 
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {       
-       padding: 18.5px 22px;
-        font-size: 16px;
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+       padding:  22.4px 12px;
+ 
     }
 
-   @media screen and (min-width: 64em) {     
-      padding: 29px 28px;
+   @media screen and (min-width: 64em) {   
+      padding:  19.4px 12px;    
    }
 
   @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-        padding: 28px 26px;
   }
 }      
 
@@ -200,23 +211,39 @@ button.is-open:after {
   position: absolute;
   right: 0;
   z-index: 999999;
-  top: 52px;
+  top: 42px;
   box-shadow: none;
 
 .menu .active > a, .menu .is-active > a {
   background-color: $white;
 }
-   @media screen and (min-width: 40em) and (max-width: 63.9375em) {       
-          top: 69px;            
-    }
 
-   @media screen and (min-width: 64em) {           
-        top: 95px;
-    }
+      @media screen and (max-width: 39.9375em) {      
+      }
 
-   @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-    top: 93px;
-   }
+            @media screen and (min-width: 40em) {
+               top: 71px;
+              width: 27%;
+   
+      }
+
+      @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+                top: 76px;  
+                 width: 47%;         
+    
+      }
+
+       @media screen and (min-width: 64em) {
+                top: 71px;
+                width: 27%;
+
+       }
+
+       @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+           top:71px;
+           width: 30%;
+
+       }
 
 }
 
