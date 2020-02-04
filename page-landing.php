@@ -17,6 +17,11 @@ get_header(); ?>
   <?php
   while ( have_posts() ) : the_post(); ?>
 
+ <?php //Page Heading
+  get_template_part( 'template-parts/content', 'page-heading' );
+  ?>
+    
+
     <?php if ( have_rows( 'landing_page_row_content' ) ) : ?>
    
     <?php while ( have_rows( 'landing_page_row_content') ) : the_row(); ?>

@@ -8,7 +8,6 @@
 
   }
 
-
 .tabs-title {
 	color: $secondary;
 	background-color: $primary;
@@ -71,7 +70,7 @@ li.accordion-item {
 
 	}
 
-  .accordion-content {
+.accordion-content {
   	border: none;
   	border-left: .5px solid $medium-gray;
   	border-right: .5px solid $medium-gray;
@@ -95,4 +94,5 @@ li.accordion-item {
   :last-child > .accordion-content:last-child {
     border-bottom: 1px solid $medium-gray;
 }
+
 }
