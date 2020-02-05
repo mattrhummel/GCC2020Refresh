@@ -7,59 +7,59 @@
  * @package gccwp-2018
  */
 if ( ! function_exists( 'gcc_wp_2018_posted_on' ) ) :
-	/**
-	 * Prints HTML with meta information for the current post-date/time.
-	 */
-	function gcc_wp_2018_posted_on() {
+    /**
+     * Prints HTML with meta information for the current post-date/time.
+     */
+    function gcc_wp_2018_posted_on() {
   $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-		$time_string = sprintf( $time_string,
-			esc_attr( get_the_date( 'c' ) ),
-			esc_html( get_the_date() )
-		);
-		$posted_on = sprintf (
-			/* translators: %s: post date. */
-			 esc_html_x( ' %s', 'post date', 'gcc-wp-2018' ),
-			'' . $time_string . ''
-		);
-		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+        $time_string = sprintf( $time_string,
+            esc_attr( get_the_date( 'c' ) ),
+            esc_html( get_the_date() )
+        );
+        $posted_on = sprintf (
+            /* translators: %s: post date. */
+             esc_html_x( ' %s', 'post date', 'gcc-wp-2018' ),
+            '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+        );
+        echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 }
 endif;
 if ( ! function_exists( 'gcc_wp_2018_entry_footer' ) ) :
-	/**
-	 * Prints HTML with meta information for the categories, tags and comments.
-	 */
-	function gcc_wp_2018_entry_footer() {
+    /**
+     * Prints HTML with meta information for the categories, tags and comments.
+     */
+    function gcc_wp_2018_entry_footer() {
   // Hide category and tag text for pages.
-		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'gcc-wp-2018' ) );
-			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<strong><span class="cat-links">' . esc_html__( 'Posted in %1$s', 'gcc-wp-2018' ) . '</span></strong> ', $categories_list ); // WPCS: XSS OK.
+        if ( 'post' === get_post_type() ) {
+            /* translators: used between list items, there is a space after the comma */
+            $categories_list = get_the_category_list( esc_html__( ', ', 'gcc-wp-2018' ) );
+            if ( $categories_list ) {
+                /* translators: 1: list of categories. */
+                printf( '<strong><span class="cat-links">' . esc_html__( 'Posted in %1$s', 'gcc-wp-2018' ) . '</span></strong> ', $categories_list ); // WPCS: XSS OK.
 }
-			/* translators: used between list items, there is a space after the comma */
-			//$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'gcc-wp-2018' ) );
-			//if ( $tags_list ) {
-				/* translators: 1: list of tags. */
+            /* translators: used between list items, there is a space after the comma */
+            //$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'gcc-wp-2018' ) );
+            //if ( $tags_list ) {
+                /* translators: 1: list of tags. */
   //printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'gcc-wp-2018' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 //}
-		}
+        }
 edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( '| Edit Page <span class="screen-reader-text">%s</span>', 'gcc-wp-2018' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
+            sprintf(
+                wp_kses(
+                    /* translators: %s: Name of current post. Only visible to screen readers */
+                    __( '| Edit Page <span class="screen-reader-text">%s</span>', 'gcc-wp-2018' ),
+                    array(
+                        'span' => array(
+                            'class' => array(),
+                        ),
+                    )
+                ),
+                get_the_title()
+            ),
+            '<span class="edit-link">',
+            '</span>'
+        );
 }
 endif;
 if ( ! function_exists( 'gcc_wp_2018_post_thumbnail' ) ) :
@@ -71,30 +71,30 @@ if ( ! function_exists( 'gcc_wp_2018_post_thumbnail' ) ) :
  */
 function gcc_wp_2018_post_thumbnail() {
 if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
-		return;
+        return;
 }
 if ( is_singular() ) :
-	?>
-	<div class="post-thumbnail">
-		<?php the_post_thumbnail(); ?>
-	</div><!-- .post-thumbnail -->
-	<?php else : ?>
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
-		<?php
-			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
-			) );
-		?>
-	</a>
-	<?php endif; // End is_singular().
+    ?>
+    <div class="post-thumbnail">
+        <?php the_post_thumbnail(); ?>
+    </div><!-- .post-thumbnail -->
+    <?php else : ?>
+    <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+        <?php
+            the_post_thumbnail( 'post-thumbnail', array(
+                'alt' => the_title_attribute( array(
+                    'echo' => false,
+                ) ),
+            ) );
+        ?>
+    </a>
+    <?php endif; // End is_singular().
 }
 endif;
 // Replaces the excerpt "Read More" text by a link
 function new_read_more($more) {
 global $post;
-	return '...';
+    return '...';
 }
 //...<br/>
 // <a class="button primary" href="'. get_permalink($post->ID) . '">Read the full article</a>
@@ -106,7 +106,7 @@ function posts_link_attributes() {
 return 'class="button hollow rounded"';
 }
 /*=============================================
-=            BREADCRUMBS			            =
+=            BREADCRUMBS                        =
 =============================================*/
 //to include in functions.php
 // Breadcrumbs
@@ -128,15 +128,15 @@ function custom_breadcrumbs() {
     if ( !is_front_page() ) {
        
         // Build the breadcrums
-        echo '<ul class="' . $breadcrums_class . '">';
+        echo '<ul id="' . $breadcrums_id . '" class="' . $breadcrums_class . '">';
            
         // Home page
-        echo '<li class="item-home"><a class="bread-link bread-home" href="' . get_home_url() . '">' . $home_title . '</a></li>';
+        echo '<li class="item-home"><a class="bread-link bread-home" href="' . get_home_url() . '" title="' . $home_title . '">' . $home_title . '</a></li>';
        
            
         if ( is_archive() && !is_tax() && !is_category() && !is_tag() ) {
               
-            //echo '<li class="item-current item-archive">' . post_type_archive_title($prefix, false) . '</li>';
+            echo '<li class="item-current item-archive"><strong class="bread-current bread-archive">' . post_type_archive_title($prefix, false) . '</strong></li>';
               
         } else if ( is_archive() && is_tax() && !is_category() && !is_tag() ) {
               
@@ -149,13 +149,13 @@ function custom_breadcrumbs() {
                 $post_type_object = get_post_type_object($post_type);
                 $post_type_archive = get_post_type_archive_link($post_type);
               
-                echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="/news/">' . $post_type_object->labels->name . '</a></li>';
+                echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
               
      
             }
               
-            //$custom_tax_name = get_queried_object()->name;
-           // echo '<li class="item-current item-archive">' . $custom_tax_name . '</li>';
+            $custom_tax_name = get_queried_object()->name;
+            echo '<li class="item-current item-archive"><strong class="bread-current bread-archive">' . $custom_tax_name . '</strong></li>';
               
         } else if ( is_single() ) {
               
@@ -168,12 +168,12 @@ function custom_breadcrumbs() {
                 $post_type_object = get_post_type_object($post_type);
                 $post_type_archive = get_post_type_archive_link($post_type);
               
-                echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="/news/" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
+                echo '<li class="item-cat item-custom-post-type-' . $post_type . '"><a class="bread-cat bread-custom-post-type-' . $post_type . '" href="' . $post_type_archive . '" title="' . $post_type_object->labels->name . '">' . $post_type_object->labels->name . '</a></li>';
                
               
             }
               
-            // // Get post category info
+            // Get post category info
             $category = get_the_category();
              
             if(!empty($category)) {
@@ -183,7 +183,7 @@ function custom_breadcrumbs() {
                   
                 // Get parent any categories and create array
                 $get_cat_parents = rtrim(get_category_parents($last_category->term_id, true, ','),',');
-                $cat_parents = explode(',',$get_cat_parents);
+                    $cat_parents = explode(',',$get_cat_parents);
                 $get_cat_parents = end($cat_parents);
                 // Loop through parent categories and store in variable $cat_display
                 $cat_display = '';
@@ -209,25 +209,25 @@ function custom_breadcrumbs() {
             // Check if the post is in a category
             if(!empty($last_category)) {
                 echo $cat_display;
-               // echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
+                echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
                   
             // Else if post is in a custom taxonomy
             } else if(!empty($cat_id)) {
                   
-                echo '<li class="item-cat item-cat-' . $cat_id . ' item-cat-' . $cat_nicename . '"><a class="bread-cat bread-cat-' . $cat_id . ' bread-cat-' . $cat_nicename . '" href="/news/" title="' . $cat_name . '">' . $cat_name . '</a></li>';
+                echo '<li class="item-cat item-cat-' . $cat_id . ' item-cat-' . $cat_nicename . '"><a class="bread-cat bread-cat-' . $cat_id . ' bread-cat-' . $cat_nicename . '" href="' . $cat_link . '" title="' . $cat_name . '">' . $cat_name . '</a></li>';
                
-               // echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
+                echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
               
             } else {
                   
-                //echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
+                echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '" title="' . get_the_title() . '">' . get_the_title() . '</strong></li>';
                   
             }
               
         } else if ( is_category() ) {
                
             // Category page
-           // echo '<li class="item-current item-cat">' . single_cat_title('', false) . '</li>';
+            echo '<li class="item-current item-cat"><strong class="bread-current bread-cat">' . single_cat_title('', false) . '</strong></li>';
                
         } else if ( is_page() ) {
                
@@ -243,20 +243,20 @@ function custom_breadcrumbs() {
                 // Parent page loop
                 if ( !isset( $parents ) ) $parents = null;
                 foreach ( $anc as $ancestor ) {
-                    $parents .= '<li class="item-parent item-parent-' . $ancestor . '"><a class="bread-parent bread-parent-' . $ancestor . '" href="">' . get_the_title($ancestor) . '</a></li>';
+                    $parents .= '<li class="item-parent item-parent-' . $ancestor . '"><a class="bread-parent bread-parent-' . $ancestor . '" href="' . get_permalink($ancestor) . '" title="' . get_the_title($ancestor) . '">' . get_the_title($ancestor) . '</a></li>';
                     $parents .= '';
                 }
                    
                 // Display parent pages
                 echo $parents;
                    
-                // Current page
-                //echo '<li class="item-current item-' . $post->ID . '"> ' . get_the_title() . '</li>';
+                // // Current page
+                // echo '<li class="item-current item-' . $post->ID . '"><strong title="' . get_the_title() . '"> ' . get_the_title() . '</strong></li>';
                    
             } else {
                    
-                // Just display current page if not parents
-                //echo '<li class="item-current item-' . $post->ID . '"> ' . get_the_title() . '</li>';
+                // // Just display current page if not parents
+                // echo '<li class="item-current item-' . $post->ID . '"><strong class="bread-current bread-' . $post->ID . '"> ' . get_the_title() . '</strong></li>';
                    
             }
                
@@ -274,38 +274,38 @@ function custom_breadcrumbs() {
             $get_term_name  = $terms[0]->name;
                
             // Display the tag name
-            //echo '<li class="item-current item-tag-' . $get_term_id . ' item-tag-' . $get_term_slug . '">' . $get_term_name . '</li>';
+            echo '<li class="item-current item-tag-' . $get_term_id . ' item-tag-' . $get_term_slug . '"><strong class="bread-current bread-tag-' . $get_term_id . ' bread-tag-' . $get_term_slug . '">' . $get_term_name . '</strong></li>';
            
         } elseif ( is_day() ) {
                
             // Day archive
                
             // Year link
-            echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link( get_the_time('Y') ) . '">' . get_the_time('Y') . ' Archives</a></li>';
+            echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link( get_the_time('Y') ) . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</a></li>';
  
                
             // Month link
-            echo '<li class="item-month item-month-' . get_the_time('m') . '"><a class="bread-month bread-month-' . get_the_time('m') . '" href="' . get_month_link( get_the_time('Y'), get_the_time('m') ) . '">' . get_the_time('M') . ' Archives</a></li>';
+            echo '<li class="item-month item-month-' . get_the_time('m') . '"><a class="bread-month bread-month-' . get_the_time('m') . '" href="' . get_month_link( get_the_time('Y'), get_the_time('m') ) . '" title="' . get_the_time('M') . '">' . get_the_time('M') . ' Archives</a></li>';
            
                
             // Day display
-            //echo '<li class="item-current item-' . get_the_time('j') . '"> ' . get_the_time('jS') . ' ' . get_the_time('M') . ' Archives</li>';
+            echo '<li class="item-current item-' . get_the_time('j') . '"><strong class="bread-current bread-' . get_the_time('j') . '"> ' . get_the_time('jS') . ' ' . get_the_time('M') . ' Archives</strong></li>';
                
         } else if ( is_month() ) {
                
             // Month Archive
                
             // Year link
-            echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link( get_the_time('Y') ) . '">' . get_the_time('Y') . ' Archives</a></li>';
+            echo '<li class="item-year item-year-' . get_the_time('Y') . '"><a class="bread-year bread-year-' . get_the_time('Y') . '" href="' . get_year_link( get_the_time('Y') ) . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</a></li>';
         
                
             // Month display
-            echo '<li class="item-month item-month-' . get_the_time('m') . '">' . get_the_time('M') . ' Archives</li>';
+            echo '<li class="item-month item-month-' . get_the_time('m') . '"><strong class="bread-month bread-month-' . get_the_time('m') . '" title="' . get_the_time('M') . '">' . get_the_time('M') . ' Archives</strong></li>';
                
         } else if ( is_year() ) {
                
             // Display year archive
-            //echo '<li class="item-current item-current-' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</li>';
+            echo '<li class="item-current item-current-' . get_the_time('Y') . '"><strong class="bread-current bread-current-' . get_the_time('Y') . '" title="' . get_the_time('Y') . '">' . get_the_time('Y') . ' Archives</strong></li>';
                
         } else if ( is_author() ) {
                
@@ -316,12 +316,12 @@ function custom_breadcrumbs() {
             $userdata = get_userdata( $author );
                
             // Display author name
-            //echo '<li class="item-current item-current-' . $userdata->user_nicename . '">' . 'Author: ' . $userdata->display_name . '</li>';
+            echo '<li class="item-current item-current-' . $userdata->user_nicename . '"><strong class="bread-current bread-current-' . $userdata->user_nicename . '" title="' . $userdata->display_name . '">' . 'Author: ' . $userdata->display_name . '</strong></li>';
            
         } else if ( get_query_var('paged') ) {
                
             // Paginated archives
-           // echo '<li class="item-current item-current-' . get_query_var('paged') . '">'.__('Page') . ' ' . get_query_var('paged') . '</li>';
+            echo '<li class="item-current item-current-' . get_query_var('paged') . '"><strong class="bread-current bread-current-' . get_query_var('paged') . '" title="Page ' . get_query_var('paged') . '">'.__('Page') . ' ' . get_query_var('paged') . '</strong></li>';
                
         } else if ( is_search() ) {
            
@@ -345,26 +345,26 @@ function custom_breadcrumbs() {
 //previous post next post links
 function getPrevNext() {
 ?>
-	<div class="row expanded collapsed prevnext">
-		<hr/>
-		<?php if (strlen(get_previous_post()->post_title) > 0) { ?>
-		<div class="small-12 large-4 columns">
-	  <span class="button hollow primary alignleft"><?php previous_post_link('%link', '<span class="fa fa-chevron-left" aria-hidden="true"></span>
-	Previous post', TRUE); ?></span>
-		</div>
- 	<?php
+    <div class="row expanded collapsed prevnext">
+        <hr/>
+        <?php if (strlen(get_previous_post()->post_title) > 0) { ?>
+        <div class="small-12 large-4 columns">
+      <span class="button hollow primary alignleft"><?php previous_post_link('%link', '<span class="fa fa-chevron-left" aria-hidden="true"></span>
+    Previous post', TRUE); ?></span>
+        </div>
+    <?php
 } ?>
-		<div class="small-12 large-4 columns">
-		<a href="<?php esc_html_e('https://www.germanna.edu/blog/', 'gcc-wp-2018')?>" class="button expanded hollow secondary text-center"><?php _e('All highlights', 'gcc-wp-2018'); ?></a>
-		</div>
-		<?php if (strlen(get_next_post()->post_title) > 0) {
+        <div class="small-12 large-4 columns">
+        <a href="<?php esc_html_e('https://www.germanna.edu/blog/', 'gcc-wp-2018')?>" class="button expanded hollow secondary text-center"><?php _e('All highlights', 'gcc-wp-2018'); ?></a>
+        </div>
+        <?php if (strlen(get_next_post()->post_title) > 0) {
 ?>
-		<div class="small-12 large-4 columns">
-	  <span class="button hollow primary alignright"><?php next_post_link('%link', 'Next post<span class="fa fa-chevron-right" aria-hidden="true"></span>', TRUE); ?></span>
-	 </div>
-	 <?php
+        <div class="small-12 large-4 columns">
+      <span class="button hollow primary alignright"><?php next_post_link('%link', 'Next post<span class="fa fa-chevron-right" aria-hidden="true"></span>', TRUE); ?></span>
+     </div>
+     <?php
 } ?>
-	</div>
+    </div>
 <?php
 }?>
 
@@ -372,7 +372,7 @@ function getPrevNext() {
 //close button
 function gcc_wp_2018_close_button() { ?>
 <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018' ); ?>" type="button" data-close>
-					<?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
+                    <?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
 </button>
 <?php }
 ?>

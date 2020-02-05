@@ -32,11 +32,13 @@
 
 }
 .promo-image {
- background-position: top left; 
+  background-position: top center; 
  background-repeat: none; 
  background-size: cover;
- height: 300px;
- min-width: 100%; 
+ background-color: #eee;
+ margin: 0;
+ padding: 0;
+ height: 300px; 
  
 }
 

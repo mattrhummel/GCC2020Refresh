@@ -55,20 +55,20 @@
 //   // echo gcc_wp_2018_list_child_pages('child_of=9124'); 
 //   dynamic_sidebar( 'advising-widgets' );
 //   }
-//   //post pages
-//   if ( is_singular('post'))  {
-//   //custom archive widgets
-//    dynamic_sidebar( 'blog-widgets' );
-//   }
+  //post pages
+  if ( is_singular('post'))  {
+  //custom archive widgets
+   dynamic_sidebar( 'blog-widgets' );
+  }
 // //post pages
 //   if ( is_page('13180'))  {
 //   //custom archive widgets
 //    dynamic_sidebar( 'blog-widgets' );
 //   }
-//   // if ( is_archive('news'))  {
-//   // //custom archive widgets
-//   // dynamic_sidebar( 'single-widgets' );
-//   // }
+  if ( is_archive('news'))  {
+  //custom archive widgets
+  dynamic_sidebar( 'single-widgets' );
+  }
 //   //awards
 //   if (is_page('35') || $post->post_parent == '35')
 //   {
