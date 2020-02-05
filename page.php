@@ -248,8 +248,7 @@ get_header(); ?>
         <?php endif; ?>
       </div>
 
-
-        <?php endif; ?>
+  
 
           </div>
 
