@@ -202,7 +202,7 @@ get_header(); ?>
 
 
 
-        <?php if (is_page('40255')) : ; ?>
+        <?php if (is_page('40255')) : ?>
 
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
           <?php
@@ -248,7 +248,7 @@ get_header(); ?>
         <?php endif; ?>
       </div>
 
-  
+   <?php endif; ?>
 
           </div>
 
