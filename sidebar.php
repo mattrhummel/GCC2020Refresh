@@ -17,6 +17,13 @@
 
   <?php //get page widgets
   dynamic_sidebar( 'sidebar-widgets' );
+
+  if ( is_page('40255')) {
+
+      dynamic_sidebar( 'student-activities-widgets' );
+
+  });
+
   //about germanna
   if ( is_page('24') ) {
   //custom department widgets
