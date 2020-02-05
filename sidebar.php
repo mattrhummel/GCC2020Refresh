@@ -18,12 +18,6 @@
   <?php //get page widgets
   dynamic_sidebar( 'sidebar-widgets' );
 
-  if ( is_page('40255')) {
-
-      dynamic_sidebar( 'student-activities-widgets' );
-
-  });
-
   //about germanna
   if ( is_page('24') ) {
   //custom department widgets
@@ -397,7 +391,7 @@
   dynamic_sidebar( 'services-support-widgets' );
   }
   //student activities
-  if ( is_page('104') || $post->post_parent == '104' ) {
+  if ( is_page('104') || $post->post_parent == '104' || is_page('40255') ) {
   //custom department widgets
   // echo gcc_wp_2018_list_child_pages('child_of=104'); 
   dynamic_sidebar( 'student-activities-widgets' );
