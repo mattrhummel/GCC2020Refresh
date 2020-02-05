@@ -204,7 +204,8 @@ get_header(); ?>
 
         <?php if (is_page('40255')) : ?>
 
-        <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
+        <div class="row expanded" data-equalizer data-equalize-on="medium">
+
           <?php
           $args =  array (
           'post_type' => 'bhm_events',
@@ -245,10 +246,10 @@ get_header(); ?>
         <?php wp_reset_postdata(); ?>
         <?php else : ?>
         <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
-        <?php endif; ?>
+  
       </div>
 
-   <?php endif; ?>
+      <?php endif; ?>
 
           </div>
 
