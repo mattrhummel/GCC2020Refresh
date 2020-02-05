@@ -82,11 +82,11 @@
 //   //echo gcc_wp_2018_list_child_pages('child_of=34'); 
 //   dynamic_sidebar( 'academic-widgets' );
 //   }
-//   //academic center for excellence sidebar
-//   if ( is_page('108') || $post->post_parent == '108' ) {
-//   //custom department widgets
-//   dynamic_sidebar( 'tutoring-services-widgets' );
-//   }
+  //academic center for excellence sidebar
+  if ( is_page('108') || $post->post_parent == '108' ) {
+  //custom department widgets
+  dynamic_sidebar( 'tutoring-services-widgets' );
+  }
 //   //bookstore
 //   if ( is_page('26193') || $post->post_parent == '26193' ) {
 //   //custom department widgets
