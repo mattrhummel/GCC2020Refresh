@@ -22,19 +22,19 @@ get_header(); ?>
       <div class="columns small-12 medium-12 large-8" style="padding: 0">
         <div class="entry-content" id="main" tabindex="0">
 
-            <?php if ( have_rows( 'slide_item', 'options' ) ) : ?>
+            <?php if ( have_rows( 'wf_slider') ) : ?>
             <div class="slider-wrap-workforce">
               
             <div id="sync1" class="owl-carousel owl-theme" style="z-index: 0;">
 
               <?php
               //while there are slide items
-              while ( have_rows( 'slide_item', 'options' ) ) : the_row(); ?>
+              while ( have_rows( 'wf_slider') ) : the_row(); ?>
               <?php // ACF Image Object
               
-              $image = get_sub_field('slide_image');
-              // vars
-              $url = $image['url'];
+                $image = get_sub_field('wf_slider_image');
+                // vars
+                $url = $image['url'];
               
               ?>
               <div class="item">
@@ -43,11 +43,11 @@ get_header(); ?>
                     <div class="hero-content">
                       
                       <div class="hero-caption">
-                        <h2><?php the_sub_field( 'slide_heading' ); ?></h2>
-                        <p class="lead"><?php the_sub_field( 'slide_text' ); ?></p>
+                        <h2><?php the_sub_field( 'wf_slider_heading' ); ?></h2>
+                        <p class="lead"><?php the_sub_field( 'wf_slider_lead_text' ); ?></p>
                         
                     
-                          <a href="<?php the_sub_field( 'slide_button_url' ); ?>" class="button"><?php the_sub_field( 'slide_button_text' ); ?></a>
+                          <a href="<?php the_sub_field( 'wf_slider_button_url' ); ?>" class="button"><?php the_sub_field( 'wf_slider_button_text' ); ?></a>
                    
 
                       </div>

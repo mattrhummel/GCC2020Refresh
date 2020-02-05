@@ -109,7 +109,6 @@ button.mobile-sidebar-button {
 }
 
 
-
 //Page Side bar
 .widget {
   margin-bottom: 0;
@@ -137,12 +136,14 @@ button.mobile-sidebar-button {
 
 
 }
-  h3 {
+
+h3 {
   color: $dark-gray;
   width: 100%;
   font-size: 1.4rem;
   margin: 0;
 }
+
 #advanced_sidebar_menu-2-wrap li
 {
            list-style-type: none !important;
@@ -160,7 +161,6 @@ ul.menu, ul.child-sidebar-menu {
            list-style: none  !important;
            color: $black;
            font-family:  $font-family-monospace;
-
 
        a {
           font-size: 14px;
@@ -192,6 +192,7 @@ ul.menu, ul.child-sidebar-menu {
 /* Large and up */
 @media screen and (min-width: 64em) {
    font-size: 20px;
+   line-height: 1.4rem;
 }
 
 /* Large only */
