@@ -102,10 +102,10 @@ div.germanna-nav {
 
   a {
       color: $white;
-      font: 900 16px $font-family-monospace;
+      font: 800 16px $font-family-monospace;
       text-transform: uppercase;
-      padding: 14px;
-            line-height: inherit;
+      padding: 20px;
+       line-height: inherit;
       border-bottom: 7px solid $primary;
 
       @media screen and (max-width: 39.9375em) {      
@@ -113,17 +113,14 @@ div.germanna-nav {
       }
 
       @media screen and (min-width: 40em) {
-      padding:  19px 12px;
 
    
       }
 
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
- padding:  22px 12px;
       }
 
        @media screen and (min-width: 64em) {
-padding:  19.2px 12px;
        }
 
        @media screen and (min-width: 64em) and (max-width: 74.9375em) {
@@ -165,19 +162,17 @@ li.has-menu {
     
     background-color: $secondary;
     display: inline-block;
- 
+
   button { 
 
       color: $white;
       border-radius: 0;
-      padding: 10px;
+      padding: 20.5px;
       display: inline-block;
-      line-height: 1.2rem;
-      font: 900 16px $font-family-monospace;
+      font: 800 16px $font-family-monospace;
       text-transform: uppercase;
       border-bottom: 7px solid $secondary;
-     margin-left: 0;
-     margin-right: 0;
+      margin: 0;
     
     &:hover { 
       background-color: $white;
@@ -187,16 +182,13 @@ li.has-menu {
     }
          
     @media screen and (max-width: 39.9375em) {    
-      display: block;
     }
 
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-       padding:  22px 12px;
  
     }
 
    @media screen and (min-width: 64em) {   
-      padding:  19.4px 12px;    
    }
 
   @media screen and (min-width: 64em) and (max-width: 74.9375em) {
