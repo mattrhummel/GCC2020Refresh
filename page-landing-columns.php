@@ -19,9 +19,23 @@ get_header(); ?>
   <?php
   while ( have_posts() ) : the_post(); ?>
 
- <?php //Page Heading
-    get_template_part( 'template-parts/content', 'page-heading' );
-  ?>
+   <header>
+
+      <div class="row expanded landing-header" style="background-image:url('https://gccstaging1.wpengine.com/wp-content/uploads/revslider/highlight-carousel511/fall-enrollment-slide-2019.jpg');">
+
+        <div class="landing-header-container">
+
+          <div class="row landing-header-content">
+         
+            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+        </div>
+
+      </div>
+    
+  </header>
 
   <div class="entry-content">
     
@@ -37,9 +51,11 @@ get_header(); ?>
   
 
   
-    <div class="row box-row left">
+    <div class="row box-row left" data-equalizer data-equalize-on="medium" id="boxes">
         
-        <div class="medium-12 large-5 columns box-content">
+        <div class="medium-12 large-6 columns">
+
+          <div class="box-content" data-equalizer-watch> 
           
           <div class="box-header">
             <h2><?php the_sub_field( 'promo_heading' ); ?></h2>
@@ -55,9 +71,13 @@ get_header(); ?>
 
               <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button primrary"><?php the_sub_field( 'promo_button_text' ); ?></a>
             
-        </div>
+         </div>
+
+      </div>
         
-          <div class="medium-12 large-7 columns box-image-container">
+          <div class="medium-12 large-6 columns">
+
+            <div class="box-image-container" data-equalizer-watch>
 
               <?php // ACF Image Object
                $image     = get_sub_field( 'promo_image' );
@@ -68,6 +88,8 @@ get_header(); ?>
             <div class="box-image" style="background-image: url('<?php echo $url ?>');"></div>
             
           </div>
+
+        </div>
         
       </div>
 

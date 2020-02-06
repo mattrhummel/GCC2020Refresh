@@ -3,114 +3,116 @@
 .entry-content{
 	margin-top: 60px;
 	margin-bottom: 60px;
-
 }
 
 .header {
-	padding: 22px;
-	background-color: $white;
+		
+		padding: 22px;
+		background-color: $white;
 
-	h2 {
-	font-family:$font-family-monospace;
-	text-transform:uppercase;
-	font-size: 2.4em;
-	font-weight:bold;
-	line-height:0.90em;
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-	font-size: 2.6em;
-
-}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-		font-size: 2.8em;
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-		font-size: 2.6em;
-}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-		font-size: 3em;
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-	font-size: 3em;
-	}
-
-}
-
-}
-.box-header {
-	padding: 0 22px;
+		h2 {
+		font-family:$font-family-monospace;
+		text-transform:uppercase;
+		font-size: 2.4em;
+		font-weight:bold;
+		line-height:0.90em;
 
 	/* Small only */
-@media screen and (max-width: 39.9375em) {
-	padding: 0 22px 0 0;
-}
+	@media screen and (max-width: 39.9375em) {
+		font-size: 2.6em;
 
-/* Medium and up */
-@media screen and (min-width: 40em) {
-			padding: 0 0 22px 0;
+	}
 
-}
+	/* Medium and up */
+	@media screen and (min-width: 40em) {
+			font-size: 2.8em;
+	}
 
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-			padding: 0 22px 0 0;
-}
+	/* Medium only */
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+			font-size: 2.6em;
+	}
 
-/* Large and up */
-@media screen and (min-width: 64em) {
-			padding: 0 0 22px 0;
+	/* Large and up */
+	@media screen and (min-width: 64em) {
+			font-size: 3em;
+	}
 
-}
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-		padding: 0 22px 0 0;
-	
-}
-
-h2 {
-	font-family:$font-family-monospace;
-	text-transform:uppercase;
-	font-size: 2.4em;
-	font-weight:bold;
-	line-height:0.90em;
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-	font-size: 2.6em;
-	padding: 0;
-}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-		font-size: 2.8em;
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-		font-size: 2.4em;
-}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
+	/* Large only */
+	@media screen and (min-width: 64em) and (max-width: 74.9375em) {
 		font-size: 3em;
+	}
+
+ }
+
 }
 
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-	font-size: 3em;
+.box-header {
 	
-}
+	padding: 0 22px;
 
-}
+		/* Small only */
+	@media screen and (max-width: 39.9375em) {
+		padding: 0 22px 0 0;
+	}
+
+	/* Medium and up */
+	@media screen and (min-width: 40em) {
+		padding: 0 0 22px 0;
+
+	}
+
+	/* Medium only */
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+				padding: 0 22px 0 0;
+	}
+
+	/* Large and up */
+	@media screen and (min-width: 64em) {
+				padding: 0 0 22px 0;
+
+	}
+	/* Large only */
+	@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+			padding: 0 22px 0 0;
+		
+	}
+
+	h2 {
+		font-family:$font-family-monospace;
+		text-transform:uppercase;
+		font-size: 2.4em;
+		font-weight:bold;
+		line-height:0.90em;
+
+		/* Small only */
+		@media screen and (max-width: 39.9375em) {
+			font-size: 2.6em;
+			padding: 0;
+		}
+
+		/* Medium and up */
+		@media screen and (min-width: 40em) {
+				font-size: 2.8em;
+		}
+
+		/* Medium only */
+		@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+				font-size: 2.4em;
+		}
+
+		/* Large and up */
+		@media screen and (min-width: 64em) {
+				font-size: 3em;
+		}
+
+		/* Large only */
+		@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+			font-size: 3em;
+			
+		}
+
+	}
 
 }
 .promo-box {
@@ -127,71 +129,72 @@ h2 {
 	padding-top:42px;
 	
 }
-
 .promo-content {
 	background-color:$white;
 	padding: 0 22px;
 	margin-bottom: 84px;
 }
-
 .box-content {
 
 	padding: 0 22px;
-	
+	background-color: $light-gray;
+
 	/* Small only */
 	@media screen and (max-width: 39.9375em) {
-		padding: 0 22px;
+		padding: 22px;
 	}
 
-/* Medium and up */
-@media screen and (min-width: 40em) {
-		padding: 0 22px 0 0;
-}
+	/* Medium and up */
+	@media screen and (min-width: 40em) {
+			padding: 44px;
+	}
 
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-		padding: 0 22px;
-}
+	/* Medium only */
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+			padding: 0 22px;
+	}
 
-/* Large and up */
-@media screen and (min-width: 64em) {
-		padding: 0 22px 0 0;
-}
+	/* Large and up */
+	@media screen and (min-width: 64em) {
+			padding: 44px;
+	}
 
 /* Large only */
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-	padding: 0 22px;
+	padding: 22px;
 	}
 
 }
-
 .box-row {
 	
-	margin-bottom: 20px;
 	
 	display: block;
-	@media screen and (max-width: 39.9375em)
-{
-		
-}
- /* Medium and up */
-@media screen and (min-width: 40em) {
-	
-}
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    margin-bottom: 40px;
-  
-}
-/* Large and up */
-@media screen and (min-width: 64em) {
-	margin-bottom: 60px;
-}
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-	 margin-bottom: 40px;
+	margin-bottom: 1rem;
 
-}
+   @media screen and (max-width: 39.9375em)
+
+	{
+			
+	}
+	 /* Medium and up */
+	@media screen and (min-width: 40em) {
+		
+	}
+
+	/* Medium only */
+	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+	   
+	  
+	}
+	/* Large and up */
+	@media screen and (min-width: 64em) {
+	
+	}
+	/* Large only */
+	@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+		
+
+	}
 }
 
 .box-image {
