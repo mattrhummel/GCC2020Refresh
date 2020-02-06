@@ -18,10 +18,9 @@ get_header(); ?>
   while ( have_posts() ) : the_post(); ?>
 
  <?php //Page Heading
-  get_template_part( 'template-parts/content', 'page-heading' );
+    get_template_part( 'template-parts/content', 'page-heading' );
   ?>
     
-
     <?php if ( have_rows( 'landing_page_row_content' ) ) : ?>
    
     <?php while ( have_rows( 'landing_page_row_content') ) : the_row(); ?>
@@ -43,7 +42,7 @@ get_header(); ?>
   
     <div class="row">
         
-        <div class="medium-7 columns">
+        <div class="medium-6 columns">
           
           <div class="header">
             <h2><?php the_sub_field( 'promo_heading' ); ?></h2>
@@ -67,7 +66,7 @@ get_header(); ?>
           
         </div>
         
-          <div class="medium-5 columns">
+          <div class="medium-6 columns">
             
             
           </div>
@@ -79,12 +78,12 @@ get_header(); ?>
 
     <div class="row">
 
-          <div class="medium-5 columns">
+          <div class="medium-6 columns">
             
             
           </div>
         
-        <div class="medium-7 columns">
+        <div class="medium-6 columns">
           
           <div class="header">
             <h2><?php the_sub_field( 'promo_heading' ); ?></h2>
