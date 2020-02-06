@@ -77,7 +77,6 @@
 }
 
 h2 {
-
 	font-family:$font-family-monospace;
 	text-transform:uppercase;
 	font-size: 2.4em;
@@ -118,10 +117,10 @@ h2 {
 
 	background-repeat:no-repeat;
 	background-size: cover;
-	background-position: left;
-	min-height:60vh;
+	background-position: top left;
+	min-height: 60vh;
 	margin-bottom:12px;
-	max-height: 550px;
+	max-height: 6-0px;
 }
 
 .promo-hero {
