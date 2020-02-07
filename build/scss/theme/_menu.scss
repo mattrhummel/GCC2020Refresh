@@ -296,6 +296,7 @@ button.is-open:after {
         text-transform: uppercase;
         font-size: 1.2em;
          border:none;
+         transition: none;
 
         &:hover {
         background-color: rgb(141,36,55);
