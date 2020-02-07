@@ -60,7 +60,7 @@
 
           <header class="title-bar hide-for-print">
 
-              <div class="row navigation">
+              <div class="navigation">
             
                 <div class="title-bar-left expanded">
                                   
