@@ -227,24 +227,6 @@ ul.grandchild-sidebar-menu {
 
 
 }
-  .textwidget {
-    margin: .5rem 0;
-      
-      a {
-        color: $black;
-        &:hover {
-              color: $primary;
-              text-decoration: underline;
-            }
-            &:focus {
-              color: $primary;
-              text-decoration: underline;
-            }
-      }
-
-
-  }
-
 .social-icons {
 margin: 0;
 padding: 0;
