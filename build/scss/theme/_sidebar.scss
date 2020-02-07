@@ -214,9 +214,6 @@ ul.menu, ul.child-sidebar-menu {
            font-size: 1.8rem;
     }
 
-    li.current_page_item a  {
-      color: $primary;
-    }
 
   }
 ul.parent-sidebar-menu,  {
@@ -226,6 +223,10 @@ ul.parent-sidebar-menu,  {
 
 ul.grandchild-sidebar-menu {
   margin-left: 1.2rem;
+
+    li.current_page_item a  {
+      color: $primary;
+    }
 
 }
   .textwidget {
