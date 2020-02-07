@@ -1,6 +1,5 @@
 .entry-content {
 
-
   @media screen and (max-width: 39.9375em) {
     margin-top: 20px;
   }
@@ -56,6 +55,59 @@ a {
   transition: 0.3s;
   color:rgb(141,36,55);
 }  
+
+ul.accordion {
+    li.accordion-item {
+          a.accordion-title {
+           
+             border-bottom: 1px solid $medium-gray;
+             border-top: 1px solid $medium-gray;
+    }
+  }
+}
+background-color: $white;
+
+  &:focus {
+     outline: none;
+  }
+
+.social-icons {
+margin: 0;
+padding: 0;
+
+li {
+list-style: none;
+width: auto;
+display: inline-block;
+
+a {
+padding: 0.4rem 0.2rem;
+ 
+span {
+color: $primary;
+padding: 0.3rem 0.6rem;
+border: 1px solid $primary;
+border-radius: 100%;
+text-align: center;
+text-indent: -9999px;
+}
+
+span:hover {
+color: $dark-gray;
+border: 1px solid $dark-gray;
+}
+span.icon-text {
+    
+    display: block;
+    text-indent: -99999px;
+    display: none;
+
+}
+    }
+  }
+}
+
+}
 
 a.button {
         background-color: $primary;
@@ -172,55 +224,3 @@ a.button.warning {
 }
 
 
-ul.accordion {
-    li.accordion-item {
-          a.accordion-title {
-           
-             border-bottom: 1px solid $medium-gray;
-             border-top: 1px solid $medium-gray;
-    }
-  }
-}
-background-color: $white;
-
-  &:focus {
-     outline: none;
-  }
-
-.social-icons {
-margin: 0;
-padding: 0;
-
-li {
-list-style: none;
-width: auto;
-display: inline-block;
-
-a {
-padding: 0.4rem 0.2rem;
- 
-span {
-color: $primary;
-padding: 0.3rem 0.6rem;
-border: 1px solid $primary;
-border-radius: 100%;
-text-align: center;
-text-indent: -9999px;
-}
-
-span:hover {
-color: $dark-gray;
-border: 1px solid $dark-gray;
-}
-span.icon-text {
-    
-    display: block;
-    text-indent: -99999px;
-    display: none;
-
-}
-    }
-  }
-}
-
-}

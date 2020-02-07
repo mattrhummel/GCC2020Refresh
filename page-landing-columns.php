@@ -21,14 +21,22 @@ get_header(); ?>
 
    <header>
 
-      <div class="row expanded landing-header" style="background-image:url('https://gccstaging1.wpengine.com/wp-content/uploads/revslider/highlight-carousel511/fall-enrollment-slide-2019.jpg');">
+    <?php // ACF Image Object
+  
+  $image = get_field('landing_page_image');
+  // vars
+  $url = $image['url'];
+  
+  ?>
+
+      <div class="row expanded landing-header" style="background-image: url('<?php echo $url ?>');">
 
         <div class="landing-header-container">
 
           <div class="row landing-header-content">
          
             <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="lead"><?php the_field( 'landing_page_heading_text' ); ?></p>
           </div>
 
         </div>
@@ -37,7 +45,7 @@ get_header(); ?>
     
   </header>
 
-  <div class="entry-content">
+  <div class="box-content-container">
     
     <?php if ( have_rows( 'landing_page_row_content' ) ) : ?>
    
@@ -49,33 +57,31 @@ get_header(); ?>
 <?php //if content to the left ?>
 <div class="row expanded">
   
-
-  
-    <div class="row box-row left" data-equalizer data-equalize-on="medium" id="boxes">
+    <div class="row box-row collapse" data-equalizer data-equalize-on="medium" id="boxes">
         
         <div class="medium-12 large-6 columns">
 
-          <div class="box-content" data-equalizer-watch> 
-          
-          <div class="box-header">
-            <h2><?php the_sub_field( 'promo_heading' ); ?></h2>
-          </div>
-          
-          <h3><?php the_sub_field( 'promo_subheading' ); ?></h3>
+            <div class="box-content <?php the_sub_field( 'promo_box_class' ); ?>" data-equalizer-watch> 
             
-          <p class="lead"><?php the_sub_field( 'promo_lead' ); ?></p>
+              <div class="box-header">
+                <h2><?php the_sub_field( 'promo_heading' ); ?></h2>
+              </div>
             
-            <?php the_sub_field('promo_text') ?>
+            <h3><?php the_sub_field( 'promo_subheading' ); ?></h3>
+              
+            <p class="lead"><?php the_sub_field( 'promo_lead' ); ?></p>
+              
+              <?php the_sub_field('promo_text') ?>
 
-            <?php the_sub_field( 'promo_form_shortcode' ); ?>
+              <?php the_sub_field( 'promo_form_shortcode' ); ?>
 
-              <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button primrary"><?php the_sub_field( 'promo_button_text' ); ?></a>
-            
-         </div>
+              <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button <?php the_sub_field( 'promo_button_class' ); ?>"><?php the_sub_field( 'promo_button_text' ); ?></a>
+              
+           </div>
 
       </div>
         
-          <div class="medium-12 large-6 columns">
+      <div class="medium-12 large-6 columns">
 
             <div class="box-image-container" data-equalizer-watch>
 
@@ -85,13 +91,14 @@ get_header(); ?>
   
               ?>
             
-            <div class="box-image" style="background-image: url('<?php echo $url ?>');"></div>
+              <div class="box-image" style="background-image: url('<?php echo $url ?>');">             
+              </div>
             
           </div>
 
         </div>
         
-      </div>
+     </div>
 
 </div>
 
