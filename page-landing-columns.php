@@ -57,11 +57,11 @@ get_header(); ?>
 <?php //if content to the left ?>
 <div class="row expanded">
   
-    <div class="row box-row collapse" data-equalizer data-equalize-on="medium" id="boxes">
+    <div class="row box-row" data-equalizer data-equalize-on="medium" id="boxes">
         
         <div class="medium-12 large-6 columns">
 
-            <div class="box-content <?php the_sub_field( 'promo_box_class' ); ?>" data-equalizer-watch> 
+            <div class="callout box-content <?php the_sub_field( 'promo_box_class' ); ?>" data-equalizer-watch> 
                      
               <?php the_sub_field('promo_text') ?>
               
