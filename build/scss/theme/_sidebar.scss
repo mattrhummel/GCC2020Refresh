@@ -108,13 +108,11 @@ button.mobile-sidebar-button {
   padding: 1rem;
            /* Small only */
 @media screen and (max-width: 39.9375em) {
-  margin-bottom: 0;
-
+ 
 }
 
 @media screen and (min-width: 40em) {
        margin-bottom: 1rem;
-
 }
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -394,6 +392,10 @@ padding: 0.4rem 0.2rem;
   }
 }
 
+}
+
+.widget.callout {
+  padding: 1rem 1rem .5rem 1rem;
 }
 .widget.callout:first-child {
   border: none;
