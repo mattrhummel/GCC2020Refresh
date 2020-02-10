@@ -18,9 +18,7 @@ get_header(); ?>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 				<p><?php the_date(); ?></p>
 				<div class="crumbs-container">
-					<nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-						<?php custom_breadcrumbs();?>
-					</nav>
+					
 				</div>
 			</div>
 		</div>

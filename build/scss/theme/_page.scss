@@ -5,23 +5,8 @@
   margin-bottom: 40px;
   padding: 0 1rem;
 
-  
 }
  
-.entry-footer {
-  margin: 0;
-  padding: 0;
-   
-   p {
-  font-size: .85rem;
-  color: rgba(0,0,0, .4);
-  padding: 0 0 0 .5rem;
-      font-family: Arial, san-serif;
-    font-weight: bold;
-
-   }
-
- }
 .spring-save, .spring-skill, .spring-learn, .de-on-campus, .de-in-school, .de-early-college {
  background-position: top right; 
  background-repeat: none; 
@@ -82,3 +67,20 @@
 
  }
 }
+
+.entry-footer {
+  margin: 0;
+  padding: 0;
+   
+   p {
+  font-size: .85rem;
+  color: rgba(0,0,0, .4);
+      font-family: Arial, san-serif;
+    font-weight: bold;
+
+
+
+
+   }
+
+ }
