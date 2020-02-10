@@ -320,6 +320,34 @@ ul.menu {
     }
 
   }
+
+  ul.grandchild-sidebar-menu.level-0.children {
+      margin-left: 0;
+    li {
+      padding: 0;
+      margin-top: 0; 
+
+      border-top: 1px solid $medium-gray;
+      a {
+        padding: .5rem 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  ul.grandchild-sidebar-menu.level-1.children {
+  margin: 0 0 1rem 1rem;
+  li {
+    border-top: none;
+
+    a {
+      padding: .2rem 0;
+      text-transform: capitalize;
+    }
+  }
+
+
+  }
 }
 
 }
