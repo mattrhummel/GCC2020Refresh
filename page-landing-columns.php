@@ -62,20 +62,8 @@ get_header(); ?>
         <div class="medium-12 large-6 columns">
 
             <div class="box-content <?php the_sub_field( 'promo_box_class' ); ?>" data-equalizer-watch> 
-            
-              <div class="box-header">
-                <h2><?php the_sub_field( 'promo_heading' ); ?></h2>
-              </div>
-            
-            <h3><?php the_sub_field( 'promo_subheading' ); ?></h3>
-              
-            <p class="lead"><?php the_sub_field( 'promo_lead' ); ?></p>
-              
+                     
               <?php the_sub_field('promo_text') ?>
-
-              <?php the_sub_field( 'promo_form_shortcode' ); ?>
-
-              <a href="<?php the_sub_field( 'promo_button_url' ); ?>" class="button <?php the_sub_field( 'promo_button_class' ); ?>"><?php the_sub_field( 'promo_button_text' ); ?></a>
               
            </div>
 
