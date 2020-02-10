@@ -111,7 +111,7 @@ $print-transparent-backgrounds: true;
 // 2. Breakpoints
 // --------------
 $breakpoints: (
-   small: 0px,
+  small: 0px,
   medium: 576px,
   large: 1024px,
   xlarge: 992px,
@@ -417,7 +417,7 @@ $dropdown-menu-item-background-active: transparent;
 // 19. Flexbox Utilities
 // ---------------------
 
-$flex-source-ordering-count: 6;
+$flex-source-ordering-count: 12;
 $flexbox-responsive-breakpoints: true;
 
 // 20. Forms
@@ -881,4 +881,4 @@ $grid-margin-gutters: (
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
 $grid-container-max: $global-width;
-$xy-block-grid-max: 8;
+$xy-block-grid-max: 12;

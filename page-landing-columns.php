@@ -28,7 +28,6 @@ get_header(); ?>
   $url = $image['url'];
   
   ?>
-
       <div class="row expanded landing-header" style="background-image: url('<?php echo $url ?>');">
 
         <div class="landing-header-container">
@@ -53,23 +52,11 @@ get_header(); ?>
 
      <?php //the_sub_field( 'sub_field_name' ); ?>
       
-
 <?php //if content to the left ?>
-<div class="row expanded">
   
     <div class="row box-row" data-equalizer data-equalize-on="medium" id="boxes">
-        
-        <div class="medium-12 large-6 columns">
 
-            <div class="callout box-content <?php the_sub_field( 'promo_box_class' ); ?>" data-equalizer-watch> 
-                     
-              <?php the_sub_field('promo_text') ?>
-              
-           </div>
-
-      </div>
-        
-      <div class="medium-12 large-6 columns">
+      <div class="columns <?php the_sub_field( 'image_column_size' ); ?>">
 
             <div class="box-image-container" data-equalizer-watch>
 
@@ -86,22 +73,31 @@ get_header(); ?>
 
         </div>
         
-     </div>
+         <div class="columns <?php the_sub_field( 'content_column_size' ); ?>">
 
-</div>
+              <div class="callout box-content <?php the_sub_field( 'promo_box_class' ); ?>" data-equalizer-watch> 
+                       
+                <?php the_sub_field('promo_text') ?>
+                
+             </div>
+
+        </div>
+        
+    </div>
 
 <?php endwhile; ?>
 
  <?php endif; ?>
 
- <?php endwhile; // End of the loop. ?>
 
  </div>
+
+ 
+ <?php endwhile; // End of the loop. ?>
 
 </div>
 
 </article>
-
 
 <?php
 get_footer();
