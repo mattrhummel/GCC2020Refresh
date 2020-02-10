@@ -98,12 +98,11 @@ p  {
 
      a {
       color: $white;
-      font-weight: bold;
-      font-family: $font-family-monospace;
-      text-decoration: underline;
-      text-transform: uppercase;
+      font-weight: normal;
+      font-family: $body-font-family;
+     
       &:hover {
-        color: $black;
+   text-decoration: underline;
       }
      }
 }
@@ -112,6 +111,8 @@ a[href^="tel"] {
   color: inherit; /* Inherit text color of parent element. */
   text-decoration: none; /* Remove underline. */
   /* Additional css `propery: value;` pairs here */
+  font-weight: normal;
+  font-family: $body-font-family;
 
   &:hover{
     color: $white;
@@ -253,7 +254,7 @@ li {
 .site-footer-bottom {
 
   background: $white;
-  padding: 1.4rem 0 4rem 0;
+  padding: 1.4rem 0 8rem 0;
   
   .bottom-footer-content {
 
@@ -262,7 +263,6 @@ li {
       margin: 0 0 1rem 0;
 
       li {
-
 
         a {
           color: $primary;
@@ -278,10 +278,9 @@ li {
           }
 
               /* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-     text-align: center;
-     margin-bottom: 0;
-}
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+             text-align: center;
+        }
         }
       }
     }
@@ -386,8 +385,7 @@ li {
    }
 
      @media screen and (min-width: 64em) {
-    margin: 0;
-}
+f}
 
 }
 
