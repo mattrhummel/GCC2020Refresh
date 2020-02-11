@@ -12,7 +12,7 @@ get_header(); ?>
   ?>
 
   <div class="row gutter-small expanded content-area">
-    <div class="row">
+    <div class="row collapse">
     <div class="columns small-12 medium-8">
       <div class="entry-content" id="main" tabindex="0">
     
