@@ -29,7 +29,7 @@ $highlights_heading = get_field('highlights_heading');
 
   <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-      <div class="small-12 large-4 columns post-box">
+      <div class="small-12 large-4 columns">
 
           <div class="callout"  data-equalizer-watch>
 

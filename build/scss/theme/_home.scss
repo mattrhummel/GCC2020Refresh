@@ -188,65 +188,26 @@ h3  {
     padding: 0 0 1rem 0;
   }
 
-.post-box {
- 
-  margin-bottom: 1rem;
-  padding: 0 2rem;
-
-
-     @media screen and (min-width: 40em) {
-
-        padding: 0 1rem;
-
-      }
-
-      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
-         padding: 0 3rem;
-      }
-        
-        @media screen and (min-width: 64em) {
-       
-        padding: 0 1rem;
-
-        }
-
-            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
-        padding: 0 1rem;
-
-            }
-
 .callout {
   padding: 1rem;
   
-  h2 a, h3 a {
-    text-transform: uppercase;
+    h3 a {
+     text-transform: uppercase;
     font-family: $font-family-monospace;
      display: block; //do not remove, keeps padding
       &:hover {
         text-decoration: underline
       }
   }
-
+  
   p {
     font-size: .95rem;
     color: $black;
     font-weight: bold;
   }
 
-  .entry-meta {
-
-    padding: 0 1rem;
-    background-color:  $primary;
-
-    p {
-      padding: 0 1rem;
-      color: $white;
-  }
 }
 
-  }
-}
 .prevnext {
   margin-top: 2rem;
 
