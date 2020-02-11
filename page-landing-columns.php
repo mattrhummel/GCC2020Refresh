@@ -19,7 +19,7 @@ get_header(); ?>
   <?php
   while ( have_posts() ) : the_post(); ?>
 
-   <header>
+  <header>
 
     <?php // ACF Image Object
   
@@ -33,10 +33,14 @@ get_header(); ?>
         <div class="landing-header-container">
 
           <div class="row landing-header-content">
+
+            <div class="columns small-9 medium-8 large-6">
          
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
             <p class="lead"><?php the_field( 'landing_page_heading_text' ); ?></p>
           </div>
+
+        </div>
 
         </div>
 
