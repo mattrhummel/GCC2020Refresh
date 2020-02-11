@@ -50,7 +50,7 @@
   </div>
 
 <?php
-  //get_template_part( 'template-parts/content', 'weather-alert' );
+  get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
         
 <div class="off-canvas-wrapper no-js">
