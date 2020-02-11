@@ -19,8 +19,6 @@
   }
 
 #success {
-  background: $light-gray; 
-  padding: 80px 1rem;
   color: $secondary;
   margin: 2rem 0;
 
@@ -35,7 +33,7 @@
 
 .stories {
 
-.card {
+.callout {
 
   .stories-image  {
   
@@ -43,17 +41,9 @@
  background-repeat: none; 
  background-size: cover;
  background-color: #eee;
- margin: 0;
- padding: 0;
  height: 300px; 
  min-width: 100%;
-
 }
-
-.card-section {
-  
-min-height: 100%;
-width: 100%;
 
 h3 {
 
@@ -61,21 +51,10 @@ h3 {
          font-family: $font-family-monospace;
          text-transform: uppercase;
          font-weight: bold;
-         font-size: 1.2rem;
-
-   a {
-    font-size: 1.4rem;
-    
-    @media screen and (max-width: 39.9375em) {
-
-      font-size: 1.2rem;
-    }
-
-    
-   }
+         padding: .5rem 0 .2rem;
   
 }
-}
+
 
 }
 
@@ -125,6 +104,7 @@ h2 {
     padding-bottom: 0;
     margin-bottom: 0;
 
+
 }
 
 
@@ -145,96 +125,21 @@ h2 {
   margin-bottom: .5rem;
 }
 
-.pathways-block {
-  position: relative;
-  margin-bottom: 20px;
- line-height: 0;
-  a {
-
-    color: $white;
-     text-transform: uppercase;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
+.callout {
 .pathway-image {
-  
  background-position: top center; 
  background-repeat: none; 
  background-size: cover;
  background-color: #eee;
- margin: 0;
- padding: 0;
  height: 300px; 
- 
 }
-
-  .block-section {
-
-     position: absolute;
-     bottom: 0;
-     background-color: rgba(51, 51, 51, .6);
-     transition: all 0.15s ease-in;
-     color: $white;
-     display: block;
-     min-width: 100%;
-     z-index: 1;
-     padding: 1rem 1.2rem;
-      
-     h3  {
-      color: $white;
-      font-family: $font-family-monospace;
-      font-size: 1rem;
-      line-height: 0;
-      display: block;
-      margin: 0;
-      padding: .5rem 0 .6rem 0;
-
-     @media screen and (min-width: 40em) {
-
-      font-size: 1.2rem;
-
-      }
-
-      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
-         
-      }
-        
-        @media screen and (min-width: 64em) {
-       
-         font-size: 1.4rem;
-
-
-        }
-
-            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
-
-            }
-
+h3  {
+    font-family: $font-family-monospace;
+    text-align: center;
+    padding: .5rem 0 .2rem 0;
+    text-transform: uppercase;
    }
 
-   h3, .more-icon {
-     display: inline-block;
-  
-   }
-
-  .more-icon {
-     position: absolute;
-     right: .4rem;
-     top: .8rem;
-     width: 10%;
-     height: 100%;
-   }
-
-  }
-
-.block-section:hover {
-  background-color: rgba(51, 51, 51, .9);
-}
-
- }
 }
 
 }
@@ -243,32 +148,32 @@ h2 {
 
 .highlights {
 
-  padding: 40px 0 60px 0;
+  padding: 20px 0 60px 0;
 
      @media screen and (min-width: 40em) {
 
       padding: 0 1rem;
-      padding: 60px 0 100px 0;
+      padding: 40px 0 100px 0;
 
       }
 
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
          
         padding: 0 3rem;
-        padding: 60px 0 100px 0;
+        padding: 40px 0 100px 0;
      
       }
         
       @media screen and (min-width: 64em) {
      
         padding: 0 1rem;
-        padding: 60px 0 100px 0;
+        padding: 40px 0 100px 0;
 
       }
 
       @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
-        padding: 60px 20px 100px 20px;
+        padding: 40px 20px 100px 20px;
       
       }
 

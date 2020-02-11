@@ -37,8 +37,7 @@ $args =  array (
 
 <div class="small-12 medium-6 large-4 columns pathway" data-equalizer-watch>
 
-  <div class="pathways-block">
-    <a href="<?php the_field('pathway_url');?>">
+  <div class="callout">
 
       <?php // ACF Image Object
       
@@ -48,13 +47,11 @@ $args =  array (
         
       ?>
 
-     <div class="pathway-image" style="background-image: url('<?php echo $url ?>');"></div>
+      <div class="pathway-image" style="background-image: url('<?php echo $url ?>');"></div>
 
-     <div class="block-section">
-      <?php the_title('<h3>', '</h3>'); ?>
-    </div>
+      <h3><a href="<?php the_field('pathway_url');?>"><?php the_title(); ?>
+</a></h3>
     
-    </a>
   </div>
 
 </div>

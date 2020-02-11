@@ -50,7 +50,7 @@ get_header(); ?>
 			
 			<div class="small-12 medium-6 large-4 columns stories">
 				
-			 <div class="card">
+			 <div class="callout">
 			
 				<?php // ACF Image Object
 							
@@ -62,9 +62,7 @@ get_header(); ?>
 
 		 		<div class="stories-image" style=" background-image: url('<?php echo $url ?>');"></div> 
 									
-					<div class="card-section" data-equalizer-watch>
-						<h3><a href="<?php the_field('video_url'); ?>"><?php the_title(); ?></a></h3>
-					</div>
+			<h3><a href="<?php the_field('video_url'); ?>"><?php the_title(); ?></a></h3>
 			   
 			   </div>
 				
