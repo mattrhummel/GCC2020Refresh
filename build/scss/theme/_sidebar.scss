@@ -202,7 +202,7 @@ ul.menu {
     }
 
 #advanced_sidebar_menu-2-wrap {
-    ul.child-sidebar-menu {
+    ul {
         margin:0;
         padding:0;  
      
@@ -214,9 +214,9 @@ ul.menu {
 
       font-size: 1.2rem;
       color: $black;
-      padding: 0 0 10px 0;
       font-family:  $font-family-monospace;
       text-transform: uppercase;
+        padding-bottom: 10px;
 
           &:hover {
             color: $primary;
@@ -231,7 +231,8 @@ ul.menu {
     li.current_page_item.has_children {
       border-top: 0;
       a {
-              padding: 0;
+        padding-bottom: 0;
+
 
       }
     }
@@ -241,12 +242,13 @@ ul.menu {
   margin-top: .5rem;
  
    li {
-              border-top: none;  
-
+        border-top: none;  
         a {
 
           text-transform: capitalize;
           font-size: 1rem;
+          padding-bottom: 0;
+
         
         }
     }
@@ -260,6 +262,7 @@ ul.menu {
      
       a {
         text-transform: capitalize;
+        padding-bottom: 0;
       }
     }
   }
@@ -281,7 +284,7 @@ ul.menu {
 
 }
 
-ul.parent-sidebar-menu,  {
+ul.parent-sidebar-menu  {
   margin: 0;
   padding: 0;
 }
