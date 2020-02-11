@@ -13,7 +13,7 @@ get_header(); ?>
 
   <div class="row gutter-small expanded content-area">
     <div class="row">
-    <div class=" columns small-12 medium-10">
+    <div class="columns small-12 medium-10">
       <div class="entry-content" id="main" tabindex="0">
     
         <?php //Page Heading
@@ -25,7 +25,6 @@ get_header(); ?>
 
                 <?php if (is_page('40255')) : ?>
 
-        <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
           <?php
           $args =  array (
           'post_type' => 'bhm_events',
@@ -40,7 +39,6 @@ get_header(); ?>
           $query = new WP_Query( $args ); ?>
           <?php if ( $query->have_posts() ) : ?>
           <?php while ( $query->have_posts() ) : $query->the_post();?>
-          <div class="small-12 columns">
               
               <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
 
@@ -60,14 +58,13 @@ get_header(); ?>
 
               <?php endif; ?>
             <hr/>
-          </div>
           
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
         <?php else : ?>
         <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
         <?php endif; ?>
-      </div>
+ 
 
 
         <?php endif; ?>
