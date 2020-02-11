@@ -216,14 +216,12 @@ h3  {
 
             }
 
-.post-box-content {
-  padding: 1.2rem 0;
-  background-color: $light-gray;
-
-  h2.post-title a, h3.post-title a {
+.callout {
+  padding: 1rem;
+  
+  h2 a, h3 a {
     text-transform: uppercase;
     font-family: $font-family-monospace;
-     padding: 0 1rem;
      display: block; //do not remove, keeps padding
       &:hover {
         text-decoration: underline
@@ -231,7 +229,6 @@ h3  {
   }
 
   p {
-    margin: 0 1rem;
     font-size: .95rem;
     color: $black;
     font-weight: bold;
