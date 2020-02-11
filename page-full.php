@@ -13,17 +13,14 @@ get_header(); ?>
 
   <div class="row gutter-small expanded content-area">
     <div class="row">
-    <div class="columns small-12 medium-10">
+    <div class="columns small-12 medium-8">
       <div class="entry-content" id="main" tabindex="0">
     
-        <?php //Page Heading
-        get_template_part( 'template-parts/content', 'page-alert' );
-        ?>
         <?php
         the_content();
         ?>
 
-                <?php if (is_page('40255')) : ?>
+          <?php if (is_page('40255')) : ?>
 
           <?php
           $args =  array (
@@ -42,7 +39,7 @@ get_header(); ?>
               
               <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
 
-              <p  style="margin-bottom: 0;"><?php the_field( 'event_date' ); ?></p>
+              <p style="margin-bottom: 0;"><?php the_field( 'event_date' ); ?></p>
 
               <p style="margin-bottom: 0;"><?php the_field( 'event_location' ); ?></p>
 
