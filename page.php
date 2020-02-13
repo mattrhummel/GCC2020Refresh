@@ -17,13 +17,14 @@ get_header(); ?>
   <?php //Page Heading
   get_template_part( 'template-parts/content', 'page-heading' );
   ?>
-  <div class="row expanded content-area gutter-small" >
+
+  <div class="row expanded content-area">
     
     <div class="row">
 
       <?php get_sidebar();?>
 
-      <div class="columns small-12 medium-12 large-8" style="padding: 0">
+      <div class="columns small-12 medium-12 large-8">
       
         <div class="entry-content" id="main">
           

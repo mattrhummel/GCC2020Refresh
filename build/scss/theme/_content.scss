@@ -1,40 +1,65 @@
 .entry-content {
-
-  @media screen and (max-width: 39.9375em) {
-    margin-top: 20px;
-  }
-
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {  
-   margin-top: 20px;
-  }
-
- .column,
- .columns, .small-uncollapse > .columns,
- .large-collapse > .columns,
-
-  {
-  
-    padding-right: .325rem;
-    padding-left: .325rem;
-
-    @media print,screen and (min-width:36em) {
-
-  
-    padding-left: 0;
-    padding-right: 1rem;
-}
+padding: 0 .5rem;
+    
+    @media screen and (max-width: 39.9375em) {
+     
+   }
 
     @media screen and (min-width: 40em) {
-
-      padding-left: 0;
-      padding-right: 1rem;
+    
+    padding: 0;
 
     }
 
-      @media screen and (min-width: 40em) and (max-width: 63.9375em) {  
-       padding-left: 0;
-        padding-right: 1rem;
-      }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+
+    }
+     @media screen and (min-width: 64em) {
+    
+    padding: 0;
+
+    }
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+   
+
+    } 
+
+.row.collapse > .column, .row.collapse > .columns {
+    padding-right: 0;
+    padding-left: 0;
+
+         @media screen and (max-width: 39.9375em) {
+           padding-right: 0;
+    padding-left: 0;
+     
+   }
+
+    @media screen and (min-width: 40em) {
+    
+     padding-right: .5rem;
+    padding-left: 0;
+
+    }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+    padding-right: 0;
+    padding-left: 0;
+    }
+     @media screen and (min-width: 64em) {
+    
+     padding-right: .5rem;
+    padding-left: 0;
+
+    }
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+   
+    padding-right: 0;
+    padding-left: 0;
+    } 
+}
+.column, .columns, .row.gutter-large > .column, .row.gutter-large > .columns, .row.gutter-medium > .column, .row.gutter-medium > .columns, .row.gutter-small > .column, .row.gutter-small > .columns {
+    padding-right: .625rem;
+    padding-left: 0;
 }
 
 h2,h3,h4,h5,h6 {

@@ -4,8 +4,8 @@
 
       <div class="row header-container">
 
-        <div class="header-content">
-          <div class="columns small-12 medium-8">
+        <div class="header-content small-uncollapse large-collapse">
+          <div class="columns small-12">
      
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   

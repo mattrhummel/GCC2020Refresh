@@ -68,7 +68,8 @@
 
 .header-section {
    background-color: $light-gray;
-  position: relative;
+   position: relative;
+
 .header-container {
    display: -webkit-flex; /* Safari */
    display: flex;
@@ -97,26 +98,22 @@
   .header-content {
   
     width: 100%;
-    padding-left: 1rem;
 
     @media screen and (min-width: 40em) {
     
-   padding-left: 0;
 
     }
 
     @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
-padding-left: 1rem;
       }
 
      @media screen and (min-width: 64em) {
 
-      padding-left: 0;
 
     }
 
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
+   
     padding-left: 1rem;
 
     }  

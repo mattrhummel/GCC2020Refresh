@@ -1,3 +1,7 @@
+.mobile-sidebar {
+  padding: 0 .5rem 1rem .5rem;
+}
+
 button.mobile-sidebar-button {
    
    background-color: $light-gray;
@@ -9,6 +13,7 @@ button.mobile-sidebar-button {
    color: $secondary;
    font-weight: 900;
    margin: 0;
+
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
@@ -67,7 +72,6 @@ button.mobile-sidebar-button {
 }
 .nav-panel {
         position: relative;
-        border-top: 1px solid $medium-gray;
         /* Small only */
 
 // @media screen and (max-width: 39.9375em) {
@@ -83,7 +87,6 @@ button.mobile-sidebar-button {
 }
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-       border-top: 1px solid $medium-gray;
 
 }
 
