@@ -10,19 +10,26 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	while ( have_posts() ) : the_post(); ?>
-	<header class="hero-section">
-		<?php //if the child page doesn't have a featured images
-		//gcc_featured_image_on_child(); ?>
-		<div class="row expanded hero-section-text">
-			<div class="row header-content">
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<p><?php the_date(); ?></p>
-				<div class="crumbs-container">
-					
-				</div>
-			</div>
-		</div>
-	</header>
+  <header>
+
+    <div class="row expanded header-section">
+
+      <div class="row header-container">
+
+        <div class="header-content">
+     
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+  
+        <div class="crumbs-container">    
+        </div>
+
+    </div>
+
+  </div>
+
+  </div>
+    
+</header>
 
   <div class="row expanded content-area gutter-small" >
     
