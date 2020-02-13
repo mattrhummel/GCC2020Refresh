@@ -67,24 +67,27 @@
 }
 
 .header-section {
-  position: relative;
   background-color: $light-gray;
   padding-bottom: 1rem;
 
-
 .header-container {
-
    display: -webkit-flex; /* Safari */
    display: flex;
    align-items: flex-end;
-   height: 15vh;
+   height: 18vh;
 
-    @media screen and (min-width: 40em) {
+   @media screen and (max-width: 39.9375em) {
+
+   height: 18vh;
+
+   }
+
+   @media screen and (min-width: 40em) {
      height: 25vh;
     }
 
     @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
-height: 20vh;
+height: 25vh;
     }
 
      @media screen and (min-width: 64em) {
@@ -92,7 +95,7 @@ height: 20vh;
     }
 
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-height: 20vh;
+height: 25vh;
 
     } 
 
