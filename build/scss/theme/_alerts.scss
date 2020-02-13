@@ -80,17 +80,30 @@
 
   p {
     color: $white;
-    padding:0;
+    padding:.5rem 0;
     margin: 0;
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
     font-family: $font-family-monospace;
+    font-weight: bold;
 
-       @media screen and (max-width: 63.9375em) and (min-width: 40em)
-       {
-            font-size: 1rem;
-
-       }
+     @media screen and (max-width: 39.9375em) {
+      font-size: 1rem;
+      line-height: 1.2rem;
+     }
+    @media screen and (min-width: 40em) {
+           font-size: 1.2rem;
+    }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {  
+     font-size: 1.1rem;
+    }
+     @media screen and (min-width: 64em) {  
+       font-size: 1.2rem;
+    }
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+     font-size: 1.1rem;
+     }
     
     strong {
       font-weight: bold;
@@ -98,9 +111,11 @@
 
     a {
       color: $white;
-      font-weight: 800;
+      font-weight: bold;
       text-decoration: none;
-       text-transform: uppercase;
+      text-transform: uppercase;
+      font-size: .95rem;
+
       &:hover {
         text-decoration: underline;
       }

@@ -350,7 +350,8 @@ padding: 0.4rem 0.2rem;
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  border-left: none;
+    border-left: 1px solid $medium-gray;
+
   padding-top: 1rem;
 }
 
@@ -363,7 +364,12 @@ padding: 0.4rem 0.2rem;
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
   padding-top: 1rem;
-  border-left: none;
+   border-left: 1px solid $medium-gray;
+
 }
+    @media screen and (max-width: 63.9375em) and (min-width: 40em)
+  {
+    border-left: none;
+  }
 
 }
