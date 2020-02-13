@@ -48,7 +48,7 @@ get_header();?>
    
 </div>
 
-     <aside class="column large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
+     <aside class="columns large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
 
         <?php dynamic_sidebar( 'single-widgets' ); ?>
 

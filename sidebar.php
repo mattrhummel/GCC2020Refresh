@@ -13,7 +13,7 @@
    
 </div>
 
-<aside class="column large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
+<aside class="columns large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
 
   <?php //get page widgets
   dynamic_sidebar( 'sidebar-widgets' );
