@@ -1,8 +1,7 @@
 //styles for the page callout boxes and alerts.
 //Default Callout
-
 .callout {
-
+  background-color: $white;
   h2, h3 {  
     font-size: 24px;
     line-height: 28px;
@@ -25,13 +24,43 @@
 
 }
 
+.callout.primary {
+  background-color: $white !important;
+  color: $black !important;
+}
+.callout.success, .callout.warning, .callout.alert {
+  
+  h1, h2, h3, h4, h5, h6 {
+      color: $white !important;
+      margin-bottom: 0;
+      font-weight: bold;
 
+}
+
+  p {
+      margin: 0 0 .2rem 0;
+      color: $white !important;
+
+  }
+
+  a.button.primary {
+      font-family: $font-family-monospace;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: $white;
+      color: $primary !important;
+      border: none;
+
+      &:hover {
+        background-color: $secondary;
+        color: $white !important;
+
+      }
+  }
+}
 //Closing Announcement
 .closing {
-
-  background-color: $secondary !important;
-  padding: .5rem 1rem !important;
-  color: $white;
+  padding: 0 !important;
   margin-bottom: 0 !important;
   border-radius: 0 !important;
   position: absolute;
@@ -39,15 +68,14 @@
   border: none !important;
 
   p {
-
-    padding: 0;
+    color: $white;
+    padding:0;
     margin: 0;
     display: block;
-    font-size: 1rem;
-    color: $white;
+    font-size: 1.2rem;
     font-family: $font-family-monospace;
     strong {
-      font-weight: 800;
+      font-weight: bold;
     }
 
     a {
@@ -61,7 +89,6 @@
 
     }
   }
-
 .close-button-weather {
   color: $white;
   top: 0;

@@ -5,7 +5,7 @@ $sign_up_for_alerts_text = get_field('sign_up_for_alerts_text', 'option');
 $alerts_url = get_field('alerts_url', 'option');
 //Column 1 Heading
 if( !empty($closing_announcement_text) ): ?>
-<div id="closeAnnouncement" class="callout small closing hide-for-print" data-closable>
+<div id="closeAnnouncement" class="callout small warning closing hide-for-print" data-closable>
   <div class="row expanded">
     <div class="small-11 columns ">
       <?php //Alert Text

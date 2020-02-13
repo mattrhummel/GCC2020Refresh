@@ -210,15 +210,40 @@ get_header(); ?>
 <h2>Callouts</h2>
 <div class="callout primary small">
   <h2>This is a small callout</h2>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <p>It has an easy to override <a href="">visual style</a>, and is appropriately subdued.</p>
   <a class="button primary" href="#">Primary</a>
 </div>
 
 <div class="callout primary large">
   <h2>This is a large callout</h2>
-  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <p>It has an easy to override<a href=""> visual style</a>, and is appropriately subdued.</p>
    <a class="button primary" href="#">Primary</a>
 </div>
+
+<div class="callout primary">
+  <h2>This is a primary callout</h2>
+  <p>It has an easy to override <a href="">visual style</a>, and is appropriately subdued.</p>
+  <a href="#"  class="button primary">It&#39;s dangerous to go alone, take this.</a>
+</div>
+
+<div class="callout success">
+  <h3>This is a success callout</h3>
+  <p>It has an easy to override <a href="">visual style</a>, and is appropriately subdued.</p>
+  <a href="#"  class="button primary">It&#39;s dangerous to go alone, take this.</a>
+</div>
+
+<div class="callout warning">
+  <h4>This is a warning callout</h4>
+  <p>It has an easy to override <a href="">visual style</a>, and is appropriately subdued.</p>
+  <a href="#"  class="button primary">It&#39;s dangerous to go alone, take this.</a>
+</div>
+
+<div class="callout alert">
+  <h5>This is an alert callout</h5>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <a href="#" class="button primary">It&#39;s dangerous to go alone, take this.</a>
+</div>
+
 
           <hr>
 
