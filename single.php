@@ -39,7 +39,11 @@ get_header(); ?>
     
     <div class="row">
 
-      <?php get_sidebar();?>
+    <aside class="column large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
+
+    	<?php dynamic_sidebar( 'single-widgets' ); ?>
+
+	</aside>
 
       <div class="columns small-12 medium-12 large-8" style="padding: 0">
       

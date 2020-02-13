@@ -6,47 +6,35 @@
 */
 get_header(); ?>
 
-	<?php
-	$error_page_heading = get_field('error_page_heading', 'option');
-	$error_page_error_message_1 = get_field('error_page_error_message_1', 'option');
-	$error_page_error_message_2 = get_field('error_page_error_message_2', 'option');
-	$error_page_button_text = get_field('error_page_button_text', 'option');
-	$error_page_button_url = get_field('error_page_button_url', 'option');
-		
-	?>
+<header>
 
-  <header>
+    <div class="row expanded header-section">
 
-    <div class="row expanded hero-section-text">
+      <div class="row header-container">
 
-      <div class="row header-content">
+        <div class="header-content">
+          <div class="columns small-12 medium-8">
      
-       <h1 class="entry-title"><?php echo $error_page_heading; ?></h1>
-  
+       <h1 class="entry-title"><?php the_field( 'error_page_heading', 'options' ); ?></h1>
+        
         <div class="crumbs-container">
 
-  
-            <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
-              <?php custom_breadcrumbs();?>
-            </nav>
-    
         </div>
 
+      </div>
+
     </div>
+
+  </div>
 
   </div>
     
 </header>
 
-
 	<div class="row expanded content-area">
 	  <div class="row">
-	  	<aside class="column large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
-
-	<?php dynamic_sidebar( 'admissions-widgets' ); ?>
-
-</aside>
-      <div class="columns small-12 medium-12 large-8">
+	
+      <div class="columns small-12 medium-10">
       
         <div class="entry-content" id="main">
 			<?php
@@ -70,9 +58,9 @@ get_header(); ?>
 			<?php
 				get_search_form();
 			else : ?>
-			<p><?php  echo $error_page_error_message_1;  ?></p>
-			<p><?php echo $error_page_error_message_2;  ?></p>
-			<p><a href="<?php echo $error_page_button_url; ?>" class="button primary"><?php echo $error_page_button_text; ?></a>
+			<p><?php  the_field( 'error_page_error_message_1', 'options' );  ?></p>
+			<p><?php the_field( 'error_page_error_message_2', 'options' ); ?></p>
+			<p><a href="<?php the_field( 'error_page_button_url', 'options' ); ?>" class="button primary"><?php the_field( 'error_page_button_text', 'options' ); ?></a>
 		</p>
                 <form role="search" method="get" id="searchform" action="<?php echo get_home_url(); ?>/search_gcse/">
                   <div class="input-group">

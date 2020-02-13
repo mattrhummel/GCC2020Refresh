@@ -13,20 +13,29 @@
 get_header();?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+  
   <header>
 
-    <div class="row expanded hero-section-text">
+    <div class="row expanded header-section">
 
-      <div class="row header-content">
-     
+      <div class="row header-container">
+
+        <div class="header-content">
+
+       <div class="columns small-10 medium-10">
+
+      
         <h1 class="entry-title"><?php echo get_cat_name(1); ?></h1>
-        <div class="crumbs-container">
 
-        
+  
+        <div class="crumbs-container">    
         </div>
 
     </div>
+
+    </div>
+
+  </div>
 
   </div>
     
@@ -36,12 +45,16 @@ get_header();?>
   
     <div class="row">
 
-      <?php get_sidebar();?>
+<aside class="column large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
 
-      
+    <?php dynamic_sidebar( 'single-widgets' ); ?>
+
+</aside>
+
+  
       <!--Page Content-->
 
-    <div class="small-12 medium-9 entry-content" id="main" tabindex="0">
+    <div class="columns small-12 medium-8 entry-content" id="main" tabindex="0">
 
       <?php
       $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;

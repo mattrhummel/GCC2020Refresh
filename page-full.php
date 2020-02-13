@@ -13,7 +13,7 @@ get_header(); ?>
 
   <div class="row gutter-small expanded content-area">
     <div class="row collapse">
-    <div class="columns small-12 medium-8">
+    <div class="columns small-12">
       <div class="entry-content" id="main" tabindex="0">
     
         <?php
@@ -68,14 +68,30 @@ get_header(); ?>
       </div>
     </div>
 
-    <footer class="entry-footer">
-      <?php gcc_wp_2018_entry_footer(); ?>
-    </footer><!-- .entry-footer -->
-
+   
     </div>
 
     </div>
     <?php endwhile; // End of the loop. ?>
+
+            <div class="row">
+
+          <div class="small-12 columns entry-footer">
+
+                  <footer>
+              <?php $u_time = get_the_time('U'); 
+$u_modified_time = get_the_modified_time('U'); 
+if ($u_modified_time >= $u_time + 86400) { 
+echo "<p>Last modified on "; 
+the_modified_time('F j, Y'); 
+"</p> "; }  ?>
+          <?php gcc_wp_2018_entry_footer(); ?>
+          </footer><!-- .entry-footer -->
+
+        </div>
+
+    </div>
+    
   </article>
   <?php
   get_footer();

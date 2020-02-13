@@ -65,10 +65,6 @@
   //custom archive widgets
    dynamic_sidebar( 'blog-widgets' );
   }
-  if ( is_archive('news'))  {
-  //custom archive widgets
-  dynamic_sidebar( 'single-widgets' );
-  }
   //awards
   if (is_page('35') || $post->post_parent == '35')
   {
