@@ -39,7 +39,7 @@ register_sidebar(array(
 		'id' => 'single-widgets',
 		'name' => __( 'Single Sidebar', 'gcc-wp-2018' ),
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
-		'before_widget' => '<div class="widget callout">',
+		'before_widget' => '<div class="widget callout news-sidebar">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
