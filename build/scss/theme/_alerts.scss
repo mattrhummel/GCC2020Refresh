@@ -2,6 +2,7 @@
 //Default Callout
 .callout {
   background-color: $white;
+
   h2, h3 {  
     font-size: 24px;
     line-height: 28px;
@@ -38,7 +39,7 @@
 }
 
   p {
-      margin: 0 0 .2rem 0;
+      margin: .2rem 0 .3rem 0;
       color: $white !important;
 
       a {
@@ -84,6 +85,7 @@
     display: block;
     font-size: 1.2rem;
     font-family: $font-family-monospace;
+    
     strong {
       font-weight: bold;
     }
@@ -92,7 +94,7 @@
       color: $white;
       font-weight: 800;
       text-decoration: none;
-
+       text-transform: uppercase;
       &:hover {
         text-decoration: underline;
       }
