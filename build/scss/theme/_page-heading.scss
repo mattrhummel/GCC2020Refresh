@@ -66,44 +66,62 @@
 
 }
 
-.hero-section-text {
-
+.header-section {
+  position: relative;
   background-color: $light-gray;
   padding-bottom: 1rem;
 
+
+.header-container {
+
+   display: -webkit-flex; /* Safari */
+   display: flex;
+   align-items: flex-end;
+   height: 15vh;
+
+    @media screen and (min-width: 40em) {
+     height: 25vh;
+    }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+height: 20vh;
+    }
+
+     @media screen and (min-width: 64em) {
+ height: 25vh;
+    }
+
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+height: 20vh;
+
+    } 
+
   .header-content {
-    
-    padding: 4rem 1rem 0 1rem;
-    display: -webkit-flex; /* Safari */
-    display: flex;
-    flex-wrap: wrap;
-    align-items: bottom;
-    margin: 0;
+  
+    width: 100%;
+    padding-left: 1rem;
 
     @media screen and (min-width: 40em) {
     
-     padding: 9rem 2rem 0 0;
+   padding-left: 0;
 
     }
 
     @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
-      padding: 9rem 1rem 0 1rem;
-
+padding-left: 1rem;
       }
 
      @media screen and (min-width: 64em) {
 
-        padding: 9rem 0 0 0;
+      padding-left: 0;
 
-      }
+    }
 
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
+    padding-left: 1rem;
 
-   padding: 9rem 1rem 0 1rem;
-
-    }
-    
+    }  
     h1.entry-title {
 
       font-family: $font-family-monospace;
@@ -111,33 +129,28 @@
       text-transform: uppercase;
       margin-bottom: .5rem;
       font-size: 2.4rem;
-  
     @media screen and (max-width: 39.9375em) {
       font-size: 2.4rem;
 
     }
     @media screen and (min-width: 40em) {
-    
        font-size: 4.0rem;
 
     }
     @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
- font-size: 3.8rem;
+    font-size: 3.8rem;
+
     }
     @media screen and (min-width: 64em) {
-
-   font-size: 4.2rem;
-
-      }
-
+    font-size: 4.2rem;
+    
+    }
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
   
-}
+    }
 
     }
  
-    }
-
 
 
 .crumbs-container {
@@ -198,6 +211,11 @@ font-size: .95rem;
     }
 
   }
+
+}
+
+
+}
 
 }
 

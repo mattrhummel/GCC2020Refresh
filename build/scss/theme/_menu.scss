@@ -119,6 +119,10 @@ overflow: hidden;
         padding: 13.5px 18px;
        }
 
+      @media screen and (max-width: 63.9375em) and (min-width: 40em)
+       {
+        padding: 14.5px 8px;
+       }
 
     &:hover {
       border-bottom: 7px solid $white;

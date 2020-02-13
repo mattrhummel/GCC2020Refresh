@@ -85,6 +85,12 @@
     display: block;
     font-size: 1.2rem;
     font-family: $font-family-monospace;
+
+       @media screen and (max-width: 63.9375em) and (min-width: 40em)
+       {
+            font-size: 1rem;
+
+       }
     
     strong {
       font-weight: bold;

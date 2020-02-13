@@ -1,8 +1,10 @@
   <header>
 
-    <div class="row expanded hero-section-text">
+    <div class="row expanded header-section">
 
-      <div class="row header-content">
+      <div class="row header-container">
+
+        <div class="header-content">
      
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   
@@ -15,6 +17,8 @@
         </div>
 
     </div>
+
+  </div>
 
   </div>
     
