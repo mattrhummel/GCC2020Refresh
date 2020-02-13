@@ -1,6 +1,6 @@
 .tabs {
 	border: none !important;
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
     
   @media screen and (max-width: 39.9375em) {
 		
@@ -12,7 +12,7 @@
 	color: $secondary;
 	background-color: $primary;
 	margin-right: 1px;
-	font-weight: 800;
+  font-size: 1rem;
 	font-family: $font-family-monospace;
 	text-transform: uppercase;
 	@media screen and (max-width: 39.9375em) {
@@ -46,7 +46,6 @@ li.accordion-item {
 	a.accordion-title {
 
 			text-decoration: none;
-			font-weight: 800;
 			font-size: 1rem;
 			line-height: 1.6rem;
 			color: $secondary;
