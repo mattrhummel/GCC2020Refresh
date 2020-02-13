@@ -17,11 +17,15 @@ get_header(); ?>
       <div class="row header-container">
 
         <div class="header-content">
-     
+
+       <div class="columns small-10 medium-10">
+
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   
         <div class="crumbs-container">    
         </div>
+
+    </div>
 
     </div>
 

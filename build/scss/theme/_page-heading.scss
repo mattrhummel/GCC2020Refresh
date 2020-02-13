@@ -67,14 +67,14 @@
 }
 
 .header-section {
-  background-color: $light-gray;
-  padding-bottom: 1rem;
-
+   background-color: $light-gray;
+  position: relative;
 .header-container {
    display: -webkit-flex; /* Safari */
    display: flex;
    align-items: flex-end;
    height: 22vh;
+   padding: 20px 0;
 
    @media screen and (max-width: 39.9375em) {
    height: 22vh;
@@ -85,14 +85,13 @@
     }
 
     @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
-    height: 25vh;
+    height: 28vh;
     }
-    
-    @media screen and (min-width: 64em) {
-      height: 25vh;
+     @media screen and (min-width: 64em) {
+      height: 30vh;
     }
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-    height: 25vh;
+    height: 28vh;
     } 
 
   .header-content {
@@ -127,9 +126,11 @@ padding-left: 1rem;
       color: $black;
       text-transform: uppercase;
       margin-bottom: .5rem;
-      font-size: 2.4rem;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
     @media screen and (max-width: 39.9375em) {
-      font-size: 2.4rem;
+       font-size: 1.6rem;
+       line-height: 1.8rem;
 
     }
     @media screen and (min-width: 40em) {
@@ -137,18 +138,21 @@ padding-left: 1rem;
 
     }
     @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
-    font-size: 3.8rem;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
 
     }
     @media screen and (min-width: 64em) {
-    font-size: 4.2rem;
-    
+    font-size: 3.8rem;
+    line-height: 4rem;
     }
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-  
+      font-size: 3rem;
+    line-height: 3.2rem;
+    
     }
 
-    }
+  }
  
 
 
