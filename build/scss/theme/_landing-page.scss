@@ -164,6 +164,7 @@
 		    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 			padding: 22px;
 			}
+
 			h2 {
 				font-family:$font-family-monospace;
 				text-transform:uppercase;
@@ -199,8 +200,8 @@
 
 			}
 	}  //box-content
-	.box-content.primary {
-			background-color: $primary;
+	.box-content.callout.primary {
+			background-color: $primary !important;
 		    border: none;
 			h2,p,h3  {
 			color: $white;

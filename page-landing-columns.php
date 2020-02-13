@@ -59,7 +59,7 @@ get_header(); ?>
         </div>
         
         <div class="columns <?php the_sub_field( 'content_column_size' ); ?>">
-          <div class="callout box-content <?php the_sub_field( 'promo_box_class' ); ?>" data-equalizer-watch>
+          <div class="box-content callout <?php the_sub_field( 'promo_box_class' ); ?>" data-equalizer-watch>
             
             <?php the_sub_field('promo_text') ?>
             
