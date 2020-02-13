@@ -41,6 +41,15 @@
       margin: 0 0 .2rem 0;
       color: $white !important;
 
+      a {
+        text-decoration: underline;
+        color: $white; 
+
+        &:hover {
+          color: $black;
+        }
+      }
+
   }
 
   a.button.primary {
