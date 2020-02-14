@@ -44,10 +44,10 @@ get_header(); ?>
                       
                       <div class="hero-caption">
                         <h2><?php the_sub_field( 'wf_slider_heading' ); ?></h2>
+                        
                         <p class="lead"><?php the_sub_field( 'wf_slider_lead_text' ); ?></p>
                         
-                    
-                          <a href="<?php the_sub_field( 'wf_slider_button_url' ); ?>" class="button"><?php the_sub_field( 'wf_slider_button_text' ); ?></a>
+                        <a href="<?php the_sub_field( 'wf_slider_button_url' ); ?>" class="button"><?php the_sub_field( 'wf_slider_button_text' ); ?></a>
                    
 
                       </div>
@@ -61,7 +61,7 @@ get_header(); ?>
             </div>
             <?php endif; //end workforce slider?>
 
-          <div class="row expanded workforce-callout">
+          <div class="row expanded callout">
            
            <div class="small-12 medium-7 columns">
                <h3><?php the_field('box_1_heading'); ?></h3>
@@ -84,7 +84,7 @@ get_header(); ?>
 
           </div>
 
-          <div class="row expanded workforce-callout">
+          <div class="row expanded callout">
 
            <div class="small-12 medium-7 columns">
           <h3><?php the_field('box_2_heading');  ?></h3>
@@ -106,7 +106,7 @@ get_header(); ?>
 
           </div>
 
-          <div class="row expanded workforce-callout">
+          <div class="row expanded callout">
 
             <div class="small-12 medium-7 column">
                    <h3><?php the_field('box_3_heading');  ?></h3>
@@ -148,7 +148,7 @@ get_header(); ?>
             <a href="<?php the_field('box_5_url');?>" class="button primary" ><?php  the_field('box_5_button_text'); ?></a>
           </div>
         
-  <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
+  <div data-equalizer>
           
             <h2>Workforce Updates</h2>
             <?php
