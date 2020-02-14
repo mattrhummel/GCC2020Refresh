@@ -21,7 +21,6 @@ get_header(); ?>
        <div class="columns small-10 medium-10">
 
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
   
         <div class="crumbs-container">  
 
@@ -55,7 +54,7 @@ get_header(); ?>
 
 	</aside>
 
-      <div class="columns small-12 medium-12 large-8" style="padding: 0">
+      <div class="columns small-12 medium-12 large-8">
       
         <div class="entry-content" id="main">
 					<?php
