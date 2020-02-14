@@ -21,8 +21,12 @@ get_header(); ?>
        <div class="columns small-10 medium-10">
 
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
   
-        <div class="crumbs-container">    
+        <div class="crumbs-container">  
+
+            <p><?php echo get_the_date();  ?></p>
+              
         </div>
 
     </div>
