@@ -132,29 +132,29 @@
       color: $black;
       text-transform: uppercase;
       margin-bottom: .5rem;
-      font-size: 1.2rem;
-      line-height: 1.6rem;
+      font-size: 2.1rem;
+      line-height: 2.2rem;
     @media screen and (max-width: 39.9375em) {
-       font-size: 1.6rem;
-       line-height: 1.8rem;
+        font-size: 2.1rem;
+        line-height: 2.2rem;
 
     }
     @media screen and (min-width: 40em) {
-       font-size: 4.0rem;
-
+      font-size: 3.8rem;
+      line-height: 3.9rem;
     }
     @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
-    font-size: 2.6rem;
-    line-height: 2.8rem;
+    font-size: 3rem;
+    line-height: 3.1rem;
 
     }
     @media screen and (min-width: 64em) {
     font-size: 3.8rem;
-    line-height: 4rem;
+    line-height: 3.9rem;
     }
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
       font-size: 3rem;
-    line-height: 3.2rem;
+    line-height: 3.1rem;
     
     }
 
@@ -176,39 +176,42 @@
         font-family: $font-family-monospace;
         text-transform: uppercase;
         font-weight: 400;
-        font-size: .85rem;
+        font-size: .95rem;
+        line-height: 1.1rem;
         color: $black;
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 font-size: .95rem;
- 
+ line-height: 1.1rem;
 }
 
       @media screen and (min-width: 40em) {
 
-      font-size: 1rem;
+      font-size: 1.1rem;
+       line-height: 1.2rem;
 
       }
 
       /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
- font-size: .95rem;
+ font-size: 1rem;
+  line-height: 1.1rem;
   
 }
 
        @media screen and (min-width: 64em) {
 
         font-size: 1.2rem;
-       
+        line-height: 1.3rem;
        }
 
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
  font-size: 1.1rem;
-
+ line-height: 1.2rem;
 }
 
 

@@ -3,11 +3,6 @@
 .callout {
   background-color: $white;
 
-  h2, h3 {  
-    font-size: 24px;
-    line-height: 28px;
-  }
-  
   .close-button {
     color: $secondary;
     &:hover {
@@ -35,7 +30,6 @@
       color: $white !important;
       margin-bottom: 0;
       font-weight: bold;
-
 }
 
   p {
