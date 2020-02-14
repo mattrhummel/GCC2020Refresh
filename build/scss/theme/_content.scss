@@ -9,7 +9,7 @@ padding: 0 .1rem;
 
     @media screen and (min-width: 40em) {
     
-    padding: 0;
+    padding: 0 ;
 
     }
 
@@ -30,7 +30,7 @@ padding: 0 .1rem;
     } 
 
 .row.collapse > .column, .row.collapse > .columns {
-    padding-right: 0;
+    padding-right: .5rem;
     padding-left: 0;
 
   @media screen and (max-width: 39.9375em) {
@@ -53,7 +53,7 @@ padding: 0 .1rem;
      @media screen and (min-width: 64em) {
     
      padding-right: .5rem;
-    padding-left: 0;
+     padding-left: 0;
 
     }
     @media screen and (min-width: 64em) and (max-width: 74.9375em) {

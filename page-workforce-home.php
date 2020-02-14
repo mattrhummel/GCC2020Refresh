@@ -19,13 +19,13 @@ get_header(); ?>
     <div class="row">
       <?php get_sidebar();?>
       
-      <div class="columns small-12 medium-12 large-8" style="padding: 0">
+      <div class="columns small-12 medium-12 large-8">
         <div class="entry-content" id="main" tabindex="0">
 
             <?php if ( have_rows( 'wf_slider') ) : ?>
             <div class="slider-wrap-workforce">
               
-            <div id="sync1" class="owl-carousel owl-theme" style="z-index: 0;">
+            <div id="sync1" class="owl-carousel owl-theme">
 
               <?php
               //while there are slide items

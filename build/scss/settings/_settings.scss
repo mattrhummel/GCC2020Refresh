@@ -304,10 +304,10 @@ $button-color-alt: $white;
 $button-radius: $global-radius;
 $button-hollow-border-width: 2px;
 $button-sizes: (
-  tiny: 0.85rem,
-  small: .95rem,
-  default: 1rem,
-  large: 1.2rem,
+  tiny: 0.75rem,
+  small: .85rem,
+  default: .95rem,
+  large: 1rem,
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
