@@ -1,165 +1,165 @@
-//styles for the page callout boxes and alerts.
-//Default Callout
-.callout {
-  background-color: $white;
+// //styles for the page callout boxes and alerts.
+// //Default Callout
+// .callout {
+//   background-color: $white;
 
-  .close-button {
-    color: $secondary;
-    &:hover {
-          color: $primary;
+//   .close-button {
+//     color: $secondary;
+//     &:hover {
+//           color: $primary;
 
-    }
-  }
+//     }
+//   }
 
-.callout-image {
+// .callout-image {
 
-        width: 100%;
-        margin-bottom: .9rem;
+//         width: 100%;
+//         margin-bottom: .9rem;
 
-    }
+//     }
 
-}
+// }
 
-.callout.primary {
-  background-color: $white !important;
-  color: $black !important;
-}
-.callout.success, .callout.warning, .callout.alert {
+// .callout.primary {
+//   background-color: $white !important;
+//   color: $black !important;
+// }
+// .callout.success, .callout.warning, .callout.alert {
   
-  h1, h2, h3, h4, h5, h6 {
-      color: $white !important;
-      margin-bottom: 0;
-      font-weight: bold;
-}
+//   h1, h2, h3, h4, h5, h6 {
+//       color: $white !important;
+//       margin-bottom: 0;
+//       font-weight: bold;
+// }
 
-  p {
-      margin: .2rem 0 .3rem 0;
-      color: $white !important;
+//   p {
+//       margin: .2rem 0 .3rem 0;
+//       color: $white !important;
 
-      a {
-        text-decoration: underline;
-        color: $white; 
+//       a {
+//         text-decoration: underline;
+//         color: $white; 
 
-        &:hover {
-          color: $black;
-        }
-      }
+//         &:hover {
+//           color: $black;
+//         }
+//       }
 
-  }
+//   }
 
-  a.button.primary {
-      font-family: $font-family-monospace;
-      text-transform: uppercase;
-      font-weight: bold;
-      background-color: $white;
-      color: $primary !important;
-      border: none;
-      margin-top: 1rem;
+//   a.button.primary {
+//       font-family: $font-family-monospace;
+//       text-transform: uppercase;
+//       font-weight: bold;
+//       background-color: $white;
+//       color: $primary !important;
+//       border: none;
+//       margin-top: 1rem;
 
-      &:hover {
-        background-color: $secondary;
-        color: $white !important;
+//       &:hover {
+//         background-color: $secondary;
+//         color: $white !important;
 
-      }
-  }
-}
-//Closing Announcement
-.closing {
-  padding: 0 !important;
-  margin-bottom: 0 !important;
-  border-radius: 0 !important;
-  position: absolute;
-  top: 0;
-  border: none !important;
+//       }
+//   }
+// }
+// //Closing Announcement
+// .closing {
+//   padding: 0 !important;
+//   margin-bottom: 0 !important;
+//   border-radius: 0 !important;
+//   position: absolute;
+//   top: 0;
+//   border: none !important;
 
-  p {
-    color: $white;
-    padding:.5rem 0;
-    margin: 0;
-    display: block;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    font-family: $font-family-monospace;
+//   p {
+//     color: $white;
+//     padding:.5rem 0;
+//     margin: 0;
+//     display: block;
+//     font-size: 1rem;
+//     line-height: 1.2rem;
+//     font-family: $font-family-monospace;
 
-     @media screen and (max-width: 39.9375em) {
-      font-size: 1rem;
-      line-height: 1.2rem;
-     }
-    @media screen and (min-width: 40em) {
-           font-size: 1.2rem;
-               padding:.5rem 0 .5rem .5rem;
+//      @media screen and (max-width: 39.9375em) {
+//       font-size: 1rem;
+//       line-height: 1.2rem;
+//      }
+//     @media screen and (min-width: 40em) {
+//            font-size: 1.2rem;
+//                padding:.5rem 0 .5rem .5rem;
 
-    }
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {  
-     font-size: 1.1rem;
-         padding:.5rem 0;
+//     }
+//     @media screen and (min-width: 40em) and (max-width: 63.9375em) {  
+//      font-size: 1.1rem;
+//          padding:.5rem 0;
 
-    }
-     @media screen and (min-width: 64em) {  
-       font-size: 1.2rem;
-           padding:.5rem 0 .5rem .5rem;
+//     }
+//      @media screen and (min-width: 64em) {  
+//        font-size: 1.2rem;
+//            padding:.5rem 0 .5rem .5rem;
 
-    }
-    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-     font-size: 1.1rem;
-     }
+//     }
+//     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+//      font-size: 1.1rem;
+//      }
     
-    strong {
-      font-weight: bold;
-    }
+//     strong {
+//       font-weight: bold;
+//     }
 
-    a {
-      color: $white;
-      font-weight: bold;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: .95rem;
+//     a {
+//       color: $white;
+//       font-weight: bold;
+//       text-decoration: none;
+//       text-transform: uppercase;
+//       font-size: .95rem;
 
-      &:hover {
-        text-decoration: underline;
-      }
+//       &:hover {
+//         text-decoration: underline;
+//       }
 
-    }
-  }
-.close-button-weather {
-  color: $white;
-  top: 0;
-  right: 1rem;
-  font-size: 2em;
-  line-height: 1;
-  position: absolute;
-  &:hover {
-    color: $secondary;
-  }
-}
-.button.hollow {
-  border: 2px solid $white;
-  color: $white;
-  margin-top: 0;
-  margin-right: 1rem;
-  margin-bottom: 0;
-}
-a.alert-button {
-  margin-right: 1rem;
-}
-}
+//     }
+//   }
+// .close-button-weather {
+//   color: $white;
+//   top: 0;
+//   right: 1rem;
+//   font-size: 2em;
+//   line-height: 1;
+//   position: absolute;
+//   &:hover {
+//     color: $secondary;
+//   }
+// }
+// .button.hollow {
+//   border: 2px solid $white;
+//   color: $white;
+//   margin-top: 0;
+//   margin-right: 1rem;
+//   margin-bottom: 0;
+// }
+// a.alert-button {
+//   margin-right: 1rem;
+// }
+// }
 
-.callout.announcement.small {
-  background: $light-gray;
-  color: $black;
-  margin: 0 0 1rem 0;
-  padding: 1rem;
-  border: 5px solid $secondary;
-  border-radius: 0;
+// .callout.announcement.small {
+//   background: $light-gray;
+//   color: $black;
+//   margin: 0 0 1rem 0;
+//   padding: 1rem;
+//   border: 5px solid $secondary;
+//   border-radius: 0;
 
-  p {
-    padding: 0 0;
-    margin-bottom: 0;
-  }
-  a.button.primary {
-    padding-left: 0
-  }
-}
+//   p {
+//     padding: 0 0;
+//     margin-bottom: 0;
+//   }
+//   a.button.primary {
+//     padding-left: 0
+//   }
+// }
 
 .bottom-banner {
     position: fixed;
@@ -169,7 +169,6 @@ a.alert-button {
     height: auto;
     background-color: $primary;
     width: 100%; //important do not remove, keeps banner full width of screen
-    padding: .5rem 8rem .5rem .2rem;
     min-width: 100%;
     font-family: $font-family-monospace;
 
@@ -179,31 +178,24 @@ a.alert-button {
     }
     .close-button-banner {
       color: $white;
-      font-size: 2rem;
-      font-weight: 800;     
-      font-size: 2em;
-      line-height: 1;
       position: absolute;
     }
 
     p {
+      
       color: $white;
-      font-size: 1rem;
       font-weight: 800;
-      margin: 0;
-      line-height: auto;
-
-        @media screen and (min-width: 40em) {
+   	  margin: 0;
+       
+       @media screen and (min-width: 40em) {
 
         font-size: 1.6rem;
-        margin: 0;
       
       }
         
-        @media screen and (min-width: 64em) {
+     @media screen and (min-width: 64em) {
         
         font-size: 1.6rem;
-        margin: 0;
      }
 
     }

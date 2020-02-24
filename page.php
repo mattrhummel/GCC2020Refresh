@@ -20,11 +20,13 @@ get_header(); ?>
 
   <div class="row expanded content-area">
     
-    <div class="row">
+    <div class="row collapse">
 
       <?php get_sidebar();?>
 
-      <div class="columns small-12 medium-12 large-8">
+      <div class="row expanded">
+
+      <div class="columns small-12 medium-12 large-9 float-right">
       
         <div class="entry-content" id="main">
           
@@ -208,6 +210,10 @@ get_header(); ?>
           </div><!--.pagecontent-->
      
         </div>
+
+      </div>
+
+    </div>
 
       </article>
 

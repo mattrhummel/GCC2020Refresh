@@ -1,91 +1,91 @@
-.promotion {
+// .promotion {
 
-  padding: 1.8rem .8rem 0 .8rem;
-  margin-bottom: 3rem;
+//   padding: 1.8rem .8rem 0 .8rem;
+//   margin-bottom: 3rem;
 
-.promotion-container {
+// .promotion-container {
 
-	padding: 0;
+// 	padding: 0;
 
-	@media screen and (min-width: 40em) {
+// 	@media screen and (min-width: 40em) {
 
-	padding: 0 .8rem;
+// 	padding: 0 .8rem;
 
- }
+//  }
 
-.card {
+// .card {
 
- h2 {
-  font-weight: 400;
-  font-size: 1.3rem;
+//  h2 {
+//   font-weight: 400;
+//   font-size: 1.3rem;
 
-  @media screen and (min-width: 40em) {
+//   @media screen and (min-width: 40em) {
 
-		font-size: 1.6rem;
+// 		font-size: 1.6rem;
 
-  }
+//   }
 
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  font-size: 1.3rem;
+//   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+//   font-size: 1.3rem;
 
-}
+// }
 
-}
-.promo-image {
-  background-position: top center; 
- background-repeat: none; 
- background-size: cover;
- background-color: #eee;
- margin: 0;
- padding: 0;
- height: 300px; 
+// }
+// .promo-image {
+//   background-position: top center; 
+//  background-repeat: none; 
+//  background-size: cover;
+//  background-color: #eee;
+//  margin: 0;
+//  padding: 0;
+//  height: 300px; 
  
-}
+// }
 
-p.promotion-date {
-	font-size:  1.2rem;
-	margin-top: 0;
+// p.promotion-date {
+// 	font-size:  1.2rem;
+// 	margin-top: 0;
 
-	  @media screen and (min-width: 40em) {
+// 	  @media screen and (min-width: 40em) {
 
-		font-size: 1.6rem;
+// 		font-size: 1.6rem;
 
-  }
+//   }
 
- @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  font-size: 1.2rem;
+//  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+//   font-size: 1.2rem;
 
-}
+// }
 
-}
+// }
 
-.promotion-description {
-	margin-bottom: 2rem;
-}
-.card-section {
-	padding: 2rem;
-}
+// .promotion-description {
+// 	margin-bottom: 2rem;
+// }
+// .card-section {
+// 	padding: 2rem;
+// }
 
-}
+// }
 
 
-}
+// }
 
-.promotion-container:last-child {
+// .promotion-container:last-child {
 
-	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+// 	@media screen and (min-width: 40em) and (max-width: 63.9375em) {
     
-      width: 100%;
+//       width: 100%;
 
-	}
+// 	}
 
-.promo-image {
- background-position: center; 
- background-repeat: none; 
- background-size: cover;
- height: 300px;
-}
+// .promo-image {
+//  background-position: center; 
+//  background-repeat: none; 
+//  background-size: cover;
+//  height: 300px;
+// }
 
-}
+// }
 
-}
+// }

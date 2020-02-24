@@ -3,73 +3,12 @@
 background-color:$primary !important;
 font-family: $font-family-monospace;
 
-.navigation {
-  //do not remove
-  width: 100%;
-  padding: 0;
+	.navigation {
+	  //do not remove
+	  width: 100%;
+	  padding: 0;
 
-}
-
-.title-bar-left {
-  
-.logo-container {
-
-  width: 170px;
-  display: inline-block;
-
-      @media screen and (min-width: 40em) {
-
-      }
-
-      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
-            
-      }
-
-      @media screen and (min-width: 64em) {
-        
-      }
-
-     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
-      }
-
-  a.custom-logo-link {
-   
-    width: 100%;
-    height: auto;
-      padding: .40rem 2.4rem 0 .4rem;
-   
-    display: block;
-  
-      @media screen and (max-width: 39.9375em) {
-       }
-
-      @media screen and (min-width: 40em) {
-
-             padding: .85rem 1.8rem 0 .6rem;
-      }
-
-      @media screen and (min-width: 40em) and (max-width: 63.9375em) {  
-
-         padding: .50rem 1rem 0 .3rem;
-      }
-
-      @media screen and (min-width: 64em) {
-         padding: .85rem 1.8rem 0 .6rem;
-      }
-
-     @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-         padding: .58rem 1.4rem 0 .4rem;
-      }
-
-     &:focus {
-      text-decoration: none;
-     }
-
-    }
-}
-      
-    }
+	}
 
 } 
 
@@ -83,137 +22,49 @@ float: right;
 div.germanna-nav {
 
   ul {
-
-    margin: 0;
-overflow: hidden;
   li.menu-item {    
 
-  display:inline-block;      
-
   a {
-      color: $white;
-      font: 800 16px $font-family-monospace;
       text-transform: uppercase;
-      padding: 20px;
       line-height: inherit;
-      border-bottom: 7px solid $primary;
-      line-height: 1.6rem;
+      font-weight: bold;
+
       @media screen and (max-width: 39.9375em) {      
             display: none;
 
       }
-      @media screen and (min-width: 40em) {
-
-           padding: 16.5px 18px;
-
-      }
-      @media screen and (min-width: 40em) and (max-width: 63.9375em) {      
-      padding: 14.5px 14px;
-      }
-
-       @media screen and (min-width: 64em) {
-        padding: 17.5px 22px;
-       }
-
-       @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-        padding: 13.5px 18px;
-       }
-
-      @media screen and (max-width: 63.9375em) and (min-width: 40em)
-       {
-        padding: 14.5px 8px;
-       }
-
-    &:hover {
-      border-bottom: 7px solid $white;
-      color: $white;
-    } 
-    
-    &:focus {           
-            color: $white;
-            border-bottom:7px solid $black;
-            text-decoration: none;
-    }
-    &:active {
-
-      border-bottom: 7px solid $white;
-      color: $white;
-
-    }
   }
 
 }
 
-li.active  {
-
-    a {
-
-      border-bottom: 7px solid $white;
-      color: $white;
-
-    }
-}
 
 li.has-menu {          
-    
-   
-    display: inline-block;
-
+     
   button { 
-
       color: $white;
+      margin-top: 3px;
       border-radius: 0;
-      padding: 8px 12px;
       display: inline-block;
-      font: 800 16.5px $font-family-monospace;
-      line-height: 1.5rem;
       text-transform: uppercase;
-      margin: 0;
-       background-color: $secondary;
-            border-bottom: 7px solid $secondary;
+      background-color: $secondary;
+      font-weight: bold;
 
-    
     &:hover { 
       background-color: $white;
       color: $primary;
-      border-bottom: 7px solid $white;
 
     }
          
-    @media screen and (max-width: 39.9375em) {    
-    
-    }
-
-    @media screen and (min-width: 40em) {
-
-      padding: 18px;
-    
-    }
-
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-          padding: 14.5px 14px;
-    }
-
-   @media screen and (min-width: 64em) {  
-         padding: 17.5px 20px;
-   }
-
-  @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-           padding: 13.5px 18px;
-
-  }
 }      
+	button::after {
+	  content: '\f0c9 ';
+	  font-family: FontAwesome;
+	  line-height: inherit;
+	}
 
-
-button::after {
-  content: '\f0c9 ';
-  font-family: FontAwesome;
-  line-height: inherit;
-}
-
-button.is-open:after {
-    content: '\f00d';
-}
+	button.is-open:after {
+	    content: '\f00d';
+	}
 
   }
 
@@ -222,66 +73,42 @@ button.is-open:after {
 
 }
 
-.js-off-canvas-overlay.is-overlay-absolute {
-  top: 75px;
-}
 #popout-menu {
   //main sidebar styles
-  background-color: $white;
-  width: 100%;
   //do not change these styles
-  overflow: visible;
-  border-top:14px solid $secondary;
-  padding: 10px 28px 28px 28px;
-  position: absolute;
-  right: 0;
-  z-index: 999999;
-  top: 48px;
+  overflow: hidden;
+  padding: 20px;
   box-shadow: none;
 
-.menu .active > a, .menu .is-active > a {
-  background-color: $white;
-}
-      @media screen and (max-width: 39.9375em) {    
-
-      }
-      @media screen and (min-width: 40em) {
-               top: 71px;
-               width: 50%;
-      }
-
-      @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
-                 top: 60px;  
-                 width: 48%;         
-      }
-       @media screen and (min-width: 64em) {
-                top: 66px;
-                width: 30%;
-       }
-
-       @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-           top: 58px;
-           width: 42%;
-
-       }
+  /* Small only */
+@media screen and (max-width: 39.9375em) {
+ padding: 20px;
 
 }
 
-.close-button-menu {
-  font-size: 1.2rem;
-  text-align: right;
-  padding: 1rem;
-  font-weight: bold;
-  font-family: $font-family-monospace;
-  width: 100%;
-  display: block;
+/* Medium and up */
+@media screen and (min-width: 40em) {
+	padding: 20px 0 0 0;
 }
-.menu-icon {
-  margin: 1rem !important;
-  height: 34px !important;
-  width: 34px !important;
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+	padding: 20px 20px 0 20px;
 }
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+	padding: 20px 0 0 0;
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+	padding: 20px 20px 0 20px;
+}
+ 
 .mobile-menu {
+
   .mygcc-button {
       margin-bottom: 20px;
       margin-top: 10px;
@@ -345,9 +172,13 @@ button.is-open:after {
 
   }
 }
-.menu {   
-    width: 100%;
-    margin: 0 0 28px 0;
+
+}
+
+.menu.vertical 
+{  
+
+    margin: 0;
     padding: 0;
    
    li {
@@ -355,39 +186,10 @@ button.is-open:after {
       a {
           color: $primary;
           font-weight: 800;
-          background-color: $white;
-           font-size: 19px;  
+          font-size: 20px; 
           padding: 0 0 24px 0;
           text-transform: uppercase;
           font-family: $font-family-monospace;
-
-
-          /* Small only */
-@media screen and (max-width: 39.9375em) {
-    font-size: 18px; 
-}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-  font-size: 22px; 
-
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
-    font-size: 18px; 
-}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-    font-size: 22px; 
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
- font-size: 20px; 
-}
 
       /* visited link */
       &:visited {
@@ -403,8 +205,8 @@ button.is-open:after {
     }
 
   }
-
 }
+
 .secondary-menu-container {
   margin: 0;
   padding: 0;
@@ -413,6 +215,11 @@ button.is-open:after {
 
       margin: 0;
       padding: 0;
+
+       .menu .active > a, .menu .is-active > a {
+  		background-color: $light-gray;
+  }
+
        
     h2 {
       
@@ -426,7 +233,7 @@ button.is-open:after {
 
     }
 
-     ul.menu.vertical {
+     ul.menu {
 
       padding-left: 0;
 
@@ -458,6 +265,12 @@ button.is-open:after {
 
   }
 
-}
 
 }
+}
+
+.position-top {
+	height: auto;
+	margin-bottom: 100px;
+}
+

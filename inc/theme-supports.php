@@ -71,11 +71,21 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 		add_theme_support( 'custom-logo', array(
 			'height'      => 60,
 			'width'       => 200,
-			'flex-width'  => true,
-			'flex-height' => true,
+			'flex-width'  => false,
+			'flex-height' => false,
 		));
 	}
 endif;
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+
+    $html = str_replace( 'custom-logo', 'logo', $html );
+    $html = str_replace( 'custom-logo-link', 'logo', $html );
+
+    return $html;
+}
 add_action( 'after_setup_theme', 'gcc_wp_2018_setup' );
 //add editor style
 add_editor_style( 'dist/css/editor-style.css' );

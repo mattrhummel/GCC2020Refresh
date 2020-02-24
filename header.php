@@ -25,11 +25,11 @@
     })(window,document,'script','dataLayer','GTM-T2KLMW');</script> -->
     <!-- End Google Tag Manager -->
     <!-- Google Tag Manager (noscript) -->
-   <!--  <noscript>
+    <!--  <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2KLMW"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <!-- End Google Tag Manager (noscript) -->
-        
+    
     <script type="text/javascript">
     var _monsido = _monsido || [];
     _monsido.push(['_setDomainToken', '14l5XpM9a7fdx1hVoA-QRQ']);
@@ -38,65 +38,73 @@
     
     <script async src="//cdn.monsido.com/tool/javascripts/monsido.js">
     </script>
-
   </head>
   
   <body <?php body_class(); ?>>
+    <div id="skip">
+      
+      <a href="#main-content" class="show-on-focus"><?php _e('skip to content', 'gcc-wp-2018') ?></a>
 
-  <div id="skip">
-    
-    <a href="#main-content" class="show-on-focus"><?php _e('skip to content', 'gcc-wp-2018') ?></a> 
+    </div>
+<!--     <?php
+    //get_template_part( 'template-parts/content', 'weather-alert' );
+    ?> -->
+      <div class="off-canvas-wrapper no-js">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+          
+          <div class="off-canvas-content" data-off-canvas-content>
 
-  </div>
+<header class="branding">
 
-<?php
-  get_template_part( 'template-parts/content', 'weather-alert' );
-    ?>
-        
-<div class="off-canvas-wrapper no-js">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        
-        <div class="off-canvas-content" data-off-canvas-content>
-
-          <header class="title-bar hide-for-print">
-
-              <div class="navigation">
             
-                <div class="title-bar-left expanded">
-                                  
-                      <div class="logo-container">
-
-                        <?php the_custom_logo( ); ?>
-
-                      </div>
-
-                        <nav role="navigation" class="main-nav">
-                          <div class="menu germanna-nav float-right"> 
-
-                            <?php gcc_wp_2018_top_bar_menu() ?>
-                            
-                            <ul>
-                            
-                              <li class="menu-item has-menu">                     
-                                <button id="btn-toggle" class="" data-toggle="popout-menu" data-open="offCanvasLeft" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
-                                </button>                      
-                              </li>
-
-                            </ul>
-
-                          </div>
-                        </nav>
-
-                  </div>
-     </div>
-</header> 
- 
-<div class="off-canvas position-right mobile-menu" id="popout-menu" data-off-canvas>
-    <div class="mobile-menu-container">
-            <div class="mygcc-button">
-            <a href="<?php echo esc_html_e('https://gcc.my.vccs.edu/', 'gcc-wp-2018'); ?>" class="button expanded">
+            <div class="row">
+              <div class="top-bar hide-for-print">
+                
+                <div class="top-bar-left">
                   
-                <i class="fa fa-lock" aria-hidden="true"></i>
+                  <?php the_custom_logo( ); ?>
+                </div>
+                <div class="top-bar-right">
+                  <nav role="navigation" class="main-nav">
+                    <div class="menu germanna-nav">
+                      <?php gcc_wp_2018_top_bar_menu() ?>                      
+                      <ul class="menu">
+                        
+                        <li class="menu-item  has-menu">
+                          <button type="button" class="button" data-toggle="popout-menu" data-open="offCanvasTopPush" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
+                          </button>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+</header>
+
+
+</div>
+</div>
+</div>
+
+<div class="off-canvas-absolute position-top" id="offCanvasTopPush" data-off-canvas data-transition="push">
+
+      <div class="row collapse" id="popout-menu">
+        
+        <div class="row expanded collapse">
+          
+          <div class="small-12 medium-4 columns">
+            <?php  //function located in inc/main-navigation.php
+                gcc_wp_2018_main_menu(); ?>
+          </div>
+
+          <div class="small-12 medium-8 columns secondary-menu-container">
+            <div class="row secondary-menu">
+              <div class="mygcc-button">
+                <a href="<?php echo esc_html_e('https://gcc.my.vccs.edu/', 'gcc-wp-2018'); ?>" class="button expanded">
+                  
+                  <i class="fa fa-lock" aria-hidden="true"></i>
                   <?php _e('myGCC', 'gcc-wp-2018'); ?>
                 </a>
                 
@@ -105,32 +113,26 @@
               <div id="gccSearch" class="search-container">
                 
                 <?php
-  get_template_part( 'searchform' );
-    ?>
-
+                get_template_part( 'searchform' );
+                ?>
               </div>
-              
-              <?php  //function located in inc/main-navigation.php
-              gcc_wp_2018_main_menu(); ?>
-              <div class="row expanded secondary-menu-container">
-                <div class="small-12 medium-6 columns secondary-menu">
-                  <h2 id="menu_information"><?php _e('Information For', 'gcc-wp-2018') ?></h2>
-                  
-                  <?php //function located in inc/main-navigation.php
-                  gcc_wp_2018_information_menu(); ?>
-                </div>
-                <div class="small-12 medium-6 columns secondary-menu">
-                  <h2 id="menu_resource"><?php _e('Resources', 'gcc-wp-2018'); ?></h2>
-                  
-                  <?php  //function located in inc/main-navigation.php
-                  gcc_wp_2018_resource_menu(); ?>
-                </div>     
+              <div class="small-12 medium-6 columns secondary-menu">
+                <h2 id="menu_information"><?php _e('Information For', 'gcc-wp-2018') ?></h2>
+                
+                <?php //function located in inc/main-navigation.php
+                gcc_wp_2018_information_menu(); ?>
+              </div>
+              <div class="small-12 medium-6 columns secondary-menu">
+                <h2 id="menu_resource"><?php _e('Resources', 'gcc-wp-2018'); ?></h2>
+                
+                <?php  //function located in inc/main-navigation.php
+                gcc_wp_2018_resource_menu(); ?>
               </div>
             </div>
-</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
-</div>
-
-
-<main id="main-content">
+    <div class="off-canvas-content" data-off-canvas-content>
+      <main id="main-content">

@@ -1,60 +1,102 @@
-//Branding and Main Navigation
-@media screen and (min-width: 40em) {
-  
-.branding {
-  background-color: $white;
-  padding: 0;
-  max-width: 300px !important;
-  margin-bottom: 1rem;
-  font-family: $font-family-monospace;
-
-}
-
-.calltos {
-
+#closeAnnouncement {
+.callout.alert {
+	
   margin-bottom: 0;
-  font-weight: bold;
+	.closing-container {
+			position: relative;
+		   color:$white;
+	 p {
+	 	margin-bottom: 0;
+	    a {
+	    	color: $white;
+	    	font-weight: bold;
+	    }
 
-    a {
+	}
+
+	.close-button {
+		color: $white;
+		top: -.3rem;
+	}
+}
+}
+}
+
+
+.branding {
+	border-bottom: 5px solid $primary;
+	position: relative;
+
+	.logo {
+	max-width: 160px;
+}
+
+
+}
+
+.position-top {
+		top: 120px !important;
+}
+
+h1 {
+	font-family: $font-family-monospace;
+}
+
+// //Branding and Main Navigation
+// @media screen and (min-width: 40em) {
+  
+// .branding {
+//   background-color: $white;
+//   padding: 0;
+//   max-width: 300px !important;
+//   margin-bottom: 1rem;
+//   font-family: $font-family-monospace;
+
+// }
+
+// .calltos {
+
+//   margin-bottom: 0;
+//   font-weight: bold;
+//     a {
         
-        font-size: 1.1rem !important;
-        padding-top: 1.05rem;
-        padding-bottom: 1.05rem;
+//         font-size: 1.1rem !important;
+//         padding-top: 1.05rem;
+//         padding-bottom: 1.05rem;
        
-    }
+//     }
+//     a.primary {
+//     background-color: #82082A;
 
-    a.primary {
-    background-color: #82082A;
+//     &:hover {
+//       background-color: $medium-gray;
+//       color: $primary;
+//     }
 
-    &:hover {
-      background-color: $medium-gray;
-      color: $primary;
-    }
+//   }
 
-  }
+//   a.secondary {
 
-  a.secondary {
+//     background-color: $secondary;
 
-    background-color: $secondary;
+//     &:hover {
+//       background-color: $medium-gray;
+//       color: $primary;
+//     }
 
-    &:hover {
-      background-color: $medium-gray;
-      color: $primary;
-    }
+//   }
 
-  }
+// }
+// .custom-logo-link, .mobile-logo {
+//   overflow: hidden;
+//   display: block;
+//   position: relative;
+// }
+// .custom-logo-link {
+//   margin: 0;
+// }
+// .mobile-logo {
+//   margin: .5rem;
+// }
 
-}
-.custom-logo-link, .mobile-logo {
-  overflow: hidden;
-  display: block;
-  position: relative;
-}
-.custom-logo-link {
-  margin: 0;
-}
-.mobile-logo {
-  margin: .5rem;
-}
-
-}
+// }
