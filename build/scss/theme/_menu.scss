@@ -1,92 +1,77 @@
 //top bar (branding)
+
+.branding {
+
+border-bottom: 5px solid $primary;
+  position: relative;
+
+    .logo {
+      max-width: 160px;
+    }
+
+}
+
 .main-nav {
-   
- .germanna-nav {
+    
+   .germanna-nav {
 
-  ul {
+    ul {
 
-	  li.menu-item {    
+  	  li.menu-item {    
 
-		  a  {
-		      text-transform: uppercase;
-		      font-weight: bold;
-		      
-		      @media screen and (max-width: 39.9375em) {      
-		        display: none;
-		      }
-		  }
+  		  a  {
+  		      text-transform: uppercase;
+  		      font-weight: bold;
+  		      
+  		      @media screen and (max-width: 39.9375em) {      
+  		        display: none;
+  		      }
+  		  }
 
-	 }
+  	 }
 
-}
+  }
 
-li.has-menu {   
+  li.has-menu {   
 
-  	  button { 
-  	      text-transform: uppercase;
-  	      background-color: $secondary;
-          color: $white;
-  	      font-weight: bold;
+    	  button { 
+    	      text-transform: uppercase;
+    	      background-color: $secondary;
+            color: $white;
+    	      font-weight: bold;
 
-  	    &:hover { 
-  	       background-color: $light-gray;
-          color: $primary;
-  	    }   
+    	    &:hover { 
+    	       background-color: $light-gray;
+             color: $primary;
+    	    }   
 
-}      
-		
-    button::after {
-		  content: '\f0c9 ';
-		  font-family: FontAwesome;
-		}
+  }      
+  		
+      button::after {
+  		  content: '\f0c9 ';
+  		  font-family: FontAwesome;
+  		}
 
-	 }
+  	 }
 
-}
+  }
 
 }//top bar (branding)
 
-
 //off canvas menu popout
-#popout-menu {
+#offCanvasRightPush {
+  
   //main sidebar styles
   //do not change these styles
   overflow: hidden;
-  padding: 20px;
+  padding: 48px 28px;
   box-shadow: none;
 
-  /* Small only */
-@media screen and (max-width: 39.9375em) {
- padding: 20px;
-
-}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-	padding: 20px 0 0 0;
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
-	padding: 20px 20px 0 20px;
-}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-	padding: 20px 0 0 0;
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-	padding: 20px 20px 0 20px;
-}
- 
 .mobile-menu {
-
-  .mygcc-button {
-      margin-bottom: 20px;
+  .mygcc-button {   
+      margin-bottom: 40px;
       margin-top: 10px;
+
      .button {
         color: $white;
         background-color: $secondary;
@@ -95,7 +80,6 @@ li.has-menu {
         font-size: 1.2em;
         border:none;
         transition: none;
-
         &:hover {
         background-color: rgb(141,36,55);
         color: $white;
@@ -248,10 +232,13 @@ li.has-menu {
 
 
 }
-}//off canvas menu popout
-
-.position-top {
-	height: auto;
-	margin-bottom: 100px;
+.close-button {
+  font-size: 2.4rem;
+  font-weight: 100;
 }
 
+}//off canvas menu popout
+
+.position-right {
+	height: auto;
+}

@@ -48,13 +48,8 @@
     </div>
 <!--     <?php
     //get_template_part( 'template-parts/content', 'weather-alert' );
-    ?> -->
-      <div class="off-canvas-wrapper no-js">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-          
-          <div class="off-canvas-content" data-off-canvas-content>
-
-      <header class="branding">
+    ?> -->          
+<header class="branding">
   
             <div class="row">
               <div class="top-bar hide-for-print">
@@ -70,7 +65,7 @@
                       <ul class="menu">
                   
                         <li class="menu-item has-menu">
-                          <button type="button" class="button" data-toggle="popout-menu"aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
+                          <button type="button" class="button" data-toggle="offCanvasRightPush"><?php _e(' Menu', 'gcc-wp-2018'); ?>
                           </button>
                         </li>
 
@@ -82,26 +77,16 @@
             </div>
 </header>
 
-</div>
-</div>
-</div>
-
-<div class="off-canvas-absolute position-top" id="popout-menu" data-off-canvas>
+<div class="off-canvas-wrapper">
+<div class="off-canvas-absolute position-right" id="offCanvasRightPush" data-off-canvas data-transition="push">
       <div class="row collapse">
-        <div class="row expanded collapse">
+
              <!-- Close button -->
     <button class="close-button" aria-label="Close menu" type="button" data-close>
-      <span aria-hidden="true">&times;</span>
+ <span aria-hidden="true" class="times">&times;</span>
     </button>
-          
-          <div class="small-12 medium-4 columns">
-            <?php  //function located in inc/main-navigation.php
-                gcc_wp_2018_main_menu(); ?>
-          </div>
 
-          <div class="small-12 medium-8 columns secondary-menu-container">
-            <div class="row secondary-menu">
-              <div class="mygcc-button">
+               <div class="mygcc-button">
                 <a href="<?php echo esc_html_e('https://gcc.my.vccs.edu/', 'gcc-wp-2018'); ?>" class="button expanded">
                   
                   <i class="fa fa-lock" aria-hidden="true"></i>
@@ -115,7 +100,15 @@
                 <?php
                 get_template_part( 'searchform' );
                 ?>
+
               </div>
+          
+            <?php  //function located in inc/main-navigation.php
+                gcc_wp_2018_main_menu(); ?>
+
+          <div class="secondary-menu-container">
+            <div class="row secondary-menu">
+   
               <div class="small-12 medium-6 columns secondary-menu">
                 <h2 id="menu_information"><?php _e('Information For', 'gcc-wp-2018') ?></h2>
                 
@@ -129,10 +122,10 @@
                 gcc_wp_2018_resource_menu(); ?>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="off-canvas-content" data-off-canvas-content>
-      <main id="main-content">
+        </div>
+    </div>
+  </div>
+
+<div class="off-canvas-content" data-off-canvas-content>      
+<main id="main-content">

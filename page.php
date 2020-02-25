@@ -11,7 +11,7 @@ get_header(); ?>
  <?php
   while ( have_posts() ) : the_post(); ?>
 
-
+<div class="off-canvas-content" data-off-canvas-content>  
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
   <?php //Page Heading
@@ -236,6 +236,9 @@ the_modified_time('F j, Y');
         </div>
 
     </div>
+</div>
+</div>
+</div>
 </div>
 
         <?php endwhile; // End of the loop. ?>

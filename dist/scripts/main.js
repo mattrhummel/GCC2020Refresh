@@ -1,4 +1,6 @@
- $(document).foundation();
+$(document).ready(function(){
+    $(document).foundation();
+});
 
   // $(function() {
   //       $('.lazy').Lazy();
@@ -151,9 +153,8 @@ if (Boolean(readCookie('hide'))) {
                 $('.bottom-banner').hide();
                 $('.bottom-banner').fadeOut(1000);
             }
-
             
-            $('.close-button-babber').click(function (e) {
+            $('.close-button-banner').click(function (e) {
 
                 $('.bottom-banner').fadeOut(700);
                 e.stopPropagation();
@@ -233,7 +234,6 @@ function eraseCookieClosing(name) {
     createCookieClosing(name, "", -1);
 }
 
-
 $(document).ready(function() {
 var sync1 = $("#sync1");
   //Init the carousel
@@ -250,5 +250,3 @@ var sync1 = $("#sync1");
   }).on('changed.owl.carousel', syncPosition);
      
  });
-
-
