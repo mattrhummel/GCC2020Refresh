@@ -1,3 +1,105 @@
+.header-section {
+   background-color: $light-gray;
+   position: relative;
+
+.header-container {
+   
+   height: auto;
+   padding: 8rem 0 1rem 0;
+
+   @media screen and (max-width: 39.9375em) {
+       padding: 4rem 0 1rem 0;
+   }
+
+    @media screen and (min-width: 40em) {
+        padding: 7rem 0 1rem 0;
+    }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+    padding: 7rem 0 1rem 0;
+
+    }
+     @media screen and (min-width: 64em) {
+       padding: 8rem 0 1rem 0;
+    }
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+    padding: 7rem 0 1rem 0;
+
+    } 
+
+  .header-content {
+  
+     h1.entry-title {
+
+      font-family: $font-family-monospace;
+      color: $black;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+      font-size: 2.1rem;
+       line-height: 1.8rem;
+    @media screen and (max-width: 39.9375em) {
+        font-size: 2.1rem;
+        line-height: 1.8rem;
+
+    }
+    @media screen and (min-width: 40em) {
+      font-size: 3.8rem;
+      	    line-height: 3.4rem;
+
+    }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+    font-size: 3rem;
+	    line-height: 2.6rem;
+
+    }
+    @media screen and (min-width: 64em) {
+	    font-size: 3.8rem;
+	    line-height: 3.4rem;
+    }
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+        font-size: 3rem;
+    
+    }
+
+  }
+ 
+
+.crumbs-container {
+
+  width: 100%;
+  font-family: $font-family-monospace;
+        
+  .breadcrumbs {
+
+    margin: 0 0 1rem 0;
+
+    li {
+
+        font-family: $font-family-monospace;
+        text-transform: uppercase;
+        color: $black;
+        font-weight: 800;
+
+      a {
+        color: $black;
+        font-family: $font-family-monospace;
+        font-weight: 800;
+        font-size: 1.2rem;
+      }
+    }
+
+  }
+
+}
+
+
+}
+
+}
+
+}
+
+
 .content-area {
   position: relative;
   margin-top: 0;
@@ -20,7 +122,7 @@
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
 	 margin-top: 20px;
-  margin-bottom: 120px;
+  	 margin-bottom: 120px;
 }
 
 /* Large and up */
