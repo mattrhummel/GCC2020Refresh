@@ -532,14 +532,14 @@ $offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: rgba($black, 0.25);
-// $offcanvas-overlay-zindex: 11;
+$offcanvas-overlay-zindex: 11;
 $offcanvas-push-zindex: 12;
-// $offcanvas-overlap-zindex: 13;
-// $offcanvas-reveal-zindex: 12;
-$offcanvas-transition-length: 0;
-$offcanvas-transition-timing: none;
-$offcanvas-fixed-reveal: false;
-$offcanvas-exit-background: rgba($white, 0.25);
+$offcanvas-overlap-zindex: 13;
+$offcanvas-reveal-zindex: 12;
+$offcanvas-transition-length: 0.1s;
+$offcanvas-transition-timing: ease;
+$offcanvas-fixed-reveal: true;
+$offcanvas-exit-background: rgba($white, 0);
 $maincontent-class: 'off-canvas-content';
 
 // // 26. Orbit

@@ -1,23 +1,23 @@
  $(document).foundation();
 
-  $(function() {
-        $('.lazy').Lazy();
-  });
+  // $(function() {
+  //       $('.lazy').Lazy();
+  // });
 
 
-$(function () {
+// $(function () {
 
-	$(".menu-open").click(function(){
-	    $(this).addClass('is-active');
-	});
+// 	$(".has-menu").click(function(){
+// 	    $(this).addClass('is-active');
+// 	});
 
-	$(".js-off-canvas-exit").click(function(){
-	    $(this).removeClass("is-active");
-	    $("#btn-toggle").removeClass('is-open');
-	});
+// 	$(".js-off-canvas-exit").click(function(){
+// 	    $(this).removeClass("is-active");
+// 	    $("#btn-toggle").removeClass('is-open');
+// 	});
 
   
-});
+// });
 
 
 // $(document).ready(function() {

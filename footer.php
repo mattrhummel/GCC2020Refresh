@@ -84,21 +84,21 @@
 
     <?php if( get_field('banner_text', 'options') ): ?>
     
-<div id="bannerAnnouncement" class="bottom-banner hide-for-print" data-closable>
+<!-- <div id="bannerAnnouncement" class="bottom-banner hide-for-print" data-closable>
       
       <div class="row expanded">
         <div class="row">
           <div class="small-12 medium-8 columns ">
-            <p><?php the_field( 'banner_text', 'options' ); ?></p>
+            <p><?php //the_field( 'banner_text', 'options' ); ?></p>
           </div>
           <div class="small-12 medium-4 columns">
             <div class="button-group show-for-medium">
               
-              <a href="<?php echo the_field( 'banner_button_1_url', 'options' ); ?>" class="button banner-button-hollow apply-button">
-                <?php the_field( 'banner_button_1_text', 'options' ); ?>
+              <a href="<?php //echo the_field( 'banner_button_1_url', 'options' ); ?>" class="button banner-button-hollow apply-button">
+                <?php //the_field( 'banner_button_1_text', 'options' ); ?>
               </a>
-              <a href="<?php echo the_field( 'banner_button_2_url', 'options' ); ?>" class="button banner-button request-button">
-                <?php the_field( 'banner_button_2_text', 'options' ); ?>
+              <a href="<?php //echo the_field( 'banner_button_2_url', 'options' ); ?>" class="button banner-button request-button">
+                <?php //the_field( 'banner_button_2_text', 'options' ); ?>
               </a>
             </div>
           </div>
@@ -108,7 +108,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <?php endif; ?>
 

@@ -10,7 +10,7 @@ if (is_page('home') || is_page('workforce')) wp_enqueue_style( 'gcc-wp-2018-slid
 		wp_deregister_script( 'jquery-migrate' );
 // CDN hosted jQuery migrate for compatibility with jQuery 3.x
 		wp_register_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-3.0.1.min.js', array('jquery'), '3.0.1', false );
-wp_enqueue_script( 'gcc-wp-2018-foundation', '//cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js', array(), '20191025', true );
+wp_enqueue_script( 'gcc-wp-2018-foundation', '//cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js', array(), '20191025', true );
 if (is_page('home') || is_page('workforce')) wp_enqueue_script('gcc-wp-2018-owl', get_template_directory_uri() . '/dist/scripts/owl.carousel.min.js', array(), '20190813', true);
 wp_enqueue_script( 'gcc-wp-2018-scripts', get_template_directory_uri() . '/dist/scripts/main.min.js', array(), '20191118', true );
 wp_enqueue_script( 'gcc-wp-2018-lazy-load', get_template_directory_uri() . '/dist/scripts/jquery.lazy.min.js', array(), '', true );

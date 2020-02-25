@@ -54,24 +54,23 @@
           
           <div class="off-canvas-content" data-off-canvas-content>
 
-<header class="branding">
-
-            
+      <header class="branding">
+  
             <div class="row">
               <div class="top-bar hide-for-print">
                 
                 <div class="top-bar-left">
-                  
                   <?php the_custom_logo( ); ?>
                 </div>
+
                 <div class="top-bar-right">
                   <nav role="navigation" class="main-nav">
                     <div class="menu germanna-nav">
                       <?php gcc_wp_2018_top_bar_menu() ?>                      
                       <ul class="menu">
-                        
-                        <li class="menu-item  has-menu">
-                          <button type="button" class="button" data-toggle="popout-menu" data-open="offCanvasTopPush" aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
+                  
+                        <li class="menu-item has-menu">
+                          <button type="button" class="button" data-toggle="popout-menu"aria-haspopup="true" aria-expanded="false"><?php _e(' Menu', 'gcc-wp-2018'); ?>
                           </button>
                         </li>
 
@@ -83,16 +82,17 @@
             </div>
 </header>
 
-
 </div>
 </div>
 </div>
 
-<div class="off-canvas-absolute position-top" id="offCanvasTopPush" data-off-canvas data-transition="push">
-
-      <div class="row collapse" id="popout-menu">
-        
+<div class="off-canvas-absolute position-top" id="popout-menu" data-off-canvas>
+      <div class="row collapse">
         <div class="row expanded collapse">
+             <!-- Close button -->
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+      <span aria-hidden="true">&times;</span>
+    </button>
           
           <div class="small-12 medium-4 columns">
             <?php  //function located in inc/main-navigation.php
