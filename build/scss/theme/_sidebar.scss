@@ -6,6 +6,7 @@ button.mobile-sidebar-button {
 	background-color: $light-gray;
 	text-align: left;
 	font-size: 1.2rem;
+	margin-top: 20px;
 	font-family: $font-family-monospace;
 	text-transform: uppercase;
 	color: $secondary;
@@ -35,7 +36,7 @@ button.mobile-sidebar-button {
 //Page Side bar
 .widget {
 background-color: $light-gray;
-margin-bottom: 2rem;
+margin-bottom: 1rem;
 
 h3 {
 	padding: 10px;

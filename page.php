@@ -11,22 +11,26 @@ get_header(); ?>
  <?php
   while ( have_posts() ) : the_post(); ?>
 
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
   <?php //Page Heading
   get_template_part( 'template-parts/content', 'page-heading' );
   ?>
 
-  <div class="row expanded content-area">
-    
-    <div class="row collapse">
+<div class="row">
+  <div class="columns small-12">
+      <div class="mobile-sidebar" data-responsive-toggle="example-menu" data-hide-for="large">
+         <button class="button expanded mobile-sidebar-button" type="button" data-toggle="example-menu"><?php _e('In this section', 'gcc-wp-2018'); ?>
+         </button> 
+      </div>
+</div>
+</div>
 
+  <div class="row content-area">
+    
       <?php get_sidebar();?>
 
-      <div class="row expanded">
-
-      <div class="columns small-12 medium-12 large-9 float-right">
+      <div class="columns small-12 medium-12 large-8 float-right">
       
         <div class="entry-content" id="main">
           
@@ -211,13 +215,10 @@ get_header(); ?>
      
         </div>
 
-      </div>
-
     </div>
 
       </article>
 
-      <div class="row expanded gutter-small">
 
         <div class="row">
 
@@ -236,7 +237,6 @@ the_modified_time('F j, Y');
         </div>
 
     </div>
-</div>
 
         <?php endwhile; // End of the loop. ?>
 

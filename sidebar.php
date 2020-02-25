@@ -7,11 +7,8 @@
 * @package gccwp-2018
 */
 ?>
-<div class="mobile-sidebar" data-responsive-toggle="example-menu" data-hide-for="large">
-   <button class="button expanded mobile-sidebar-button" type="button" data-toggle="example-menu"><?php _e('In this section', 'gcc-wp-2018'); ?></button> 
-</div>
 
-<aside class="columns large-3 hide-for-print" id="example-menu">
+<aside class="columns medium-12 large-4 hide-for-print" id="example-menu">
 
   <?php //get page widgets
   dynamic_sidebar( 'sidebar-widgets' );

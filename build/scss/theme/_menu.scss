@@ -1,9 +1,8 @@
 //top bar (branding)
-
 .branding {
 
-border-bottom: 5px solid $primary;
-  position: relative;
+   border-bottom: 5px solid $primary;
+   position: relative;
 
     .logo {
       max-width: 160px;
@@ -157,6 +156,7 @@ border-bottom: 5px solid $primary;
 }
 
 .menu.vertical 
+
 {  
     margin: 0;
     padding: 0;

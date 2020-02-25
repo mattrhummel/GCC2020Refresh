@@ -4,8 +4,7 @@
 
       <div class="row header-container">
 
-        <div class="header-content small-uncollapse large-collapse">
-          <div class="columns small-12">
+          <div class="columns small-12 header-content">
      
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   
@@ -22,7 +21,5 @@
     </div>
 
   </div>
-
-  </div>
-    
+      
 </header>

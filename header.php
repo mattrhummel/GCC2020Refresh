@@ -98,11 +98,14 @@
         </div>
     </div>
 </div>
-
 <div class="off-canvas-content" data-off-canvas-content>
+
 <header class="branding">
   
             <div class="row">
+
+              <div class="columns small-12">
+
               <div class="top-bar hide-for-print">
                 
                 <div class="top-bar-left">
@@ -127,6 +130,7 @@
                   </nav>
                 </div>
               </div>
+            </div>
             </div>
 </header>
 
