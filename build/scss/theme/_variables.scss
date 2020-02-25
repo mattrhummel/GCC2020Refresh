@@ -66,7 +66,7 @@
 // // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1280);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #A30E34,
@@ -112,8 +112,8 @@ $print-hrefs: false;
 // // --------------
 $breakpoints: (
   small: 0,
-  medium: 1024px,
-  large: 1200px,
+  medium: 640px,
+  large: 1024px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
@@ -133,12 +133,12 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 20px,
-  medium: 30px,
+  small: 30px,
+  medium: 40px,
   large: 80px
 );
 $grid-column-align-edge: true;
-$grid-column-alias: 'columns';
+// $grid-column-alias: 'columns';
 $block-grid-max: 8;
 
 // // 4. Base Typography
@@ -521,12 +521,12 @@ $menu-icons-back-compat: true;
 // // 25. Off-canvas
 // // --------------
 $offcanvas-sizes: (
-  small: auto,
-  large: auto
+  small: 380px,
+  large: 400px
 );
 $offcanvas-vertical-sizes: (
-  small: auto,
-  large: auto
+  small: 380px,
+  large: 400px
 );
 $offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
@@ -882,7 +882,7 @@ $topbar-background:$white;
 $topbar-submenu-background: $primary;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 // $topbar-input-width: 200px;
-// $topbar-unstack-breakpoint: large;
+$topbar-unstack-breakpoint: small;
 
 // // 56. Xy Grid
 // // -----------

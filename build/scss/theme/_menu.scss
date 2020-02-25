@@ -22,10 +22,32 @@ border-bottom: 5px solid $primary;
   		  a  {
   		      text-transform: uppercase;
   		      font-weight: bold;
+            display: none;
   		      
   		      @media screen and (max-width: 39.9375em) {      
   		        display: none;
   		      }
+
+            /* Medium and up */
+            @media screen and (min-width: 40em) {
+              display: block;
+            }
+
+            /* Medium only */
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+              display: none;
+            }
+
+            /* Large and up */
+            @media screen and (min-width: 64em) {
+              display: block;
+            }
+
+            /* Large only */
+            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+              display: block;
+            }
+
   		  }
 
   	 }
@@ -92,7 +114,7 @@ border-bottom: 5px solid $primary;
 }
 .search-container {
 
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   .input-group {
     height: calc(1.5em + .75rem + 2px);

@@ -48,46 +48,18 @@
     </div>
 <!--     <?php
     //get_template_part( 'template-parts/content', 'weather-alert' );
-    ?> -->          
-<header class="branding">
-  
-            <div class="row">
-              <div class="top-bar hide-for-print">
-                
-                <div class="top-bar-left">
-                  <?php the_custom_logo( ); ?>
-                </div>
+    ?> -->    
 
-                <div class="top-bar-right">
-                  <nav role="navigation" class="main-nav">
-                    <div class="menu germanna-nav">
-                      <?php gcc_wp_2018_top_bar_menu() ?>                      
-                      <ul class="menu">
-                  
-                        <li class="menu-item has-menu">
-                          <button type="button" class="button" data-toggle="offCanvasRightPush"><?php _e(' Menu', 'gcc-wp-2018'); ?>
-                          </button>
-                        </li>
+<div class="off-canvas position-right" id="offCanvasRightPush" data-off-canvas>
 
-                      </ul>
-                    </div>
-                  </nav>
-                </div>
-              </div>
-            </div>
-</header>
-
-<div class="off-canvas-wrapper">
-<div class="off-canvas-absolute position-right" id="offCanvasRightPush" data-off-canvas data-transition="push">
-      <div class="row collapse">
-
+<div class="row">
              <!-- Close button -->
     <button class="close-button" aria-label="Close menu" type="button" data-close>
- <span aria-hidden="true" class="times">&times;</span>
+      <span aria-hidden="true" class="times">&times;</span>
     </button>
 
                <div class="mygcc-button">
-                <a href="<?php echo esc_html_e('https://gcc.my.vccs.edu/', 'gcc-wp-2018'); ?>" class="button expanded">
+                <a href="<?php echo esc_html_e('https://gcc.my.vccs.edu/', 'gcc-wp-2018'); ?>" class="button primary expanded">
                   
                   <i class="fa fa-lock" aria-hidden="true"></i>
                   <?php _e('myGCC', 'gcc-wp-2018'); ?>
@@ -125,7 +97,37 @@
 
         </div>
     </div>
-  </div>
+</div>
 
-<div class="off-canvas-content" data-off-canvas-content>      
+<div class="off-canvas-content" data-off-canvas-content>
+<header class="branding">
+  
+            <div class="row">
+              <div class="top-bar hide-for-print">
+                
+                <div class="top-bar-left">
+                  <?php the_custom_logo( ); ?>
+                </div>
+
+                <div class="top-bar-right">
+                  <nav role="navigation" class="main-nav">
+                    <div class="menu germanna-nav">
+
+                      <?php gcc_wp_2018_top_bar_menu() ?>  
+
+                      <ul class="menu">
+                  
+                        <li class="menu-item has-menu">
+                          <button type="button" class="button" data-toggle="offCanvasRightPush"><?php _e(' Menu', 'gcc-wp-2018'); ?>
+                          </button>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+</header>
+
 <main id="main-content">
