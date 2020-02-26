@@ -63,7 +63,6 @@ h3,h4 {
     font-size: 1rem;
     margin-bottom: 5px;
     text-align: center;
-    font-family: Arial, san-serif;
     color: $white;
     text-transform: uppercase;
              
@@ -265,9 +264,9 @@ li {
         a {
           color: $primary;
           font-size: .8rem;
-          font-family: Arial, san-serif;
+          line-height:1.2rem;
           font-weight: normal;
-          padding: 0 1rem 1rem 0;
+          padding: 0 1rem 0 0;
           margin: 0;
 
           &:hover {
@@ -325,9 +324,8 @@ li {
     font-size: 0.8rem;
     line-height: 1.2rem;
     font-weight: bold;
-    font-family: Arial, san-serif;
     margin: 0 0 1rem;
-      color: $black;
+    color: $black;
 
     @media screen and (min-width: 40em) {
 

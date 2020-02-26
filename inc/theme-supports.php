@@ -68,7 +68,7 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		
+
 		add_theme_support( 'custom-logo', array(
 			'height'      => 140,
  			'width'       => 280,
@@ -78,6 +78,8 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 	}
 endif;
 add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
 
 
 function change_logo_class( $html ) {

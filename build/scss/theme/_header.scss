@@ -29,7 +29,7 @@
    position: relative;
 
     .logo-link img {
-      width: 260px;
+      max-width: 260px;
     }
 
 }
@@ -91,7 +91,7 @@
             color: $white;
     	      font-weight: bold;
             line-height: inherit;
-            margin-left: 2px;
+            margin-left: 15px;
 
     	    &:hover { 
     	       background-color: $light-gray;
@@ -199,7 +199,7 @@
           color: $primary;
           font-weight: 800;
           font-size: 20px; 
-          padding: 0 0 24px 0;
+          padding: 12px 0;
           text-transform: uppercase;
           font-family: $font-family-monospace;
 
@@ -263,7 +263,7 @@
             font-family: $body-font-family;
             color: $black;
             margin: 0;
-            padding:0 0 14px 0;
+            padding: 7px 0;
             font-size: 14px;
             border:none;
             text-transform: none;
@@ -289,6 +289,9 @@
 .close-button {
   font-size: 2.4rem;
   font-weight: 100;
+  &:focus {
+    border: none;
+  }
 }
 
 }//off canvas menu popout
