@@ -70,14 +70,14 @@
               <div id="gccSearch" class="search-container">
                 
                 <?php
-                get_template_part( 'searchform' );
+                  get_template_part( 'searchform' );
                 ?>
 
               </div>
           
-            <?php  //function located in inc/main-navigation.php
-                gcc_wp_2018_main_menu(); ?>
-
+                <?php  //function located in inc/main-navigation.php
+                 gcc_wp_2018_main_menu(); ?>
+  
           <div class="secondary-menu-container">
             <div class="row secondary-menu">
    
@@ -85,17 +85,20 @@
                 <h2 id="menu_information"><?php _e('Information For', 'gcc-wp-2018') ?></h2>
                 
                 <?php //function located in inc/main-navigation.php
-                gcc_wp_2018_information_menu(); ?>
+                  gcc_wp_2018_information_menu(); ?>
+
               </div>
+
               <div class="small-12 medium-6 columns secondary-menu">
                 <h2 id="menu_resource"><?php _e('Resources', 'gcc-wp-2018'); ?></h2>
-                
-                <?php  //function located in inc/main-navigation.php
-                gcc_wp_2018_resource_menu(); ?>
+                  
+                  <?php  //function located in inc/main-navigation.php
+                  gcc_wp_2018_resource_menu(); ?>
+
               </div>
             </div>
-
         </div>
+
     </div>
 </div>
 <div class="off-canvas-content" data-off-canvas-content>

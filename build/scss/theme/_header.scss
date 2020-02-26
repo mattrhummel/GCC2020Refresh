@@ -22,83 +22,273 @@
 }
 }
 
-
+//top bar (branding)
 .branding {
-	border-bottom: 5px solid $primary;
-	position: relative;
 
-	.logo {
-	max-width: 160px;
-
-
-
-
+   border-bottom: 5px solid $primary;
+   position: relative;
 
 }
 
+.main-nav {
+    
+   .germanna-nav {
 
+    ul {
+
+  	  li.menu-item {  
+      margin-left: 2px;  
+
+  		  a  {
+  		      text-transform: uppercase;
+  		      font-weight: bold;
+            display: none;
+  		      line-height:inherit;
+  		      @media screen and (max-width: 39.9375em) {      
+  		        display: none;
+  		      }
+
+            /* Medium and up */
+            @media screen and (min-width: 40em) {
+              display: block;
+            }
+
+            /* Medium only */
+            @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+              display: none;
+            }
+
+            /* Large and up */
+            @media screen and (min-width: 64em) {
+              display: block;
+            }
+
+            /* Large only */
+            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+              display: block;
+            }
+
+  		  }
+
+  	 }
+
+  }
+
+.menu .active > a, .menu .is-active > a {
+    background: $white;
+    color: $black;
 }
 
+  li.has-menu {   
 
-h1 {
-	font-family: $font-family-monospace;
-}
+    	  button { 
+    	      text-transform: uppercase;
+    	      background-color: $secondary;
+            color: $white;
+    	      font-weight: bold;
+            line-height: inherit;
+            margin-left: 2px;
 
-// //Branding and Main Navigation
-// @media screen and (min-width: 40em) {
+    	    &:hover { 
+    	       background-color: $light-gray;
+             color: $primary;
+    	    }   
+
+  }      
+  		
+      button::after {
+  		  content: '\f0c9 ';
+  		  font-family: FontAwesome;
+  		}
+
+  	 }
+
+  }
+
+}//top bar (branding)
+
+//off canvas menu popout
+#offCanvasRightPush {
   
-// .branding {
-//   background-color: $white;
-//   padding: 0;
-//   max-width: 300px !important;
-//   margin-bottom: 1rem;
-//   font-family: $font-family-monospace;
+  //main sidebar styles
+  //do not change these styles
+  overflow: hidden;
+  padding: 48px 28px;
+  box-shadow: none;
 
-// }
+.mobile-menu {
+  .mygcc-button {   
+      margin-bottom: 40px;
+      margin-top: 10px;
 
-// .calltos {
+     .button {
+        color: $white;
+        background-color: $secondary;
+        font-family: $font-family-monospace;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        border:none;
+        transition: none;
+        &:hover {
+        background-color: rgb(141,36,55);
+        color: $white;
+        }
+        &:focus {
+        border: none;
+        outline: none;
+        }
+      }
+}
+.search-container {
 
-//   margin-bottom: 0;
-//   font-weight: bold;
-//     a {
-        
-//         font-size: 1.1rem !important;
-//         padding-top: 1.05rem;
-//         padding-bottom: 1.05rem;
+  margin-bottom: 40px;
+
+  .input-group {
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  [type="text"] {
+    height: auto;
+  }
+  .button {
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+    }
+
+  }
+}
+
+}
+
+.menu.vertical 
+
+{  
+    margin: 0;
+    padding: 0;
+   
+   li {
+
+      a {
+          color: $primary;
+          font-weight: 800;
+          font-size: 20px; 
+          padding: 0 0 24px 0;
+          text-transform: uppercase;
+          font-family: $font-family-monospace;
+
+      /* visited link */
+      &:visited {
+          color: $primary;
+      }
+     &:hover {
+          color: $secondary;
+     }
+      /* selected link */
+     &:active {
+          color: $secondary!important;
+      }
+    }
+
+  }
+
+
+}
+
+.menu .active > a, .menu .is-active > a {
+    background: none;
+    color: $black !important;
+  }
+
+.secondary-menu-container {
+  margin: 0;
+  padding: 0;
+
+  .secondary-menu {
+
+      margin: 0;
+      padding: 0;
+
+       .menu .active > a, .menu .is-active > a {
+  		background-color: $light-gray;
+  }
+
        
-//     }
-//     a.primary {
-//     background-color: #82082A;
+    h2 {
+      
+        font-size: 16px;
+        text-align: left;
+        color: #666;
+        padding-bottom:7px;
+        text-transform: uppercase;
+        font-family: $font-family-monospace;
+        font-weight: bold;
 
-//     &:hover {
-//       background-color: $medium-gray;
-//       color: $primary;
-//     }
+    }
 
-//   }
+     ul.menu {
 
-//   a.secondary {
+      padding-left: 0;
 
-//     background-color: $secondary;
+      li {
+           
+          a {
 
-//     &:hover {
-//       background-color: $medium-gray;
-//       color: $primary;
-//     }
+            font-family: $body-font-family;
+            color: $black;
+            margin: 0;
+            padding:0 0 14px 0;
+            font-size: 14px;
+            border:none;
+            text-transform: none;
+            font-weight: bold;
+          
+            &:hover {
+              text-decoration: underline;
+              color: $primary;
+            }
 
-//   }
+          }
 
-// }
-// .custom-logo-link, .mobile-logo {
-//   overflow: hidden;
-//   display: block;
-//   position: relative;
-// }
-// .custom-logo-link {
-//   margin: 0;
-// }
-// .mobile-logo {
-//   margin: .5rem;
-// }
+      }
 
-// }
+
+     }
+
+
+  }
+
+
+}
+.close-button {
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+}//off canvas menu popout
+
+.position-right {
+	height: auto;
+}
