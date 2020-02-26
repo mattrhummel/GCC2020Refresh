@@ -68,9 +68,10 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
+		
 		add_theme_support( 'custom-logo', array(
-			'height'      => 60,
-			'width'       => 200,
+			'height'      => 140,
+ 			'width'       => 280,
 			'flex-width'  => true,
 			'flex-height' => true,
 		));

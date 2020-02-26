@@ -28,6 +28,10 @@
    border-bottom: 5px solid $primary;
    position: relative;
 
+    .logo-link img {
+      width: 260px;
+    }
+
 }
 
 .main-nav {
