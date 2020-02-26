@@ -46,9 +46,6 @@
       <a href="#main-content" class="show-on-focus"><?php _e('skip to content', 'gcc-wp-2018') ?></a>
 
     </div>
-<!--     <?php
-    //get_template_part( 'template-parts/content', 'weather-alert' );
-    ?> -->    
 
 <div class="off-canvas position-right" id="offCanvasRightPush" data-off-canvas>
 
@@ -101,7 +98,12 @@
 
     </div>
 </div>
+
 <div class="off-canvas-content" data-off-canvas-content>
+
+    <?php
+    get_template_part( 'template-parts/content', 'weather-alert' );
+    ?>  
 
 <header class="branding">
   

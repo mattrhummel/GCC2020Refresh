@@ -2,20 +2,25 @@
 .callout.alert {
 	
   margin-bottom: 0;
+  margin-top: 0;
+
 	.closing-container {
-			position: relative;
-		   color:$white;
+			 position: relative;
+		   color:$black;
 	 p {
 	 	margin-bottom: 0;
 	    a {
-	    	color: $white;
+	    	color: $black;
 	    	font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
 	    }
 
 	}
 
 	.close-button {
-		color: $white;
+		color: $black;
 		top: -.3rem;
 	}
 }
@@ -118,6 +123,7 @@
   overflow: hidden;
   padding: 48px 28px;
   box-shadow: none;
+  background-color: $medium-gray;
 
 .mobile-menu {
   .mygcc-button {   
@@ -225,7 +231,7 @@
   }
 
 .secondary-menu-container {
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
 
   .secondary-menu {

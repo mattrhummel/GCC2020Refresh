@@ -37,10 +37,25 @@ get_header(); ?>
 
           <hr>
 
+          <h2>Breadcrumbs</h2>
+
+          <nav aria-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="#0">Home</a></li>
+              <li><a href="#0">Features</a></li>
+              <li class="disabled">Gene Splicing</li>
+              <li>
+                <span class="show-for-sr">Current: </span> Cloning
+              </li>
+            </ul>
+          </nav>
+
+          <hr>
+
           <h2>Paragraphs</h2>
 
           <p>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap strong around type to <strong>make it bold!</strong>. You can also use em to <em>italicize your words</em>.</p>
-
+<hr>
                     <h2>Lead Paragraphs</h2>
 
           <p class="lead">This is a lead paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap strong around type to <strong>make it bold!</strong>. You can also use em to <em>italicize your words</em>.</p>
@@ -80,7 +95,128 @@ get_header(); ?>
 
           <hr/>
 
-                    <hr>
+    <h2>Labels</h2>
+
+<span class="label primary">Primary Label</span>
+<span class="label secondary">Secondary Label</span>
+<span class="label success">Success Label</span>
+<span class="label alert">Alert Label</span>
+<span class="label warning">Warning Label</span>
+
+<hr>
+
+<h2>Badges</h2>
+<span class="primary badge">1</span>
+<span class="secondary badge">2</span>
+<span class="success badge">3</span>
+<span class="alert badge">A</span>
+<span class="warning badge">B</span>
+
+<hr>
+
+
+<h2>Orbit</h2>
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    </div>
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+          <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+          <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+          <figcaption class="orbit-caption">Encapsulating</figcaption>
+        </figure>
+      </li>
+      <li class="orbit-slide">
+        <figure class="orbit-figure">
+          <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+          <figcaption class="orbit-caption">Outta This World</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+  <nav class="orbit-bullets">
+    <button class="is-active" data-slide="0">
+      <span class="show-for-sr">First slide details.</span>
+      <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+    </button>
+    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+  </nav>
+</div>
+
+<hr>
+
+          <h2>Forms</h2>
+
+          <form>
+  <label>Input Label
+    <input type="text" placeholder=".small-12.columns" aria-describedby="exampleHelpText">
+  </label>
+  <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+  <label>
+    How many puppies?
+    <input type="number" value="100">
+  </label>
+  <label>
+    What books did you read over summer break?
+    <textarea placeholder="None"></textarea>
+  </label>
+  <label>Select Menu
+    <select>
+      <option value="husker">Husker</option>
+      <option value="starbuck">Starbuck</option>
+      <option value="hotdog">Hot Dog</option>
+      <option value="apollo">Apollo</option>
+    </select>
+  </label>
+  <div class="grid-x grid-margin-x">
+    <fieldset class="cell large-6">
+      <legend>Choose Your Favorite</legend>
+      <input type="radio" name="pokemon" value="Red" id="formRed" required><label for="formRed">Red</label>
+      <input type="radio" name="pokemon" value="Blue" id="formBlue"><label for="formBlue">Blue</label>
+      <input type="radio" name="pokemon" value="Yellow" id="formYellow"><label for="formYellow">Yellow</label>
+    </fieldset>
+    <fieldset class="cell large-6">
+      <legend>Check these out</legend>
+      <input id="formCheckbox1" type="checkbox"><label for="formCheckbox1">Checkbox 1</label>
+      <input id="formCheckbox2" type="checkbox"><label for="formCheckbox2">Checkbox 2</label>
+      <input id="formCheckbox3" type="checkbox"><label for="formCheckbox3">Checkbox 3</label>
+    </fieldset>
+  </div>
+  <div class="grid-x grid-margin-x">
+    <div class="cell small-3">
+      <label for="middle-label" class="text-right middle">Label</label>
+    </div>
+    <div class="cell small-9">
+      <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+    </div>
+  </div>
+  <div class="input-group">
+    <span class="input-group-label">$</span>
+    <input class="input-group-field" type="url">
+    <div class="input-group-button">
+      <input type="submit" class="button" value="Submit">
+    </div>
+  </div>
+</form>
+
+                    <hr/>
 
 
           <h2>Unordered List</h2>

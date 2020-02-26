@@ -195,7 +195,6 @@ $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
-$enable-cite-block: true;
 $keystroke-font: $font-family-monospace;
 $keystroke-color: $black;
 $keystroke-background: $light-gray;
@@ -206,25 +205,25 @@ $abbr-underline: 1px dotted $black;
 // // 5. Typography Helpers
 // // ---------------------
 
-$lead-font-size: $global-font-size * 1.25;
-$lead-lineheight: 1.6;
-$subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
-$subheader-font-weight: $global-weight-normal;
-$subheader-margin-top: 0.2rem;
-$subheader-margin-bottom: 0.5rem;
-$stat-font-size: 2.5rem;
+$lead-font-size: $global-font-size * 1.65;
+$lead-lineheight: 1.4;
+// $subheader-lineheight: 1.4;
+// $subheader-color: $dark-gray;
+// $subheader-font-weight: $global-weight-normal;
+// $subheader-margin-top: 0.2rem;
+// $subheader-margin-bottom: 0.5rem;
+// $stat-font-size: 2.5rem;
 $cite-color: $dark-gray;
 $cite-font-size: rem-calc(13);
 $cite-pseudo-content: '\2014 \0020';
-$code-color: $black;
-$code-font-family: $font-family-monospace;
-$code-font-weight: $global-weight-normal;
-$code-background: $light-gray;
-$code-border: 1px solid $medium-gray;
-$code-padding: rem-calc(2 5 1);
-$code-block-padding: 1rem;
-$code-block-margin-bottom: 1.5rem;
+// $code-color: $black;
+// $code-font-family: $font-family-monospace;
+// $code-font-weight: $global-weight-normal;
+// $code-background: $light-gray;
+// $code-border: 1px solid $medium-gray;
+// $code-padding: rem-calc(2 5 1);
+// $code-block-padding: 1rem;
+// $code-block-margin-bottom: 1.5rem;
 
 // // 6. Abide
 // // --------
@@ -240,7 +239,7 @@ $code-block-margin-bottom: 1.5rem;
 // // 7. Accordion
 // // ------------
 
-$accordion-background: $white;
+$accordion-background: $light-gray;
 $accordion-plusminus: true;
 $accordion-plus-content: '\002B';
 $accordion-minus-content: '\2013';
@@ -261,7 +260,7 @@ $accordionmenu-nested-margin: $global-menu-nested-margin;
 $accordionmenu-submenu-padding: $accordionmenu-padding;
 $accordionmenu-arrows: true;
 $accordionmenu-arrow-color: $primary-color;
-$accordionmenu-item-background: null;
+$accordionmenu-item-background: $medium-gray;
 $accordionmenu-border: null;
 $accordionmenu-submenu-toggle-background: null;
 $accordion-submenu-toggle-border: $accordionmenu-border;
@@ -340,8 +339,8 @@ $callout-background: $white;
 $callout-border: 1px solid rgba($black, 0.25);
 $callout-margin: 1rem 0;
 $callout-sizes: (
-  small: 0.5rem,
-  default: 1rem,
+  small: 0.8rem,
+  default: 1.2rem,
   large: 3rem,
 );
 $callout-font-color: $body-font-color;
@@ -354,8 +353,8 @@ $callout-link-tint: 0;
 
 $card-background: $white;
 $card-font-color: $body-font-color;
-$card-divider-background: $light-gray;
-$card-border: 1px solid $light-gray;
+$card-divider-background: $medium-gray;
+$card-border: 1px solid $medium-gray;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
@@ -436,44 +435,44 @@ $closebutton-color-hover: $black;
 // // 20. Forms
 // // ---------
 
-// $fieldset-border: 1px solid $medium-gray;
-// $fieldset-padding: rem-calc(20);
-// $fieldset-margin: rem-calc(18 0);
-// $legend-padding: rem-calc(0 3);
-// $form-spacing: rem-calc(16);
-// $helptext-color: $black;
-// $helptext-font-size: rem-calc(13);
-// $helptext-font-style: italic;
-// $input-prefix-color: $black;
-// $input-prefix-background: $light-gray;
-// $input-prefix-border: 1px solid $medium-gray;
-// $input-prefix-padding: 1rem;
-// $form-label-color: $black;
-// $form-label-font-size: rem-calc(14);
-// $form-label-font-weight: $global-weight-normal;
-// $form-label-line-height: 1.8;
-// $select-background: $white;
-// $select-triangle-color: $dark-gray;
-// $select-radius: $global-radius;
-// $input-color: $black;
-// $input-placeholder-color: $medium-gray;
-// $input-font-family: inherit;
-// $input-font-size: rem-calc(16);
-// $input-font-weight: $global-weight-normal;
-// $input-line-height: $global-lineheight;
-// $input-background: $white;
-// $input-background-focus: $white;
-// $input-background-disabled: $light-gray;
-// $input-border: 1px solid $medium-gray;
-// $input-border-focus: 1px solid $dark-gray;
-// $input-padding: $form-spacing / 2;
-// $input-shadow: inset 0 1px 2px rgba($black, 0.1);
-// $input-shadow-focus: 0 0 5px $medium-gray;
-// $input-cursor-disabled: not-allowed;
-// $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
-// $input-number-spinners: true;
-// $input-radius: $global-radius;
-// $form-button-radius: $global-radius;
+$fieldset-border: 1px solid $medium-gray;
+$fieldset-padding: rem-calc(20);
+$fieldset-margin: rem-calc(18 0);
+$legend-padding: rem-calc(0 3);
+$form-spacing: rem-calc(16);
+$helptext-color: $black;
+$helptext-font-size: rem-calc(13);
+$helptext-font-style: italic;
+$input-prefix-color: $black;
+$input-prefix-background: $light-gray;
+$input-prefix-border: 1px solid $medium-gray;
+$input-prefix-padding: 1rem;
+$form-label-color: $black;
+$form-label-font-size: rem-calc(14);
+$form-label-font-weight: $global-weight-normal;
+$form-label-line-height: 1.8;
+$select-background: $white;
+$select-triangle-color: $dark-gray;
+$select-radius: $global-radius;
+$input-color: $black;
+$input-placeholder-color: $medium-gray;
+$input-font-family: inherit;
+$input-font-size: rem-calc(16);
+$input-font-weight: $global-weight-normal;
+$input-line-height: $global-lineheight;
+$input-background: $white;
+$input-background-focus: $white;
+$input-background-disabled: $light-gray;
+$input-border: 1px solid $medium-gray;
+$input-border-focus: 1px solid $dark-gray;
+$input-padding: $form-spacing / 2;
+$input-shadow: inset 0 1px 2px rgba($black, 0.1);
+$input-shadow-focus: 0 0 5px $medium-gray;
+$input-cursor-disabled: not-allowed;
+$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+$input-number-spinners: true;
+$input-radius: $global-radius;
+$form-button-radius: $global-radius;
 
 // // 21. Label
 // // ---------
@@ -825,18 +824,18 @@ $orbit-control-zindex: 10;
 // // 51. Tabs
 // // --------
 
-// $tab-margin: 0;
-// $tab-background: $white;
-// $tab-color: $primary-color;
-// $tab-background-active: $light-gray;
-// $tab-active-color: $primary-color;
-// $tab-item-font-size: rem-calc(12);
-// $tab-item-background-hover: $white;
-// $tab-item-padding: 1.25rem 1.5rem;
-// $tab-content-background: $white;
-// $tab-content-border: $light-gray;
-// $tab-content-color: $body-font-color;
-// $tab-content-padding: 1rem;
+$tab-margin: 0;
+$tab-background: $light-gray;
+$tab-color: $primary-color;
+$tab-background-active: $light-gray;
+$tab-active-color: $primary-color;
+$tab-item-font-size: rem-calc(12);
+$tab-item-background-hover: $medium-gray;
+$tab-item-padding: 1.25rem 1.5rem;
+$tab-content-background: $white;
+$tab-content-border: $medium-gray;
+$tab-content-color: $body-font-color;
+$tab-content-padding: 1rem;
 
 // // 52. Thumbnail
 // // -------------
