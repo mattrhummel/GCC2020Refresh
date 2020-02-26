@@ -78,6 +78,16 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 endif;
 add_filter( 'get_custom_logo', 'change_logo_class' );
 
+//* Add support for custom flexible header
+add_theme_support( 'custom-header', array(
+	'flex-width'    => true,
+	'width'           => 260,
+	'flex-height'    => true,
+	'height'          => 100,
+	'header-selector' => '.site-title a',
+	'header-text'     => false
+ 
+) );
 
 function change_logo_class( $html ) {
 
