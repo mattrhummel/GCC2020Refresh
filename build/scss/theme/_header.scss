@@ -34,8 +34,7 @@
 
 }
 
-.main-nav {
-    
+.main-nav {    
    .germanna-nav {
 
     ul {
@@ -101,7 +100,7 @@
   }      
   		
       button::after {
-  		  content: '\f0c9 ';
+  		  content: '\f0c9';
   		  font-family: FontAwesome;
   		}
 
@@ -218,7 +217,6 @@
 
   }
 
-
 }
 
 .menu .active > a, .menu .is-active > a {
@@ -235,11 +233,10 @@
       margin: 0;
       padding: 0;
 
-       .menu .active > a, .menu .is-active > a {
-  		background-color: $light-gray;
+    .menu .active > a, .menu .is-active > a {
+  		    background-color: $light-gray;
   }
 
-       
     h2 {
       
         font-size: 16px;
@@ -252,7 +249,7 @@
 
     }
 
-     ul.menu {
+  ul.menu {
 
       padding-left: 0;
 
@@ -283,7 +280,6 @@
 
 
   }
-
 
 }
 .close-button {

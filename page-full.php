@@ -11,8 +11,7 @@ get_header(); ?>
   get_template_part( 'template-parts/content', 'page-heading' );
   ?>
 
-  <div class="row gutter-small expanded content-area">
-    <div class="row collapse">
+    <div class="row content-area">
     <div class="columns small-12">
       <div class="entry-content" id="main" tabindex="0">
     
@@ -71,7 +70,6 @@ get_header(); ?>
    
     </div>
 
-    </div>
     <?php endwhile; // End of the loop. ?>
 
             <div class="row">
@@ -90,8 +88,7 @@ the_modified_time('F j, Y');
 
         </div>
 
-    </div>
-    
+</div>    
   </article>
   <?php
   get_footer();

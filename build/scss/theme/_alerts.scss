@@ -1,3 +1,81 @@
+.callout.primary {
+  background-color: $light-gray !important;
+}
+
+.bottom-banner {
+    position: fixed;
+    z-index: 99999999;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    background-color: $primary;
+    width: 100%; //important do not remove, keeps banner full width of screen
+    min-width: 100%;
+    font-family: $font-family-monospace;
+
+    @media screen and (min-width: 64em) {
+    padding: .5rem 2.6rem .5rem 1rem;
+
+    }
+    .close-button-banner {
+      color: $white;
+      position: absolute;
+    }
+
+    p {
+      
+      color: $white;
+      font-weight: 800;
+      margin: 0;
+       
+       @media screen and (min-width: 40em) {
+
+        font-size: 1.6rem;
+      
+      }
+        
+     @media screen and (min-width: 64em) {
+        
+        font-size: 1.6rem;
+     }
+
+    }
+
+    .button-group {
+
+      float: none;
+      margin-right: 20px;
+
+     @media screen and (min-width: 64em) {
+
+      float: right;
+      margin-right: 0;
+    
+    }
+
+   .button.banner-button, .button.banner-button-hollow {
+    margin: .2rem .1rem 0 .1rem; 
+    font-weight: 800;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: $font-family-monospace;
+
+   }
+   .button.banner-button {
+    
+    background-color: $light-gray;
+    color: $secondary;
+
+   }
+        
+   .button.banner-button-hollow {
+    background-color: $primary;
+    color: $white;
+  
+   }
+ }
+}
 // //styles for the page callout boxes and alerts.
 // //Default Callout
 // .callout {
@@ -160,78 +238,3 @@
 //     padding-left: 0
 //   }
 // }
-
-.bottom-banner {
-    position: fixed;
-    z-index: 99999999;
-    bottom: 0;
-    left: 0;
-    height: auto;
-    background-color: $primary;
-    width: 100%; //important do not remove, keeps banner full width of screen
-    min-width: 100%;
-    font-family: $font-family-monospace;
-
-    @media screen and (min-width: 64em) {
-    padding: .5rem 2.6rem .5rem 1rem;
-
-    }
-    .close-button-banner {
-      color: $white;
-      position: absolute;
-    }
-
-    p {
-      
-      color: $white;
-      font-weight: 800;
-   	  margin: 0;
-       
-       @media screen and (min-width: 40em) {
-
-        font-size: 1.6rem;
-      
-      }
-        
-     @media screen and (min-width: 64em) {
-        
-        font-size: 1.6rem;
-     }
-
-    }
-
-    .button-group {
-
-      float: none;
-      margin-right: 20px;
-
-     @media screen and (min-width: 64em) {
-
-      float: right;
-      margin-right: 0;
-    
-    }
-
-   .button.banner-button, .button.banner-button-hollow {
-    margin: .2rem .1rem 0 .1rem; 
-    font-weight: 800;
-    padding: .5rem 1rem;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    font-family: $font-family-monospace;
-
-   }
-   .button.banner-button {
-    
-    background-color: $light-gray;
-    color: $secondary;
-
-   }
-        
-   .button.banner-button-hollow {
-    background-color: $primary;
-    color: $white;
-  
-   }
- }
-}

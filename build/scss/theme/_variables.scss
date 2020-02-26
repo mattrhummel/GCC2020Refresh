@@ -71,21 +71,21 @@ $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #A30E34,
   secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
+  success: #105B2C,
+  warning: #704D00,
+  alert: #9A3728,
 );
 $primary-color: #A30E34;
 $primary: #8d2437;
 $secondary: #231F20;
-$success: #3adb76;
-$warning: #ffae00;
-$alert: #D57C00;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
+$success: #105B2C;
+$warning: #704D00;
+$alert: #9A3728;
+$light-gray: #fafafa;
+$medium-gray: #eeeeee;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$black: #333333;
+$white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: Roboto, Arial, sans-serif;
@@ -135,7 +135,7 @@ $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
   medium: 20px,
-  large: 80px
+  large: 60px
 );
 $grid-column-align-edge: true;
 $grid-column-alias: 'columns';
@@ -161,12 +161,12 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 62),
+    'h2': ('font-size': 34),
+    'h3': ('font-size': 32),
+    'h4': ('font-size': 28),
+    'h5': ('font-size': 26),
+    'h6': ('font-size': 24),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -244,12 +244,12 @@ $accordion-background: $white;
 $accordion-plusminus: true;
 $accordion-plus-content: '\002B';
 $accordion-minus-content: '\2013';
-$accordion-title-font-size: rem-calc(12);
+$accordion-title-font-size: rem-calc(16);
 $accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
+$accordion-item-background-hover: $medium-gray;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
+$accordion-content-border: 1px solid $medium-gray;
 $accordion-content-color: $body-font-color;
 $accordion-content-padding: 1rem;
 
@@ -304,9 +304,9 @@ $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background-hover: $black;
 $button-color: $white;
-$button-color-alt: $black;
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-border: 1px solid transparent;
 $button-hollow-border-width: 1px;
@@ -318,8 +318,8 @@ $button-sizes: (
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -50%;
+$button-background-hover-lightness: -100%;
+$button-hollow-hover-lightness: -100%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 $button-responsive-expanded: false;
 
@@ -336,7 +336,7 @@ $buttongroup-radius-on-each: true;
 // // -----------
 
 $callout-background: $white;
-$callout-background-fade: 0;
+// $callout-background-fade: 0;
 $callout-border: 1px solid rgba($black, 0.25);
 $callout-margin: 1rem 0;
 $callout-sizes: (
@@ -347,7 +347,7 @@ $callout-sizes: (
 $callout-font-color: $body-font-color;
 $callout-font-color-alt: $body-background;
 $callout-radius: $global-radius;
-$callout-link-tint: 30%;
+$callout-link-tint: 0;
 
 // // 14. Card
 // // --------
