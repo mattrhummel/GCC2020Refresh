@@ -18,7 +18,7 @@
   <div class="small-12 medium-12 large-4 columns">
     
     <div class="footer-logo">      
-         <?php the_custom_logo( ); ?>  
+       <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo"/></a>
     </div>
     
   </div>

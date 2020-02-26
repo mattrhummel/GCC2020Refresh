@@ -10,6 +10,7 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function gcc_wp_2018_customize_register( $wp_customize ) {
+	
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -23,7 +24,8 @@ function gcc_wp_2018_customize_register( $wp_customize ) {
 			'render_callback' => 'gcc_wp_2018_customize_partial_blogdescription',
 		) );
 	}
-	$wp_customize->add_setting( 'gcc_wp_2018_mobile_logo' ); // Add setting for logo uploader
+
+$wp_customize->add_setting( 'gcc_wp_2018_mobile_logo' ); // Add setting for logo uploader
 
 	    // Add control for logo uploader (actual uploader)
 	    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'gcc_wp_2018_mobile_logo', array(
