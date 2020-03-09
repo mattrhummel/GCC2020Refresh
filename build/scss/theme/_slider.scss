@@ -1,3 +1,144 @@
+.orbit {
+
+  .orbit-wrapper {
+	 
+	.orbit-controls {
+
+
+	}
+
+	  .orbit-container {
+        
+        min-height: 700px;
+        height: 70vh;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        align-items: flex-end;
+
+            @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+            min-height: 550px;
+            height: 55vh;
+
+            }
+
+	  }
+
+	  .orbit-slide {
+
+		  	background-size:cover;
+	        background-repeat: no-repeat;
+	        background-position: center;
+	        background-color: $medium-gray;
+
+	        .orbit-figure {
+
+       background-color:$white;
+        padding: 18px;
+        width: 100%;
+ 
+    @media screen and (min-width: 40em) {
+
+        width: auto;
+        margin-left: 180px;
+
+    }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+
+        margin-left: 80px;
+        width: 480px;
+
+     }
+       
+    @media screen and (min-width: 64em) {
+
+     margin-left: 0;//do not remove keeps caption to left
+     // margin-left: 20px;
+     width: 680px;
+     padding: 28px;
+
+    }
+
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+     padding: 28px;
+     margin-left: 80px;
+     width: 500px;
+
+    }
+
+ h1 {
+
+    font-family: $font-family-monospace;
+    font-size: 180%;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 39.9375em) {
+
+      font-size: 180%;
+  
+   }
+   
+    @media screen and (min-width: 40em) {
+      
+      font-size: 300%;
+
+    }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+
+       font-size: 250%;
+  
+    }
+    @media screen and (min-width: 64em) {
+    
+    font-size: 400%;
+
+    }
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+    font-size: 320%;
+   
+    }       
+    }
+
+p.lead {
+  font-size: 1rem;
+ font-weight: 100;
+  @media screen and (max-width: 39.9375em) {
+
+     font-size: 1rem;
+  
+   }
+    @media screen and (min-width: 40em) {
+      
+      font-size: 1.5rem;
+
+    }
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+
+       font-size: 1.4rem;
+  
+    }
+    @media screen and (min-width: 64em) {
+    
+      font-size: 1.6rem;
+
+    }
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+
+    font-size: 1.4rem;
+   
+    }
+}
+
+
+	  		}
+
+  }
+
+}
+
 // .slider-wrap {
 // .hero {
 //         background-size:cover;

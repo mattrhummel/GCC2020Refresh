@@ -30,12 +30,11 @@ button.mobile-sidebar-button {
 	  float: right;
 	  color: $secondary;
 	}
-
 }
 
 //Page Side bar
 .widget {
-background-color: $light-gray;
+background-color: $medium-gray;
 margin-bottom: 1rem;
 
 h3 {
@@ -57,15 +56,15 @@ ul {
 			display: block;
 			padding: 10px 0 10px 10px;
 			font-weight: 800;
-			color: #333;
-			background-color: $light-gray;
+			color: $black;
+			background-color: $medium-gray;
 			border-bottom: 1px solid $white;
 
 	    &:hover {
-	    	background-color: $medium-gray;
+	    	background-color: $light-gray;
 	    }
 	    &:focus {
-	        background-color: $medium-gray;
+	        background-color: $light-gray;
 	    }
 
 }

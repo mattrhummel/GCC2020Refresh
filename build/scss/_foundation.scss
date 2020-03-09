@@ -1,15 +1,5 @@
 // Dependencies
 //Plugins
-body, html {
-  scroll-behavior: smooth;
-  background-color: #ffffff;
-  height:100%;
-  width:100%;
-  box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-
 .no-js .top-bar .title-bar .reveal {
   display: none;
   z-index: 0;
@@ -58,9 +48,8 @@ body, html {
 // import your own `settings` here or
 // import and modify the default settings through
 @import 'theme/google-fonts';
+@import 'settings/settings';
 @import 'theme/variables';
-
-// @import 'settings/settings';
 
 // Sass utilities
 @import 'util/util';
@@ -120,16 +109,13 @@ body, html {
 @import 'prototype/prototype';
 
 @import 'theme/reveal';
-@import 'theme/slider';
+// @import 'theme/slider';
 @import 'theme/home';
 @import 'theme/promotions';
-@import 'theme/page-heading';
-@import 'theme/label';
+// @import 'theme/page-heading';
 @import 'theme/tabs';
 @import 'theme/card';
 @import 'theme/alerts';
-@import 'theme/workforce';
-@import 'theme/helpers';
 @import 'theme/header'; 
 @import 'theme/sidebar';
 @import 'theme/content';
@@ -215,5 +201,3 @@ body, html {
   @include foundation-visibility-classes;
   @if $prototype { @include foundation-prototype-classes; }
 }
-
-@import 'theme/menu';

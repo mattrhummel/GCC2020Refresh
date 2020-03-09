@@ -125,7 +125,7 @@ get_header(); ?>
     <ul class="orbit-container">
       <li class="is-active orbit-slide">
         <figure class="orbit-figure">
-          <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+          <img class="orbit-image" src="img/large.jpg" data-interchange="[img/large.jpg, small], [img/large.jpg, medium], [img/large.jpg, large]" src="#" alt="">
           <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
         </figure>
       </li>
