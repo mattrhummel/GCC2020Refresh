@@ -34,6 +34,7 @@ get_header(); ?>
       </div>
       
     </header>
+
     <div class="box-content-container">
       
       <?php if ( have_rows( 'landing_page_row_content' ) ) : ?>
@@ -43,9 +44,12 @@ get_header(); ?>
       
       <?php //if content to the left ?>
       
-      <div class="row box-row" data-equalizer data-equalize-on="medium" id="boxes">
+      <div class="row box-row" data-equalizer="true" data-equalize-on="medium" id="boxes">
+
         <div class="columns <?php the_sub_field( 'image_column_size' ); ?>">
           <div class="box-image-container" data-equalizer-watch>
+
+
             <?php // ACF Image Object
             $image     = get_sub_field( 'promo_image' );
             $url       = $image['url'];
@@ -69,6 +73,7 @@ get_header(); ?>
       </div>
       <?php endwhile; ?>
       <?php endif; ?>
+      
     </div>
     
     <?php endwhile; // End of the loop. ?>

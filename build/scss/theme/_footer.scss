@@ -1,6 +1,6 @@
 .site-footer {
   
-  background: rgb(141,36,55);
+  background: $primary;
   color: $white;
   text-align: center;
   
@@ -28,25 +28,25 @@
 .footer-logo {
   margin-bottom: 40px;
 
-
  img {
     display: block;
-    text-indent: -9999px;
+    text-indent: $global-text-indent;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
     height: 55px;
     width: 200px;
-    margin: 0 auto;
+    margin: $margin-auto;
 
-            @media screen and (min-width: 40em) {
+    @media screen and (min-width: 40em) {
 
-        margin: 0;
+        margin: $no-margin;
 
 }
 
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-margin: 0 auto;
+      
+       margin: $margin-auto;
 
       }
 
@@ -65,41 +65,39 @@ h3,h4 {
     text-align: center;
     color: $white;
     text-transform: uppercase;
+    font-weight: $global-weight-bold;
              
-        @media screen and (min-width: 40em) {
+      @media screen and (min-width: 40em) {
 
-                text-align: left;
+      text-align: left;
 
-        }
+      }
 
-          @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
-      text-align: center;
+        text-align: center;
       
      }
 }
 
 p  {
      text-align: center;
-     font-weight: normal;
+     font-weight: $global-weight-normal;
      
-     @media screen and (min-width: 40em) {
+    @media screen and (min-width: 40em) {
       text-align: left;
      }
 
-       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       text-align: center;
-      
-     }
+    }
 
      a {
       color: $white;
-      font-weight: normal;
       font-family: $body-font-family;
      
       &:hover {
-   text-decoration: underline;
+        text-decoration: underline;
       }
      }
 }
@@ -108,7 +106,6 @@ a[href^="tel"] {
   color: inherit; /* Inherit text color of parent element. */
   text-decoration: none; /* Remove underline. */
   /* Additional css `propery: value;` pairs here */
-  font-weight: normal;
   font-family: $body-font-family;
 
   &:hover{
@@ -123,33 +120,26 @@ a[href^="tel"] {
 
 .button-column {
 
-padding-left: 0;
-padding-right: 0;
+padding-left: $no-padding;
+padding-right: $no-padding;
 
-.action-buttons {
-
-  padding: 0;
-  margin: 0;
-
+ul.vertical.menu {
 
 li {
 
      margin-bottom: 5px;
      width: 100%;
-     list-style: none;
+     list-style: $global-list-style;
 
   a {
-
      color: $white;
-     background-color: #6a1b29;
+     background-color: $dark-red;
      text-transform: uppercase;
      font-family: $font-family-monospace;
-     font-weight: bold;
-     padding: 14px 20px;
-     display: block;
-     transition: .6s;
-     font-size: 1.2rem;
-
+     font-weight: $global-weight-bold;
+     padding: 20px;
+     display: block; //do not remove, keeps in blocks
+    
      &:hover {
       background-color: $white;
       color: $primary;
@@ -174,20 +164,13 @@ li {
 
 .social {
 
-  margin-bottom: 20px;
-
-      @media screen and (min-width: 40em) {
-
-        margin-bottom: 40px;
-  }
-
   .social-icons {
     
     display: flex;
     align-items: center;
-    list-style: none;
+    list-style: $global-list-style;
     justify-content: center;
-    margin: 0 auto;
+    margin: $margin-auto;
     text-align: center;
      
     @media screen and (min-width: 40em) {
@@ -239,8 +222,7 @@ li {
                 
                 display: block;
                 text-indent: -99999px;
-                display: none;
-              
+               
               }
           }
         }
@@ -256,8 +238,6 @@ li {
   .bottom-footer-content {
 
     .menu {
-
-      margin: 0 0 1rem 0;
 
       li {
 
@@ -293,18 +273,18 @@ li {
   @media screen and (min-width: 40em) {
   padding-right: 0;
 
-}
+  }
 
  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
   text-align: center;
+  
   }
 
 }
 
 .copywrite {
  
-  margin-bottom: 1rem;
 
       @media screen and (min-width: 40em) {
 
@@ -314,7 +294,8 @@ li {
 
       @media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
-      text-align: center;
+        text-align: center;
+      
       }
 
 }
@@ -322,21 +303,17 @@ li {
   p {
    
     font-size: 0.8rem;
-    line-height: 1.2rem;
     font-weight: bold;
-    margin: 0 0 1rem;
     color: $black;
 
     @media screen and (min-width: 40em) {
-
     text-align: right;
-
     }
 
- @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  text-align: center;
-  line-height: inherit;
-}
+   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+   text-align: center;
+    line-height: inherit;
+  }
 
 }
 
@@ -357,31 +334,29 @@ li {
     background: url("../media/tipslogo-gray.png") no-repeat;
     height: 40px;
     width: 100px;
-    text-indent: -9999px;
+    text-indent: $global-text-indent;
     display: block;
-    margin: 0 auto 1rem auto;
+    margin: 1rem auto;
     align-items: center;
     justify-content: center;
     display: flex;
     text-align: center;
-    z-index: 2;
+  
 
   @media screen and (min-width: 40em) {
 
     align-items: left;
     justify-content: left;
     text-align: left;
-    margin: 0;
-
+    margin: 1rem 0;
+  
   }
 
    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    margin: 0 auto 1rem auto;
+    
+    margin: 1rem auto;
 
    }
-
-     @media screen and (min-width: 64em) {
-}
 
 }
 

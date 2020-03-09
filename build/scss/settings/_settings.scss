@@ -189,8 +189,8 @@ $list-style-type: disc;
 $list-style-position: outside;
 $list-side-margin: 1.25rem;
 $list-nested-side-margin: 1.25rem;
-// $defnlist-margin-bottom: 1rem;
-// $defnlist-term-weight: $global-weight-bold;
+$defnlist-margin-bottom: 1rem;
+$defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
@@ -384,15 +384,15 @@ $closebutton-color-hover: $black;
 // // 16. Drilldown
 // // -------------
 
-// $drilldown-transition: transform 0.15s linear;
-// $drilldown-arrows: true;
-// $drilldown-padding: $global-menu-padding;
-// $drilldown-nested-margin: 0;
-// $drilldown-background: $white;
-// $drilldown-submenu-padding: $drilldown-padding;
-// $drilldown-submenu-background: $white;
-// $drilldown-arrow-color: $primary-color;
-// $drilldown-arrow-size: 6px;
+$drilldown-transition: transform 0.15s linear;
+$drilldown-arrows: true;
+$drilldown-padding: $global-menu-padding;
+$drilldown-nested-margin: 0;
+$drilldown-background: $white;
+$drilldown-submenu-padding: $drilldown-padding;
+$drilldown-submenu-background: $white;
+$drilldown-arrow-color: $primary-color;
+$drilldown-arrow-size: 6px;
 
 // // 17. Dropdown
 // // ------------
@@ -429,8 +429,8 @@ $dropdown-menu-item-background-active: transparent;
 // // 19. Flexbox Utilities
 // // ---------------------
 
-// $flex-source-ordering-count: 6;
-// $flexbox-responsive-breakpoints: true;
+$flex-source-ordering-count: 6;
+$flexbox-responsive-breakpoints: true;
 
 // // 20. Forms
 // // ---------
@@ -510,12 +510,12 @@ $menu-icons-back-compat: true;
 // // 24. Meter
 // // ---------
 
-// $meter-height: 1rem;
-// $meter-radius: $global-radius;
-// $meter-background: $medium-gray;
-// $meter-fill-good: $success-color;
-// $meter-fill-medium: $warning-color;
-// $meter-fill-bad: $alert-color;
+$meter-height: 1rem;
+$meter-radius: $global-radius;
+$meter-background: $medium-gray;
+$meter-fill-good: $success;
+$meter-fill-medium: $warning;
+$meter-fill-bad: $alert;
 
 // // 25. Off-canvas
 // // --------------
@@ -559,186 +559,186 @@ $orbit-control-zindex: 10;
 // // 27. Pagination
 // // --------------
 
-// $pagination-font-size: rem-calc(14);
-// $pagination-margin-bottom: $global-margin;
-// $pagination-item-color: $black;
-// $pagination-item-padding: rem-calc(3 10);
-// $pagination-item-spacing: rem-calc(1);
-// $pagination-radius: $global-radius;
-// $pagination-item-background-hover: $light-gray;
-// $pagination-item-background-current: $primary-color;
-// $pagination-item-color-current: $white;
-// $pagination-item-color-disabled: $medium-gray;
-// $pagination-ellipsis-color: $black;
-// $pagination-mobile-items: false;
-// $pagination-mobile-current-item: false;
-// $pagination-arrows: true;
-// $pagination-arrow-previous: '\00AB';
-// $pagination-arrow-next: '\00BB';
+$pagination-font-size: rem-calc(14);
+$pagination-margin-bottom: $global-margin;
+$pagination-item-color: $black;
+$pagination-item-padding: rem-calc(3 10);
+$pagination-item-spacing: rem-calc(1);
+$pagination-radius: $global-radius;
+$pagination-item-background-hover: $light-gray;
+$pagination-item-background-current: $primary-color;
+$pagination-item-color-current: $white;
+$pagination-item-color-disabled: $medium-gray;
+$pagination-ellipsis-color: $black;
+$pagination-mobile-items: false;
+$pagination-mobile-current-item: false;
+$pagination-arrows: true;
+$pagination-arrow-previous: '\00AB';
+$pagination-arrow-next: '\00BB';
 
 // // 28. Progress Bar
 // // ----------------
 
-// $progress-height: 1rem;
-// $progress-background: $medium-gray;
-// $progress-margin-bottom: $global-margin;
-// $progress-meter-background: $primary-color;
-// $progress-radius: $global-radius;
+$progress-height: 1rem;
+$progress-background: $medium-gray;
+$progress-margin-bottom: $global-margin;
+$progress-meter-background: $primary-color;
+$progress-radius: $global-radius;
 
 // // 29. Prototype Arrow
 // // -------------------
 
-// $prototype-arrow-directions: (
-//   down,
-//   up,
-//   right,
-//   left
-// );
-// $prototype-arrow-size: 0.4375rem;
-// $prototype-arrow-color: $black;
+$prototype-arrow-directions: (
+  down,
+  up,
+  right,
+  left
+);
+$prototype-arrow-size: 0.4375rem;
+$prototype-arrow-color: $black;
 
 // // 30. Prototype Border-Box
 // // ------------------------
 
-// $prototype-border-box-breakpoints: $global-prototype-breakpoints;
+$prototype-border-box-breakpoints: $global-prototype-breakpoints;
 
 // // 31. Prototype Border-None
 // // -------------------------
 
-// $prototype-border-none-breakpoints: $global-prototype-breakpoints;
+$prototype-border-none-breakpoints: $global-prototype-breakpoints;
 
 // // 32. Prototype Bordered
 // // ----------------------
 
-// $prototype-bordered-breakpoints: $global-prototype-breakpoints;
-// $prototype-border-width: rem-calc(1);
-// $prototype-border-type: solid;
-// $prototype-border-color: $medium-gray;
+$prototype-bordered-breakpoints: $global-prototype-breakpoints;
+$prototype-border-width: rem-calc(1);
+$prototype-border-type: solid;
+$prototype-border-color: $medium-gray;
 
 // // 33. Prototype Display
 // // ---------------------
 
-// $prototype-display-breakpoints: $global-prototype-breakpoints;
-// $prototype-display: (
-//   inline,
-//   inline-block,
-//   block,
-//   table,
-//   table-cell
-// );
+$prototype-display-breakpoints: $global-prototype-breakpoints;
+$prototype-display: (
+  inline,
+  inline-block,
+  block,
+  table,
+  table-cell
+);
 
 // // 34. Prototype Font-Styling
 // // --------------------------
 
-// $prototype-font-breakpoints: $global-prototype-breakpoints;
-// $prototype-wide-letter-spacing: rem-calc(4);
-// $prototype-font-normal: $global-weight-normal;
-// $prototype-font-bold: $global-weight-bold;
+$prototype-font-breakpoints: $global-prototype-breakpoints;
+$prototype-wide-letter-spacing: rem-calc(4);
+$prototype-font-normal: $global-weight-normal;
+$prototype-font-bold: $global-weight-bold;
 
 // // 35. Prototype List-Style-Type
 // // -----------------------------
 
-// $prototype-list-breakpoints: $global-prototype-breakpoints;
-// $prototype-style-type-unordered: (
-//   disc,
-//   circle,
-//   square
-// );
-// $prototype-style-type-ordered: (
-//   decimal,
-//   lower-alpha,
-//   lower-latin,
-//   lower-roman,
-//   upper-alpha,
-//   upper-latin,
-//   upper-roman
-// );
+$prototype-list-breakpoints: $global-prototype-breakpoints;
+$prototype-style-type-unordered: (
+  disc,
+  circle,
+  square
+);
+$prototype-style-type-ordered: (
+  decimal,
+  lower-alpha,
+  lower-latin,
+  lower-roman,
+  upper-alpha,
+  upper-latin,
+  upper-roman
+);
 
 // // 36. Prototype Overflow
 // // ----------------------
 
-// $prototype-overflow-breakpoints: $global-prototype-breakpoints;
-// $prototype-overflow: (
-//   visible,
-//   hidden,
-//   scroll
-// );
+$prototype-overflow-breakpoints: $global-prototype-breakpoints;
+$prototype-overflow: (
+  visible,
+  hidden,
+  scroll
+);
 
 // // 37. Prototype Position
 // // ----------------------
 
-// $prototype-position-breakpoints: $global-prototype-breakpoints;
-// $prototype-position: (
-//   static,
-//   relative,
-//   absolute,
-//   fixed
-// );
-// $prototype-position-z-index: 975;
+$prototype-position-breakpoints: $global-prototype-breakpoints;
+$prototype-position: (
+  static,
+  relative,
+  absolute,
+  fixed
+);
+$prototype-position-z-index: 975;
 
 // // 38. Prototype Rounded
 // // ---------------------
 
-// $prototype-rounded-breakpoints: $global-prototype-breakpoints;
-// $prototype-border-radius: rem-calc(3);
+$prototype-rounded-breakpoints: $global-prototype-breakpoints;
+$prototype-border-radius: rem-calc(3);
 
 // // 39. Prototype Separator
 // // -----------------------
 
-// $prototype-separator-breakpoints: $global-prototype-breakpoints;
-// $prototype-separator-align: center;
-// $prototype-separator-height: rem-calc(2);
-// $prototype-separator-width: 3rem;
-// $prototype-separator-background: $primary-color;
-// $prototype-separator-margin-top: $global-margin;
+$prototype-separator-breakpoints: $global-prototype-breakpoints;
+$prototype-separator-align: center;
+$prototype-separator-height: rem-calc(2);
+$prototype-separator-width: 3rem;
+$prototype-separator-background: $primary-color;
+$prototype-separator-margin-top: $global-margin;
 
 // // 40. Prototype Shadow
 // // --------------------
 
-// $prototype-shadow-breakpoints: $global-prototype-breakpoints;
-// $prototype-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),
-//                        0 2px 10px 0 rgba(0,0,0,.12);
+$prototype-shadow-breakpoints: $global-prototype-breakpoints;
+$prototype-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),
+                       0 2px 10px 0 rgba(0,0,0,.12);
 
 // // 41. Prototype Sizing
 // // --------------------
 
-// $prototype-sizing-breakpoints: $global-prototype-breakpoints;
-// $prototype-sizing: (
-//   width,
-//   height
-// );
-// $prototype-sizes: (
-//   25: 25%,
-//   50: 50%,
-//   75: 75%,
-//   100: 100%
-// );
+$prototype-sizing-breakpoints: $global-prototype-breakpoints;
+$prototype-sizing: (
+  width,
+  height
+);
+$prototype-sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+);
 
 // // 42. Prototype Spacing
 // // ---------------------
 
-// $prototype-spacing-breakpoints: $global-prototype-breakpoints;
-// $prototype-spacers-count: 3;
+$prototype-spacing-breakpoints: $global-prototype-breakpoints;
+$prototype-spacers-count: 3;
 
 // // 43. Prototype Text-Decoration
 // // -----------------------------
 
-// $prototype-decoration-breakpoints: $global-prototype-breakpoints;
-// $prototype-text-decoration: (
-//   overline,
-//   underline,
-//   line-through,
-// );
+$prototype-decoration-breakpoints: $global-prototype-breakpoints;
+$prototype-text-decoration: (
+  overline,
+  underline,
+  line-through,
+);
 
 // // 44. Prototype Text-Transformation
 // // ---------------------------------
 
-// $prototype-transformation-breakpoints: $global-prototype-breakpoints;
-// $prototype-text-transformation: (
-//   lowercase,
-//   uppercase,
-//   capitalize
-// );
+$prototype-transformation-breakpoints: $global-prototype-breakpoints;
+$prototype-text-transformation: (
+  lowercase,
+  uppercase,
+  capitalize
+);
 
 // // 45. Prototype Text-Utilities
 // // ----------------------------
@@ -770,34 +770,34 @@ $reveal-overlay-background: rgba($black, 0.45);
 // // 48. Slider
 // // ----------
 
-// $slider-width-vertical: 0.5rem;
-// $slider-transition: all 0.2s ease-in-out;
-// $slider-height: 0.5rem;
-// $slider-background: $light-gray;
-// $slider-fill-background: $medium-gray;
-// $slider-handle-height: 1.4rem;
-// $slider-handle-width: 1.4rem;
-// $slider-handle-background: $primary-color;
-// $slider-opacity-disabled: 0.25;
-// $slider-radius: $global-radius;
+$slider-width-vertical: 0.5rem;
+$slider-transition: all 0.2s ease-in-out;
+$slider-height: 0.5rem;
+$slider-background: $light-gray;
+$slider-fill-background: $medium-gray;
+$slider-handle-height: 1.4rem;
+$slider-handle-width: 1.4rem;
+$slider-handle-background: $primary-color;
+$slider-opacity-disabled: 0.25;
+$slider-radius: $global-radius;
 
 // // 49. Switch
 // // ----------
 
-// $switch-background: $medium-gray;
-// $switch-background-active: $primary-color;
-// $switch-height: 2rem;
-// $switch-height-tiny: 1.5rem;
-// $switch-height-small: 1.75rem;
-// $switch-height-large: 2.5rem;
-// $switch-radius: $global-radius;
-// $switch-margin: $global-margin;
-// $switch-paddle-background: $white;
-// $switch-paddle-offset: 0.25rem;
-// $switch-paddle-radius: $global-radius;
-// $switch-paddle-transition: all 0.25s ease-out;
-// $switch-opacity-disabled: .5;
-// $switch-cursor-disabled: not-allowed;
+$switch-background: $medium-gray;
+$switch-background-active: $primary-color;
+$switch-height: 2rem;
+$switch-height-tiny: 1.5rem;
+$switch-height-small: 1.75rem;
+$switch-height-large: 2.5rem;
+$switch-radius: $global-radius;
+$switch-margin: $global-margin;
+$switch-paddle-background: $white;
+$switch-paddle-offset: 0.25rem;
+$switch-paddle-radius: $global-radius;
+$switch-paddle-transition: all 0.25s ease-out;
+$switch-opacity-disabled: .5;
+$switch-cursor-disabled: not-allowed;
 
 // // 50. Table
 // // ---------
@@ -824,7 +824,7 @@ $table-stack-breakpoint: medium;
 // // 51. Tabs
 // // --------
 
-$tab-margin: 0;
+$tab-margin: 0 0 1rem 0;
 $tab-background: $light-gray;
 $tab-color: $primary-color;
 $tab-background-active: $light-gray;
@@ -840,23 +840,23 @@ $tab-content-padding: 1rem;
 // // 52. Thumbnail
 // // -------------
 
-// $thumbnail-border: 4px solid $white;
-// $thumbnail-margin-bottom: $global-margin;
-// $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
-// $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
-// $thumbnail-transition: box-shadow 200ms ease-out;
-// $thumbnail-radius: $global-radius;
+$thumbnail-border: 4px solid $white;
+$thumbnail-margin-bottom: $global-margin;
+$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-transition: box-shadow 200ms ease-out;
+$thumbnail-radius: $global-radius;
 
 // // 53. Title Bar
 // // -------------
 
-// $titlebar-background: $black;
-// $titlebar-color: $white;
-// $titlebar-padding: 0.5rem;
-// $titlebar-text-font-weight: bold;
-// $titlebar-icon-color: $white;
-// $titlebar-icon-color-hover: $medium-gray;
-// $titlebar-icon-spacing: 0.25rem;
+$titlebar-background: $black;
+$titlebar-color: $white;
+$titlebar-padding: 0.5rem;
+$titlebar-text-font-weight: bold;
+$titlebar-icon-color: $white;
+$titlebar-icon-color-hover: $medium-gray;
+$titlebar-icon-spacing: 0.25rem;
 
 // // 54. Tooltip
 // // -----------
@@ -886,15 +886,15 @@ $topbar-unstack-breakpoint: small;
 // // 56. Xy Grid
 // // -----------
 
-// $xy-grid: true;
-// $grid-container: $global-width;
-// $grid-columns: 12;
-// $grid-margin-gutters: (
-//   small: 20px,
-//   medium: 30px
-// );
-// $grid-padding-gutters: $grid-margin-gutters;
-// $grid-container-padding: $grid-padding-gutters;
-// $grid-container-max: $global-width;
-// $xy-block-grid-max: 8;
+$xy-grid: true;
+$grid-container: $global-width;
+$grid-columns: 12;
+$grid-margin-gutters: (
+  small: 20px,
+  medium: 30px
+);
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: $grid-padding-gutters;
+$grid-container-max: $global-width;
+$xy-block-grid-max: 8;
 

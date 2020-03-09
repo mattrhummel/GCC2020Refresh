@@ -1,0 +1,23 @@
+//Tabs
+.tabs {
+  
+.tabs-title {
+  @media screen and (max-width: 39.9375em) {
+     width: 100%;
+  }
+}
+
+}
+
+.tabs.vertical {
+
+  li {
+    border-bottom: 1px solid $medium-gray;
+  }
+
+}
+
+//Callouts
+.callout.primary {
+  background-color: $light-gray !important;
+}

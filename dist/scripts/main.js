@@ -233,19 +233,19 @@ function eraseCookieClosing(name) {
     createCookieClosing(name, "", -1);
 }
 
-$(document).ready(function() {
-var sync1 = $("#sync1");
-  //Init the carousel
-   sync1.owlCarousel({
+// $(document).ready(function() {
+// var sync1 = $("#sync1");
+//   //Init the carousel
+//    sync1.owlCarousel({
 
-    items : 1,
-    slideSpeed : 2000,
-    nav: true,
-    autoplay: false,
-    dots: true,
-    loop: true,
-    responsiveRefreshRate : 200,
-    navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
-  }).on('changed.owl.carousel', syncPosition);
+//     items : 1,
+//     slideSpeed : 2000,
+//     nav: true,
+//     autoplay: false,
+//     dots: true,
+//     loop: true,
+//     responsiveRefreshRate : 200,
+//     navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>','<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+//   }).on('changed.owl.carousel', syncPosition);
      
- });
+//  });

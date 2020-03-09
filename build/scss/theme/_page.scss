@@ -1,3 +1,4 @@
+//Page Header
 .header-section {
    background-color: $medium-gray;
    
@@ -24,7 +25,6 @@
      padding: 7rem 0 1rem 0;
 
     } 
-
   .header-content {
   
      h1.entry-title {
@@ -45,6 +45,8 @@
 }
 
 }
+
+//content
 .content-area {
   
     margin-top: 0;
@@ -81,64 +83,8 @@
   }
 
 }
- 
-// .spring-save, .spring-skill, .spring-learn, .de-on-campus, .de-in-school, .de-early-college {
-//  background-position: top right; 
-//  background-repeat: none; 
-//  background-size: cover;
-//  background-color: #eee;
-// }
-// //custom backgrounds
-// .spring-save {
-//  background-image: url('https://www.germanna.edu/wp-content/uploads/spring-save.jpg');
-//  margin: 0 0 21px 0;
-//  padding: 21px;
-//  height: 350px; 
-// }
 
-// .spring-skill {
-//  background-image: url('https://www.germanna.edu/wp-content/uploads/spring-skill-2.jpg');
-//  margin: 0 0 21px 0;
-//  padding: 21px;
-//  height: 350px; 
-// }
+//landing page styles
 
-// .spring-learn {
-//  background-image: url('https://www.germanna.edu/wp-content/uploads/spring-learn.jpg');
-//  margin: 0 0 21px 0;
-//  padding: 21px;
-//  height: 350px;
-// }
-// //DE Styles
-// .de-on-campus {
-//  background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/on-campus.jpg');
-//  margin: 0 0 20px 0;
-//  padding: 0;
-//  height: 350px; 
-//  @media screen and (min-width: 64em) {
-//  height: 250px;
 
-//  }
-// }
-// .de-in-school {
-//  background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/in-school.jpg');
-//  padding: 0;
-//  height: 350px; 
-//  margin: 0 0 20px 0;
 
-//    @media screen and (min-width: 64em) {
-//    height: 250px;
-
-//  }
-// }
-// .de-early-college {
-//  background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/early-college.jpg');
-//  padding: 0;
-//  height: 350px; 
-//  margin: 0 0 20px 0;
-//   @media screen and (min-width: 64em) {
-  
-//   height: 250px;
-
-//  }
-// }

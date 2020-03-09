@@ -14,7 +14,7 @@ function gcc_wp_2018_main_menu () {
 function gcc_wp_2018_information_menu () {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
-        'items_wrap' => '<div><ul class="menu vertical" aria-labelledby="menu_information">%3$s</ul></div>' ,                  // menu name
+        'items_wrap' => '<div><ul class="vertical menu" aria-labelledby="menu_information">%3$s</ul></div>' ,                  // menu name
         'theme_location' => 'information-menu',  // where it's located in the theme
     	'fallback_cb' => 'main_nav_fb',   // fallback function (see below)
 	));
@@ -22,7 +22,7 @@ function gcc_wp_2018_information_menu () {
 function gcc_wp_2018_resource_menu() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
-        'items_wrap' => '<div><ul class="menu vertical"  aria-labelledby="menu_resource">%3$s</ul></div>' ,                  // menu name
+        'items_wrap' => '<div><ul class="vertical menu"  aria-labelledby="menu_resource">%3$s</ul></div>' ,                  // menu name
         'theme_location' => 'resource-menu',  // where it's located in the theme
         'depth' => 0,                     // limit the depth of the nav
     ));
@@ -30,7 +30,7 @@ function gcc_wp_2018_resource_menu() {
 function gcc_wp_2018_footer_links_menu() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
-        'items_wrap' => '<div><ul class="menu vertical large-horizontal">%3$s</ul></div>' ,                  // menu name
+        'items_wrap' => '<div><ul class="vertical menu large-horizontal">%3$s</ul></div>' ,                  // menu name
         'theme_location' => 'footer-links-menu',  // where it's located in the theme
         'depth' => 0,                     // limit the depth of the nav
     ));
@@ -38,7 +38,7 @@ function gcc_wp_2018_footer_links_menu() {
 function gcc_wp_2018_footer_calltos_menu() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
-        'items_wrap' => '<div><ul class="action-buttons">%3$s</ul></div>' ,                  // menu name
+        'items_wrap' => '<div><ul class="vertical menu">%3$s</ul></div>' ,                  // menu name
         'theme_location' => 'footer-calltos-menu',  // where it's located in the theme
         'depth' => 0,                     // limit the depth of the nav
     ));
