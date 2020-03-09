@@ -20,9 +20,9 @@ get_header(); ?>
   ?>
   <div class="row content-area" >
     
-      <?php //get_sidebar();?>
+      <?php get_sidebar();?>
 
-      <div class="columns small-12 medium-12">
+      <div class="columns small-12 medium-12 large-8 float-right">
       
         <div class="entry-content" id="main">
 
