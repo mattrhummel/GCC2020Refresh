@@ -14,7 +14,7 @@ get_header();?>
       <div class="header-content">
         <div class="columns small-10 medium-10">
           
-          <h1 class="entry-title"><?php echo get_cat_name(1); ?></h1>
+          <h1 class="entry-title"><?php echo get_the_archive_title(); ?></h1>
           <div class="crumbs-container">
           </div>
         </div>
@@ -25,21 +25,7 @@ get_header();?>
 </header>
 <?php
 if ( have_posts() ) : ?>
-<header>
-  <div class="row expanded header-section">
-    <div class="row header-container">
-      <div class="header-content">
-        <div class="columns small-10 medium-10">
-          
-          <h1 class="entry-title"><?php echo get_cat_name(1); ?></h1>
-          <div class="crumbs-container">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</header>
+
 <div class="row expanded content-area gutter-small" >
   
   <div class="row">
