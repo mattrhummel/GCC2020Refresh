@@ -8,11 +8,11 @@
  */
 
 ?>
-<div class="row gutter-small expanded content-area">
+  <div class="row content-area">
 
-<div class="columns small-12 medium-9">
-
-	<div class="entry-content">
+ <div class="columns small-12 medium-12 large-8 float-right">
+      
+        <div class="entry-content" id="main">
 
 <h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'gcc-wp-2018' ); ?></h1>
 
