@@ -33,9 +33,11 @@ if ( have_posts() ) : ?>
       <button class="button expanded mobile-sidebar-button" type="button" data-toggle="example-menu"><?php _e('In this section', 'gcc-wp-2018'); ?></button>
       
     </div>
+
     <aside class="columns large-4 nav-panel hide-for-print mobile-sidebar" id="example-menu">
       <?php dynamic_sidebar( 'single-widgets' ); ?>
     </aside>
+
     <div class="columns small-12 medium-12 large-8" style="padding: 0">
       
       <div class="entry-content" id="main">
@@ -49,7 +51,9 @@ if ( have_posts() ) : ?>
                             * called content-___.php (where ___ is the Post Type name) and that will be used instead.
                             */
         ?>
-        <div class="callout primary">
+
+
+      <div class="callout primary">
           <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
           <h3 class="post-title">
           <a href="<?php the_permalink(); ?>">
@@ -85,11 +89,12 @@ if ( have_posts() ) : ?>
 
  <div class="row content-area">
 
- <div class="columns small-12 medium-12 large-8 float-right">
+  <div class="columns small-12">
       
-        <div class="entry-content" id="main">
+  <div class="entry-content" id="main">
 
-    <h1 class="page-title"><?php esc_html_e( 'Nothing found for this event category', 'gcc-wp-2018' ); ?></h1>
+    <h2 class="page-title"><?php esc_html_e( 'Nothing found for this event category', 'gcc-wp-2018' ); ?></h2>
+
 
     <?php
     if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
