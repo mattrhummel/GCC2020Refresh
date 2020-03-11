@@ -37,7 +37,7 @@ get_header(); ?>
   </div>
     
 </header>
-  
+
   <div class="row expanded content-area gutter-small" >
     
     <div class="row">
@@ -57,38 +57,33 @@ get_header(); ?>
       <div class="columns small-12 medium-12 large-8">
       
         <div class="entry-content" id="main">
-
-        <?php
-        the_content( sprintf(
-        wp_kses(
-        /* translators: %s: Name of current post. Only visible to screen readers */
-        __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-        array(
-          'span' => array(
-            'class' => array(),
+          <?php
+          the_content( sprintf(
+          wp_kses(
+          /* translators: %s: Name of current post. Only visible to screen readers */
+          __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
+          array(
+            'span' => array(
+              'class' => array(),
+            ),
+          )
           ),
-        )
-        ),
-        get_the_title()
-        )
-        ); ?>
-        <div class="row">
+          get_the_title()
+          )
+          ); 
+          ?>
 
-               
-              <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
-     
+            <p><?php the_field( 'event_date' ); ?></p>
+            <p><?php the_field( 'event_location' ); ?></p>
+            <p><?php the_field( 'event_start_time' ); ?></p>
+            <p><?php the_field( 'event_end_time' ); ?></p>
+            <p><?php the_field( 'event_details' ); ?></p>
 
-          </div>
-      
-      </div>
-
-    </div>
-  
         </div>
       </div>
-    
-</article>
+    </div>
+  </div>
   <?php endwhile; // End of the loop. ?>
-
-  <?php
-  get_footer();
+</article>
+<?php
+get_footer();
