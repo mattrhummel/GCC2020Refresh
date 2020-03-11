@@ -22,10 +22,7 @@ get_header(); ?>
 
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   
-        <div class="crumbs-container">  
-
-            <p><?php echo get_the_date();  ?></p>
-              
+        <div class="crumbs-container">              
         </div>
 
     </div>
