@@ -13,7 +13,7 @@ get_header();?>
       <div class="header-content">
         <div class="columns small-10 medium-10">
           
-          <h1 class="entry-title"><?php echo get_the_archive_title(); ?></h1>
+          <h1 class="entry-title"><?php echo post_type_archive_title(); ?></h1>
           <div class="crumbs-container">
           </div>
         </div>
