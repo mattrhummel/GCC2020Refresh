@@ -13,7 +13,7 @@ get_header();?>
       <div class="header-content">
         <div class="columns small-10 medium-10">
           
-          <h1 class="entry-title"><?php echo post_type_archive_title(); ?></h1>
+          <h1 class="entry-title">Calendars</h1>
           <div class="crumbs-container">
           </div>
         </div>
@@ -47,22 +47,29 @@ if ( have_posts() ) : ?>
         * called content-___.php (where ___ is the Post Type name) and that will be used instead.
         */
         ?>
+            
         <div class="callout primary">
+          
           <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
           <h3 class="post-title">
+          
           <a href="<?php the_permalink(); ?>">
             <?php the_title(); ?>
           </a>
-      
+          
           </h3>
 
-         <?php $terms = get_terms( 'cw_event_categories' ); ?>
+        <?php $terms = get_terms( 'cw_event_categories' ); ?>
 
-                <?php foreach( $terms as $term ){  ?>
-                    
-              <p>Calendar: <a href='<?php echo $term->slug ?>' data-filter='<?php echo $term->slug ?>'><?php echo $term->name ?></a><br/><?php the_field( 'event_date' ); ?></p>
-              <?php  } ?>
-          
+          <ul id="my-category" class="filter clearfix">
+              <?php foreach( $terms as $term ){ ?>
+              <li><a href='<?php echo $term->slug?>' data-filter='<?php echo $term->slug ?>'><span><?php echo $term->name ?></span></a></li>
+               <?php } ?>
+          </ul><!-- /my-category -->
+           
+
+          <p><?php the_field( 'event_date' ); ?></p>
+
         
       </div>
       <?php endwhile;
@@ -74,7 +81,7 @@ if ( have_posts() ) : ?>
     <div class="columns small-12">
       
       <div class="entry-content" id="main">
-        <h2 class="page-title"><?php esc_html_e( 'Nothing found for this event category', 'gcc-wp-2018' ); ?></h2>
+        <h2 class="page-title"><?php esc_html_e( 'Nothing found for this calendar', 'gcc-wp-2018' ); ?></h2>
         <?php
         if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
         <p><?php

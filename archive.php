@@ -13,7 +13,7 @@ get_header();?>
       <div class="header-content">
         <div class="columns small-10 medium-10">
           
-          <h1 class="entry-title"><?php echo get_the_archive_title(); ?></h1>
+          <h1 class="entry-title"><?php echo single_term_title( '', true ); ?></h1>
           <div class="crumbs-container">
           </div>
         </div>
@@ -24,6 +24,8 @@ get_header();?>
 
 <?php
 if ( have_posts() ) : ?>
+
+  
 <div class="row expanded content-area gutter-small" >
   
   <div class="row">

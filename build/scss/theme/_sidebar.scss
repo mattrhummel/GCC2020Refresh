@@ -1,6 +1,7 @@
 .nav-panel {
   position: relative;
 }
+
 button.mobile-sidebar-button { 
 
 	background-color: $light-gray;
@@ -34,6 +35,7 @@ button.mobile-sidebar-button {
 
 //Page Side bar
 .widget {
+
 background-color: $medium-gray;
 margin: $global-margin-bottom;
 
@@ -46,6 +48,7 @@ h3 {
 	background: $black;
 }
 
+//normal sidebar menu (parent level)
 ul {
 
 	padding: $no-padding;
@@ -55,11 +58,12 @@ ul {
 			list-style: $global-list-style;
 	   a {
 			display: block;
-			padding: 10px 0 10px 10px;
+			// padding: 10px 0 10px 10px;
 			font-weight: $global-weight-bold;
 			color: $black;
 			background-color: $medium-gray;
 			border-bottom: 1px solid $white;
+	    
 	    &:hover {
 	    	background-color: $light-gray;
 	    }
@@ -70,13 +74,73 @@ ul {
 }
 		}
 
-		li.current_page_item  {
-			a {
-			  background-color: $medium-gray;
+}
+
+ul.child-sidebar-menu {
+
+li {
+
+		a {
+			
+			padding: 10px 10px 10px 10px;
+
+					&:hover {
+						background-color: $light-gray;
+
+						}
+
+						&:focus {
+							background-color: $light-gray;
+						}
+
 			}
+
+			ul.grandchild-sidebar-menu.level-0.children {
+
+				li {
+					a {
+						padding-left: 20px;
+					}
+				}
+
+
+				li.has_children {
+
+					a {
+	
+						&:hover {
+							background-color: $light-gray;
+						}
+						&:focus {
+							background-color: $light-gray;
+						}
+
+					}
+
+
+				ul.grandchild-sidebar-menu.level-1.children {
+
+					li {
+
+						a {
+
+						padding: 10px 10px 10px 40px;
+						
+						}
+					}
+
+			
+				}
+
+			}
+
 		}
 
+
 	}
+
+
+}
 
 .textwidget {
 	padding: $global-padding;
@@ -119,7 +183,6 @@ ul {
 	}
 }
 .widget.news-sidebar {
-
 h3 {
   margin-bottom: $global-margin-bottom;
 }
@@ -127,12 +190,13 @@ h3 {
   margin-left: 0;
 
   li {
-    padding: $global-padding-bottom;
+    padding: 0;
     a {
       font-family: $font-family-monospace;
       text-transform: uppercase;
       font-size: 1.2rem;
       line-height: 1.4rem;
+      padding: 1rem;
     }
   }
  }

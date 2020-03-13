@@ -20,7 +20,7 @@ get_header(); ?>
 
        <div class="columns small-10 medium-10">
 
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+         
   
         <div class="crumbs-container">              
         </div>
@@ -69,7 +69,7 @@ get_header(); ?>
           )
           ); 
           ?>
-
+ <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
             <p><?php the_field( 'event_date' ); ?></p>
             <p><?php the_field( 'event_location' ); ?></p>
             <p><?php the_field( 'event_start_time' ); ?></p>
